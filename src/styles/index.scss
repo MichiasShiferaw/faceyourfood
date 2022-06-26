@@ -1,0 +1,56 @@
+// :root {
+//     --background-color: #fff;
+//     --background-light: #fff;
+//     --shadow-color: rgba(0, 0, 0, 0.2);
+//     --primary-color: rgb(255, 0, 86);
+//     --text-color: #0A0A0A;
+//     --text-light: #575757;
+//     --font-size: 16px;
+//     --animation-speed: 1;
+// }
+
+
+// body {
+//     font-size: var(--font-size);
+//     font-family: 'Roboto', sans-serif;
+//     padding-top: 55px;
+//     background-color: var(--background-light);
+// }
+
+// a {
+//     text-decoration: none;
+// }
+
+// img {
+//     object-fit: cover;
+// }
+// *{
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+// }
+
+// .navbar{
+//     height:55px;
+//     box-shadow: 0 3px 6px var(--shadow-color);
+//     background-color: var(--background-color);
+//     color: var(--text-color);
+//     display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         position: fixed;
+//         width: 100%;
+//         top: 0;
+//         z-index: 998;
+    
+//         .logo {
+//             font-size: 1.5em;
+//             font-weight: bolder;
+//             color: var(--primary-color);
+//             text-shadow: 0 1px 3px var(--shadow-color);
+    
+//             span {
+//                 color: var(--text-color);
+//             }
+//         }
+// }

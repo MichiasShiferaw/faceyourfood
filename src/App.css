@@ -1,0 +1,230 @@
+.App {
+  /*text-align: center;*/
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+table.table-fit {
+  width: auto !important;
+  table-layout: auto !important;
+}
+
+table.table-fit thead th,
+table.table-fit tfoot th {
+  width: auto !important;
+}
+
+table.table-fit tbody td,
+table.table-fit tfoot td {
+  width: auto !important;
+}
+
+/* .carousel-item img {
+  margin: 0 auto;
+  width: auto;
+}
+
+.carousel-item video {
+  margin: 0 auto;
+  width: auto;
+
+}
+
+
+
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+  width: 100%;
+} */
+
+#sales{
+  background-size: cover;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.serviceDescription{
+  text-align: start !important;
+}
+
+/* .carousel-inner>.item>video,
+.carousel-inner>.item>a>video {
+  width: 100%;
+}
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+
+
+@media (max-width: 640px) {
+  .carousel {
+    display: none;
+  }
+
+} */
+
+@media (max-width: 995px) {
+    #steps {
+        display: none;
+      }
+
+}
+
+
+.offcanvas.show {
+  visibility: visible;
+  
+}
+
+.offcanvas-end{
+  width: 500px !important;
+}
+
+
+.modal-backdrop {
+  z-index: -1 !important;
+}
+
+/* .carousel-inner {
+  padding: 1em;
+} */
+
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+}
+
+/* .carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 33.333333%;
+    display: block;
+  }
+
+  .carousel-inner {
+    display: flex;
+  }
+} */
+
+.card .img-wrapper {
+  max-width: 100%;
+  height: 13em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  max-height: 100%;
+}
+
+@media (max-width: 767px) {
+  .card .img-wrapper {
+    height: 17em;
+  }
+}
+
+input[type=checkbox]:checked+label.strikethrough {
+  text-decoration: line-through;
+}
+
+#instructions li{
+  text-align: start;
+  /* font-size: large; */
+}
+
+#ingredients {
+  
+  text-align: start;
+
+  
+  /* font-size: large; */
+}
+
+#ingredients .form-check{
+
+  margin-left: 120px;
+
+
+  /* font-size: large; */
+}
+
+.component-list{
+  display: flex;
+  flex-wrap: wrap;
+  /*margin: 0 -1;*/
+}
+
+.component-list li{
+  padding: 5px 30px;
+}
+
+.bi-star-fill{
+  color:#f3da35;
+}
+
+a.category-title:hover{
+background-color: blue;
+}
+a.category-title {
+  color: black;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.modal-dialog,
+.modal-content {
+  /* 80% of window height */
+  height: 80%;
+}
+
+.modal-body {
+  /* 100% = dialog height, 120px = header + footer */
+  max-height: calc(100% - 120px);
+  overflow-y: scroll;
+}
