@@ -6,10 +6,16 @@ function Sidebar () {
     return (
       <>
 
-<div className="offcanvas offcanvas-end off-canvas-sm" data-bs-backdrop="false" tabIndex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
-  <nav id="navbar-2" className="navbar navbar-light bg-light m-0 ms-2">
-  <h1 className="navbar-brand m-0" id="offcanvasLabel">My Carts</h1>
-  <ul className="nav nav-pills">
+<div className="offcanvas offcanvas-end off-canvas-sm bg-light" data-bs-backdrop="false" tabIndex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+  <nav id="navbar-2" className="navbar navbar-light bg-light m-0">
+  <button type="button" className="btn-close  btn-outline text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  <a href="#/">
+              <img src="/assets/images/Logo.png" height={'60px'} alt="FaceYourFood"/>
+            </a>
+              <div className="justify-content-end col-md-4">
+  <h1 className="navbar-brand text-wrap justify-content-end col-md-4" id="offcanvasLabel">Popular Categories</h1>
+  </div>
+  <ul className="nav nav-pills justify-content-center">
 
     <li className="nav-item dropdown">
       <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/#" role="button" aria-expanded="false">Cuisine</a>
@@ -62,7 +68,7 @@ function Sidebar () {
 
 
   </ul>
-  <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
 </nav>
   <div className="offcanvas-body">
     <Options/>

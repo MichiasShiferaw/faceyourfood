@@ -1,7 +1,25 @@
 .App {
   /*text-align: center;*/
+  font-family: 'Merriweather',serif;
+  font-weight: 300;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 800;
+}
+
+.button {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -111,7 +129,7 @@ table.table-fit tfoot td {
 }
 
 .offcanvas-end{
-  width: 500px !important;
+  width: 390px !important;
 }
 
 
@@ -150,6 +168,10 @@ table.table-fit tfoot td {
     display: flex;
   }
 } */
+
+.carousel-inner img {
+  margin: auto;
+}
 
 .card .img-wrapper {
   max-width: 100%;
@@ -227,4 +249,8 @@ a.category-title {
   /* 100% = dialog height, 120px = header + footer */
   max-height: calc(100% - 120px);
   overflow-y: scroll;
+}
+
+.form-label{
+  font-weight:bolder;
 }

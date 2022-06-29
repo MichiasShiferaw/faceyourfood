@@ -14,15 +14,15 @@ export default function Portiontwo() {
                   </div>
                 </div>
               </div>
-              <h6 className="font-weight-semibold inter-font mt-2 mb-3"><a href="#0" className="text-black">Pumpkin Marshmallow Pie</a></h6>
-              <p className="font-weight-medium">The perfect dessert for fall! finally found the perfect way to make the flakiest crust, and the toasted marshmallow is to die for!</p>
+              <h6 className="font-weight-semibold inter-font mt-2 mb-3"><a href="#0" className="text-black">Sloppy Joe</a></h6>
+              <p className="font-weight-medium">Source=https://ourfoodfix.com/paleofied-sloppy-joes-with-oven-baked-sweet-potatoes/</p>
             </figcaption>
           </figure>
           <hr/>
 <div className="row featurette">
       <div className="col-md-7">
-        <h2 className="featurette-heading fw-normal lh-1">First featurette heading. <span className="text-muted">It’ll blow your mind.</span></h2>
-        <p className="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+        <h2 className="featurette-heading fw-normal lh-1">Lorem ipsum dolor. <span className="text-muted">Lorem ipsum dolor sit amet.</span></h2>
+        <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
       <div className="col-md-5">
         {/* <svg className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> */}
@@ -32,8 +32,8 @@ export default function Portiontwo() {
     <hr/>
     <div className="row featurette">
       <div className="col-md-7 order-md-2">
-        <h2 className="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span className="text-muted">See for yourself.</span></h2>
-        <p className="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+        <h2 className="featurette-heading fw-normal lh-1">Lorem ipsum dolor sit amet. <span className="text-muted">ut labore et dolore magna.</span></h2>
+        <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
       </div>
       <div className="col-md-5 order-md-1">
         {/* <svg className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> */}

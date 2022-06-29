@@ -1,5 +1,6 @@
 import Recommended from "./recommendation";
 import Reviews from "./Reviews";
+import {Link} from "react-router-dom";
 
 export default function Recipe() {
   return (
@@ -10,8 +11,9 @@ export default function Recipe() {
         <div className="order-sm-2 ml-auto">
   <nav aria-label="breadcrumb">
   <ol className="breadcrumb">
+    <Link to='/categories' className="breadcrumb-item"><a href="#">Categories</a></Link>
     <li className="breadcrumb-item"><a href="#">Bakery</a></li>
-    <li className="breadcrumb-item"><a href="#">Muffins</a></li>
+    <li className="breadcrumb-item" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="#">Muffins</a></li>
     <li className="breadcrumb-item active" aria-current="page">Oatmeal Muffins</li>
   </ol>
 </nav>
@@ -33,9 +35,9 @@ export default function Recipe() {
           
         </div>
       </div>
-      <div className="blog-detail">
+      <div className="blog-detail pb-0 mb-0">
         <hr style={{height: '5px'}}/>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+        <p className="pb-0 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
         <br/> 
 <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">
   <div className="carousel-indicators">
@@ -45,24 +47,24 @@ export default function Recipe() {
   </div>
   <div className="carousel-inner">
     <div className="carousel-item active" data-bs-interval="10000">
-      <img src="/assets/images/muffins/1.png" className="d-block w-100" alt="..."/>
+      <img src="/assets/images/muffins/1.png" className="d-block w-175 img-fluid" alt="..."/>
       <div className="carousel-caption d-none d-md-block">
         <h5>Oatmeal Muffins Within 30 Minutes!</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda delectus.</p>
       </div>
     </div>
     <div className="carousel-item" data-bs-interval="2000">
-      <img src="/assets/images/muffins/2.png" className="d-block w-100" alt="..."/>
+      <img src="/assets/images/muffins/2.png" className="d-block w-175 img-fluid" alt="..."/>
       <div className="carousel-caption d-none d-md-block">
         <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda delectus.</p>
       </div>
     </div>
     <div className="carousel-item">
-      <img src="/assets/images/muffins/3.png" className="d-block w-100" alt="..."/>
+      <img src="/assets/images/muffins/3.png" className="d-block w-175 img-fluid" alt="..."/>
       <div className="carousel-caption d-none d-md-block">
         <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda delectus.</p>
       </div>
     </div>
   </div>
@@ -279,7 +281,7 @@ export default function Recipe() {
   </div>
 
 
-<section id="reviews" className="bg-info pb-5">
+{/* <section id="reviews" className="bg-info pb-5">
         <div className="container-lg">
             <div className="text-center">
                 
@@ -289,7 +291,7 @@ export default function Recipe() {
 
 
         </div>
-    </section>
+    </section> */}
 
 
 </section>

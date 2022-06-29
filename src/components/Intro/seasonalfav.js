@@ -31,12 +31,14 @@ export default function Portion() {
       <div className="card-body">
         <h5 className="card-title">Card title</h5>
         <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <div className="container p-0 ">
-    <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">30 mins</div>
+        <div className="container p-0 ">          <div className="row row-cols-auto">
+            <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">30 mins</div>
     <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">Carb-free</div>
     <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">Egg-free</div>
     <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">Tag4</div>
 
+
+          </div>
 </div>
       </div>
       
@@ -78,7 +80,7 @@ export default function Portion() {
     </div>
   </div>
   <div className="col-md-6">
-<div className="card h-100">
+ <div className="card h-100"> 
   <div className="row g-0">
     <div className="col-md-8">
       <img src="assets/images/muffins/3.png" className="card-img-top" alt="..."/>
@@ -88,10 +90,15 @@ export default function Portion() {
         <h5 className="card-title">Card title</h5>
         <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         <div className="container p-0 ">
-    <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">30 mins</div>
+          <div className="row row-cols-auto">
+            <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">30 mins</div>
     <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">Carb-free</div>
     <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">Egg-free</div>
     <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">Tag4</div>
+
+
+          </div>
+    
 
 </div>
       </div>
@@ -101,7 +108,7 @@ export default function Portion() {
       <a href="#" className="btn btn-primary">Go somewhere</a>
     </div>
   </div>
-</div>
+ </div> 
   </div>
   <div className="col-md-3">
     <div className="card h-100">

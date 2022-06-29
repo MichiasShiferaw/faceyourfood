@@ -1,5 +1,5 @@
 
-
+import {Link } from 'react-router-dom'
 export default function Launch (){
 
     return(
@@ -29,25 +29,27 @@ export default function Launch (){
                   </div>
                 </div>
               </div>
-              <h5 className="card-title font-weight-semibold inter-font f-size-25 mt-2 mb-1"><a href="#0" className="text-black d-block mt-1">Blueberry Muffin</a></h5>
+              <h5 className="card-title font-weight-semibold inter-font f-size-25 mt-2 mb-1"><a href="#0" className="text-black d-block mt-1">Oatmeal Muffin</a></h5>
             </figcaption>
           </figure>
           <div className="card-body">
     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
-<div className="container p-0 ">
-    <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">30 mins</div>
+<div className="container p-0 ">          <div className="row row-cols-auto">
+            <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">30 mins</div>
     <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">Carb-free</div>
     <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">Egg-free</div>
-    <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">Tag4: Lorem</div>
+    <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">Tag4</div>
 
+
+          </div>
 </div>
     
     
 
   </div>
   <div className="card-footer">
-<a href="#" className="btn btn-outline-primary stretched-link">Go <i className="bi bi-caret-right-fill"></i></a>
+<Link to="recipes" href="#" className="btn btn-outline-beige1 stretched-link">Go <i className="bi bi-caret-right-fill"></i></Link>
   </div>
         </div>
         </div>
@@ -67,7 +69,6 @@ export default function Launch (){
                             <i className="bi bi-star-fill"/>
                                           <i className="bi bi-star-fill"/>
                                                         <i className="bi bi-star-fill"/>
-                                                                      <i className="bi bi-star-fill"/>
                   </div>
                 </div>
               </div>
@@ -77,12 +78,14 @@ export default function Launch (){
           <div className="card-body">
     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
-<div className="container p-0 ">
-    <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">30 mins</div>
+<div className="container p-0 ">          <div className="row row-cols-auto">
+            <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">30 mins</div>
     <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">Carb-free</div>
     <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">Egg-free</div>
-    <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">Tag4: Lorem</div>
+    <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">Tag4</div>
 
+
+          </div>
 </div>
     
 
@@ -119,12 +122,14 @@ export default function Launch (){
           <div className="card-body">
     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
-<div className="container p-0 ">
-    <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">30 mins</div>
+<div className="container p-0 ">          <div className="row row-cols-auto">
+            <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">30 mins</div>
     <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">Carb-free</div>
     <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">Egg-free</div>
-    <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">Tag4: Lorem</div>
+    <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">Tag4</div>
 
+
+          </div>
 </div>
     
 
