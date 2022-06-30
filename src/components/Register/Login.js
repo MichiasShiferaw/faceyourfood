@@ -2,8 +2,8 @@ export default function login(){
     return(
 
       <>
-        <section className="login bg-light" id="login">
-        <div className="col-md-7 col-lg-8 my-5 mx-auto">
+        <section className="login bg-light mb-5 pb-5" id="login">
+        <div className="col-md-7 col-lg-8 mx-auto">
         <h2 className="mb-3 text-center"><strong>Get Started</strong></h2>
         <hr className="my-4"/>
         <form className="needs-validation" noValidate="">

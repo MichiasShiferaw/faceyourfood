@@ -12,7 +12,7 @@ import Newsletter from '../components/Newsletter/newsletter';
 
 function Home() {
   return (
-    <div className='container'>
+    <div className='myhome container'>
         <Launch/>
         <Pop/>
 
@@ -21,10 +21,11 @@ function Home() {
         
         <Portion/>
         {/* <Sidebar/> */}
-        <Modal1/>
-        <Modal2/>
+        {/* <Modal1/>
+        <Modal2/> */}
         <Login/>
         {/* <ToastDemo/> */}
+        <hr/>
     </div>
   )
 }
