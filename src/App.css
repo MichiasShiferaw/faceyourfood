@@ -254,3 +254,10 @@ a.category-title {
 .form-label{
   font-weight:bolder;
 }
+
+.supporting{
+    position: fixed;
+      bottom: -4px;
+      right: 10px;
+
+}
