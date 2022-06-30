@@ -259,5 +259,6 @@ a.category-title {
     position: fixed;
       bottom: -4px;
       right: 10px;
+      z-index: 2;
 
 }

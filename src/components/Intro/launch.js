@@ -36,10 +36,10 @@ export default function Launch (){
     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
 <div className="container p-0 ">          <div className="row row-cols-auto">
-            <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">30 mins</div>
-    <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">Carb-free</div>
-    <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">Egg-free</div>
-    <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">Tag4</div>
+            <div className="bg-darkturq rounded-pill m-1 p-2 d-inline-block search-item">30 mins</div>
+    <div className="bg-darkturq rounded-pill m-1 p-2 d-inline-block search-item">Carb-free</div>
+    <div className="bg-darkturq rounded-pill m-1 p-2 d-inline-block search-item">EMILY</div>
+    {/* <div className="bg-darkturq rounded-pill m-1 p-2 d-inline-block search-item">Tag4</div> */}
 
 
           </div>
@@ -79,10 +79,10 @@ export default function Launch (){
     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
 <div className="container p-0 ">          <div className="row row-cols-auto">
-            <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">30 mins</div>
-    <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">Carb-free</div>
-    <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">Egg-free</div>
-    <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">Tag4</div>
+            <div className="bg-darkturq rounded-pill m-1 p-2 d-inline-block search-item">30 mins</div>
+    <div className="bg-darkturq rounded-pill m-1 p-2 d-inline-block search-item">Carb-free</div>
+    <div className="bg-darkturq rounded-pill m-1 p-2 d-inline-block search-item">Egg-free</div>
+    <div className="bg-darkturq rounded-pill m-1 p-2 d-inline-block search-item">Tag: 4</div>
 
 
           </div>
@@ -123,10 +123,10 @@ export default function Launch (){
     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
 <div className="container p-0 ">          <div className="row row-cols-auto">
-            <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">30 mins</div>
-    <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">Carb-free</div>
-    <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">Egg-free</div>
-    <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">Tag4</div>
+            <div className="bg-darkturq rounded-pill m-1 p-2 d-inline-block search-item">30 mins</div>
+    <div className="bg-darkturq rounded-pill m-1 p-2 d-inline-block search-item">Carb-free</div>
+    <div className="bg-darkturq rounded-pill m-1 p-2 d-inline-block search-item">Egg-free</div>
+    <div className="bg-darkturq rounded-pill m-1 p-2 d-inline-block search-item">Tag4</div>
 
 
           </div>
