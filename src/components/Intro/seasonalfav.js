@@ -7,13 +7,13 @@ export default function Portion() {
     <hr className="flex-grow-1" />
 </div>
   <div className="row pt-2">
-{/* <div className="card-group"> */}
+ <div className="card-group"> 
   <div className="col-md-3">
     <div className="card h-100">
         <img src="assets/images/muffins/1.png" className="card-img-top"alt="..."/>
       <div className="card-body">
-        <h5 className="card-title">Special title treatment</h5>
-        <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <h5 className="card-title">Meal Name</h5>
+        <p className="card-text">Descriptions of the meal: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
             <div className="card-footer">
       <a href="#" className="w-75 btn btn-primary">Go somewhere</a>
@@ -29,8 +29,8 @@ export default function Portion() {
     </div>
     <div className="col-md-4">
       <div className="card-body">
-        <h5 className="card-title">Card title</h5>
-        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 className="card-title">Meal Name</h5>
+        <p className="card-text">Descriptions of the meal: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. This content is a little bit longer.</p>
         <div className="container p-0 ">          <div className="row row-cols-auto">
             <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">30 mins</div>
     <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">Carb-free</div>
@@ -42,36 +42,40 @@ export default function Portion() {
 </div>
       </div>
       
+      
     </div>
-                <div className="card-footer">
+    <div className="card-footer">
       <a href="#" className="w-75 btn btn-primary">Go somewhere</a>
     </div>
+                
   </div>
+  
 </div>
+
   </div>
   <div className="col-md-3">
     <div className="card h-100">
-        <img src="assets/images/categories/Sandiwches.jpg" className="card-img-top" alt="..."/>
+        <img src="assets/images/categories/Sandwiches.jpg" className="card-img-top" alt="..."/>
       <div className="card-body">
-        <h5 className="card-title">Special title treatment</h5>
-        <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <h5 className="card-title">Meal Name</h5>
+        <p className="card-text">Descriptions of the meal: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
                   <div className="card-footer">
       <a href="#" className="btn btn-primary">Go somewhere</a>
     </div>
     </div>
-  {/* </div> */}
+ </div> 
   </div>
 </div>
 
 <div className="row pt-2 pb-5">
-{/* <div className="card-group"> */}
+ <div className="card-group">
   <div className="col-md-3">
     <div className="card h-100">
         <img src="assets/images/categories/Chinese.jpg" className="card-img-top"alt="..."/>
       <div className="card-body">
-        <h5 className="card-title">Special title treatment</h5>
-        <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <h5 className="card-title">Meal Name</h5>
+        <p className="card-text">Descriptions of the meal: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
             <div className="card-footer">
       <a href="#" className="btn btn-primary">Go somewhere</a>
@@ -87,8 +91,8 @@ export default function Portion() {
     </div>
     <div className="col-md-4">
       <div className="card-body">
-        <h5 className="card-title">Card title</h5>
-        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 className="card-title">Meal Name</h5>
+        <p className="card-text">Descriptions of the meal: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. This content is a little bit longer.</p>
         <div className="container p-0 ">
           <div className="row row-cols-auto">
             <div className="bg-info rounded-pill m-1 p-2 d-inline-block search-item">30 mins</div>
@@ -114,14 +118,14 @@ export default function Portion() {
     <div className="card h-100">
         <img src="assets/images/categories/French.jpg" className="card-img-top" alt="..."/>
       <div className="card-body">
-        <h5 className="card-title">Special title treatment</h5>
-        <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <h5 className="card-title">Meal Name</h5>
+        <p className="card-text">Descriptions of the meal: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
                   <div className="card-footer">
       <a href="#" className="btn btn-primary">Go somewhere</a>
     </div>
     </div>
-  {/* </div> */}
+   </div> 
   </div>
 </div>
 <hr/>
