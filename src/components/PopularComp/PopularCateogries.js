@@ -132,7 +132,7 @@ export default function Pop1() {
               </div>
             </div>
 
-            <div className="carousel-item active">
+            <div className="carousel-item">
               <div className="row">
 {recipes.slice(7,13).map((recipe,index)=>(
                 <div className="col-lg-2 col-md-4 col-4">
@@ -149,7 +149,7 @@ export default function Pop1() {
                 
               </div>
             </div>
-                        <div className="carousel-item active">
+                        <div className="carousel-item">
               <div className="row">
                 {recipes.slice(14,20).map((recipe, index)=>(
                 <div className="col-lg-2 col-md-4 col-4">

@@ -25,7 +25,7 @@ export default function Portion() {
 <div className="card h-100">
   <div className="row g-0">
     <div className="col-md-8">
-      <img src="assets/images/muffins/4.png" className="card-img-top" alt="..."/>
+      <img src="assets/images/categories/IceCream.jpg" className="card-img-top" alt="..."/>
     </div>
     <div className="col-md-4">
       <div className="card-body">
@@ -51,7 +51,7 @@ export default function Portion() {
   </div>
   <div className="col-md-3">
     <div className="card h-100">
-        <img src="assets/images/muffins/2.png" className="card-img-top" alt="..."/>
+        <img src="assets/images/categories/Sandiwches.jpg" className="card-img-top" alt="..."/>
       <div className="card-body">
         <h5 className="card-title">Special title treatment</h5>
         <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -68,7 +68,7 @@ export default function Portion() {
 {/* <div className="card-group"> */}
   <div className="col-md-3">
     <div className="card h-100">
-        <img src="assets/images/muffins/5.png" className="card-img-top"alt="..."/>
+        <img src="assets/images/categories/Chinese.jpg" className="card-img-top"alt="..."/>
       <div className="card-body">
         <h5 className="card-title">Special title treatment</h5>
         <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -83,7 +83,7 @@ export default function Portion() {
  <div className="card h-100"> 
   <div className="row g-0">
     <div className="col-md-8">
-      <img src="assets/images/muffins/3.png" className="card-img-top" alt="..."/>
+      <img src="assets/images/categories/Coffee.jpg" className="card-img-top" alt="..."/>
     </div>
     <div className="col-md-4">
       <div className="card-body">
@@ -112,7 +112,7 @@ export default function Portion() {
   </div>
   <div className="col-md-3">
     <div className="card h-100">
-        <img src="assets/images/muffins/2.png" className="card-img-top" alt="..."/>
+        <img src="assets/images/categories/French.jpg" className="card-img-top" alt="..."/>
       <div className="card-body">
         <h5 className="card-title">Special title treatment</h5>
         <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
