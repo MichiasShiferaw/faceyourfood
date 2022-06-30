@@ -1,12 +1,15 @@
 import React from 'react'
 import {useNavigate, useParams} from "react-router-dom";
+import Settings from '../components/Settings/setting';
 
 function Profile() {
     let navigate = useNavigate();
     let {username} = useParams();
   return (
-    <div>This is the {username}'s profile page
-<button
+    // <div>This is the {username}'s profile page
+
+    <Settings/>
+/* <button
 onClick={()=>{
     navigate("/about");
 }}>
@@ -14,7 +17,7 @@ onClick={()=>{
 </button>
 
 
-    </div>
+    </div> */
   )
 }
 
