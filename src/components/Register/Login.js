@@ -2,9 +2,9 @@ export default function login(){
     return(
 
       <>
-        <section className="login bg-altdark" id="login">
+        <section className="login bg-light" id="login">
         <div className="col-md-7 col-lg-8 my-5 mx-auto">
-        <h2 className="mb-3 text-center color-altlight"><strong>Get Started</strong></h2>
+        <h2 className="mb-3 text-center"><strong>Get Started</strong></h2>
         <hr className="my-4"/>
         <form className="needs-validation" noValidate="">
           <div className="container">
@@ -85,8 +85,10 @@ export default function login(){
       </div>
     </section>
     </div>
-          <button className="w-100 btn btn-primary btn-lg pb-3" type="submit">Login</button>
-           <button className="w-100 btn btn-info btn-lg pb-3" type="submit">Help &amp; Support</button>
+    <div className="">
+          <button className="col align-self-start w-100 btn btn-primary btn-lg pb-3" type="submit">Login</button>
+           <button className="col align-self-end w-10 btn btn-info btn-lg pb-2" type="button">Help &amp; Support</button>
+           </div>
         </form>
       </div>
       </section>

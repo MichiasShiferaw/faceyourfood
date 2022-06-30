@@ -2,95 +2,91 @@
 
 
 export default function Pop1() {
+  var index1=0;
   const recipes = [
         {
-            title: "Pizza",
+            title: "Italian",
             image: "/img/gallery/img_1.jpg",
-            thumbnail: "/assets/images/menu11.png",
+            thumbnail: "/assets/images/categories/Italian.jpg",
         }, 
         {
-            title: "Indian",
+            title: "Halal",
             image: "/img/gallery/img_4.jpg",
-            thumbnail: "/assets/images/menu11.png",
+            thumbnail: "/assets/images/categories/Halal.jpg",
         },
         {
             title: "Chinese",
             image: "/img/gallery/img_5.jpg",
-            thumbnail: "/assets/images/menu11.png",
+            thumbnail: "/assets/images/categories/Chinese.jpg",
         },
         {
-            title: "Pasta",
+            title: "Middle Eastern",
             image: "/img/gallery/img_6.jpg",
-            thumbnail: "/assets/images/menu11.png",
+            thumbnail: "/assets/images/categories/Middle_Eastern.jpg",
         },
         {
             title: "Vegan",
             image: "/img/gallery/img_10.jpg",
-            thumbnail: "/assets/images/menu11.png",
+            thumbnail: "/assets/images/categories/Vegetarian.jpg",
         },
         {
             title: "Desserts",
             image: "/img/gallery/img_1.jpg",
-            thumbnail: "/assets/images/menu11.png",
+            thumbnail: "/assets/images/categories/Desserts.jpg",
         }, {
             title: "Smoothies",
             image: "/img/gallery/img_4.jpg",
-            thumbnail: "/assets/images/menu11.png",
+            thumbnail: "/assets/images/categories/Smoothie.jpg",
         },
         {
             title: "Breakfasts",
             image: "/img/gallery/img_5.jpg",
-            thumbnail: "/assets/images/menu11.png",
+            thumbnail: "/assets/images/categories/Breakfast.jpg",
         },
         {
-            title: "British",
+            title: "Thai",
             image: "/img/gallery/img_6.jpg",
-            thumbnail: "/assets/images/menu11.png",
+            thumbnail: "/assets/images/categories/Thai.jpg",
         },
         {
             title: "Greek",
             image: "/img/gallery/img_10.jpg",
-            thumbnail: "/assets/images/menu11.png",
+            thumbnail: "/assets/images/categories/Greek.jpg",
         },
         {
-            title: "Soup & Salad",
+            title: "Bakery",
             image: "/img/gallery/img_5.jpg",
-            thumbnail: "/assets/images/menu11.png",
+            thumbnail: "/assets/images/categories/Bakery.jpg",
         },
         {
             title: "Mexican",
             image: "/img/gallery/img_6.jpg",
-            thumbnail: "/assets/images/menu11.png",
+            thumbnail: "/assets/images/categories/Mexican.jpg",
         },
         {
-            title: "Happy Hour",
+            title: "Vietnamese",
             image: "/img/gallery/img_6.jpg",
-            thumbnail: "/assets/images/menu11.png",
+            thumbnail: "/assets/images/categories/Vietnamese.jpg",
         },
         {
             title: "BBQ",
             image: "/img/gallery/img_6.jpg",
-            thumbnail: "/assets/images/menu11.png",
+            thumbnail: "/assets/images/categories/BBQ.jpg",
         },
         {
-            title: "Southern",
+            title: "Gluten-Friendly",
             image: "/img/gallery/img_6.jpg",
-            thumbnail: "/assets/images/menu11.png",
+            thumbnail: "/assets/images/categories/Gluten-Friendly.jpg",
         },
         {
             title: "Sandwiches",
             image: "/img/gallery/img_6.jpg",
-            thumbnail: "/assets/images/menu11.png",
+            thumbnail: "/assets/images/categories/Sandwiches.jpg",
         },
         {
             title: "French",
             image: "/img/gallery/img_6.jpg",
-            thumbnail: "/assets/images/menu11.png",
-        },
-        {
-            title: "Cheap",
-            image: "/img/gallery/img_6.jpg",
-            thumbnail: "/assets/images/menu11.png",
+            thumbnail: "/assets/images/categories/French.jpg",
         }
 
     ].sort(() => Math.random() - 0.5)
@@ -138,7 +134,7 @@ export default function Pop1() {
 
             <div className="carousel-item active">
               <div className="row">
-{recipes.slice(6,12).map((recipe, index)=>(
+{recipes.slice(7,13).map((recipe,index)=>(
                 <div className="col-lg-2 col-md-4 col-4">
                   
                     <figure key={index} className="my-3 text-center card">
@@ -155,7 +151,7 @@ export default function Pop1() {
             </div>
                         <div className="carousel-item active">
               <div className="row">
-{recipes.slice(12,18).map((recipe, index)=>(
+{recipes.slice(14,20).map((recipe, index)=>(
                 <div className="col-lg-2 col-md-4 col-4">
                   
                     <figure key={index} className="my-3 text-center card">

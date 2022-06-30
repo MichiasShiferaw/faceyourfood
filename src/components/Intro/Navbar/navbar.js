@@ -1,9 +1,9 @@
 import {useNavigate, useParams,Link} from "react-router-dom";
-
+import {default as Support} from "./support";
 export default function NavBar (){
   let navigate = useNavigate();
     return(
-
+<>
 <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
   <div className="container-fluid">
     <Link to="/" className="navbar-brand" href="/home"><span style={{color:"#FFA500"}}><img src="/assets/images/Logo2.png" height={'24px'} alt="FaceYourFood"/></span>  FaceYourFood</Link>
@@ -46,6 +46,8 @@ export default function NavBar (){
     </div>
   </div>
 </nav>
+<Support/>
+</>
         
 
     )};
