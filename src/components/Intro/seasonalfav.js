@@ -3,7 +3,7 @@ export default function Portion() {
     <>
                 <div className="pt-3 d-flex align-items-center">
     <hr/>
-    <h3 className=""><i className="bi bi-emoji-sunglasses"></i>Seasonal Favourites<i className="bi bi-emoji-sunglasses"></i></h3>
+    <h3 className=""><i class="bi bi-sun"></i>Seasonal Favourites</h3>
     <hr className="flex-grow-1" />
 </div>
   <div className="row pt-2">

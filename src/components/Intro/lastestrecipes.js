@@ -5,7 +5,7 @@ export default function Portiontwo() {
       <div className="row">
         <div className="col-md-8">
           <h1 className="mt-3 mb-4">Latest Recipes</h1>
-          <figure className="my-3 border border-danger">
+          <figure className="my-3 border">
             <img src="assets/images/muffins/sloppyjoe.png" className="w-100 rounded-top-12" alt="Menu"/>
             <figcaption className="bg-white px-4 px-lg-5 pt-4 mb-4 collection border-top-0 rounded-bottom-6">
               <div className="w-100 float-left my-3">
@@ -44,7 +44,7 @@ export default function Portiontwo() {
         </div>
         <div className="col-md-4">
           <h4 className="mt-3 mt-xl-4 pt-3 pt-xl-4 mb-2">Fresh Favourite Recipes</h4>
-          <div className="row">
+          <div className="row h-100">
             <div className="col-6">
               <figure className="my-3 text-center card">
                 <a href="recipe-sidebar.html" className="animation">
@@ -58,17 +58,17 @@ export default function Portiontwo() {
             <div className="col-6">
               <figure className="my-3 text-center card">
                 <a href="recipe-sidebar.html" className="animation">
-                  <img src="assets/images/muffins/4.png" className="w-100" alt="Menu"/>
+                  <img src="assets/images/categories/Chicken.jpg" className="w-100" alt="Menu"/>
                 </a>
                 <figcaption className="bg-white pt-2">
-                  <h6 className="font-weight-semibold inter-font small"><a href="recipe-sidebar.html">Ricotta Chicken Salad</a></h6>
+                  <h6 className="font-weight-semibold inter-font small"><a href="recipe-sidebar.html">Lorem, ipsum dolor sit amet</a></h6>
                 </figcaption>
               </figure>
             </div>
             <div className="col-6">
               <figure className="my-3 text-center card">
                 <a href="recipe-sidebar.html" className="animation">
-                  <img src="assets/images/muffins/5.png" className="w-100" alt="Menu"/>
+                  <img src="assets/images/categories/Thai.jpg" className="w-100" alt="Menu"/>
                 </a>
                 <figcaption className="bg-white pt-2">
                   <h6 className="font-weight-semibold inter-font small"><a href="recipe-sidebar.html">Easy Chocolate Chip Muffins</a></h6>
@@ -81,17 +81,17 @@ export default function Portiontwo() {
                   <img src="assets/images/categories/Desserts.jpg" className="w-100" alt="Menu"/>
                 </a>
                 <figcaption className="bg-white pt-2">
-                  <h6 className="font-weight-semibold inter-font small"><a href="recipe-sidebar.html">Birthday Cupcakes</a></h6>
+                  <h6 className="font-weight-semibold inter-font small"><a href="recipe-sidebar.html">Lorem, ipsum dolor sit amet</a></h6>
                 </figcaption>
               </figure>
             </div>
             <div className="col-6">
               <figure className="my-3 text-center card">
                 <a href="recipe-sidebar.html" className="animation">
-                  <img src="assets/images/muffins/1.png" className="w-100" alt="Menu"/>
+                  <img src="assets/images/categories/Mexican.jpg" className="w-100" alt="Menu"/>
                 </a>
                 <figcaption className="bg-white pt-2">
-                  <h6 className="font-weight-semibold inter-font small"><a href="recipe-sidebar.html">4 healthy Lunch Prep Recipes</a></h6>
+                  <h6 className="font-weight-semibold inter-font small"><a href="recipe-sidebar.html">Lorem Geneus</a></h6>
                 </figcaption>
               </figure>
             </div>
@@ -101,7 +101,7 @@ export default function Portiontwo() {
                   <img src="assets/images/categories/Smoothie.jpg" className="w-100" alt="Menu"/>
                 </a>
                 <figcaption className="bg-white pt-2">
-                  <h6 className="font-weight-semibold inter-font small"><a href="recipe-sidebar.html">Berry Maddness Smoothies</a></h6>
+                  <h6 className="font-weight-semibold inter-font small"><a href="recipe-sidebar.html">Berry Smoothies</a></h6>
                 </figcaption>
               </figure>
             </div>
@@ -141,7 +141,7 @@ export default function Portiontwo() {
                   <img src="assets/images/categories/Indian.jpg" className="w-100" alt="Menu"/>
                 </a>
                 <figcaption className="bg-white pt-2">
-                  <h6 className="font-weight-semibold inter-font small"><a href="recipe-sidebar.html">Chicken Tikka Masala of Dreams</a></h6>
+                  <h6 className="font-weight-semibold inter-font small"><a href="recipe-sidebar.html">Chicken Tikka Masala</a></h6>
                 </figcaption>
               </figure>
             </div>
