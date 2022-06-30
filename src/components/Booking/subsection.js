@@ -131,7 +131,7 @@ export default function Subsection() {
       <div className="row">
         {recipes.map((recipe,index)=>(
         <div key={index} className="col-lg-3 col-md-4 col-6" title={recipe.title}onClick={()=>{toComponentB('bakery')}}>
-          <figure className="my-3 my-md-4 text-center card">
+          <figure className="my-3 my-md-4 text-center">
             <Link to="/about"  className="animation rounded-circle">
               <img src={recipe.thumbnail} className="rounded-circle img-fluid"  alt="Menu"/>
             </Link>

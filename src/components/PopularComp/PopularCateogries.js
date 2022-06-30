@@ -116,7 +116,7 @@ export default function Pop1() {
 {recipes.slice(0,6).map((recipe, index)=>(
                 <div className="col-lg-2 col-md-4 col-4">
                   
-                    <figure key={index} className="my-3 text-center card">
+                    <figure key={index} className="my-3 text-center">
             <a href="#/" className="animation rounded-circle">
               <img src={recipe.thumbnail} className="rounded-circle img-fluid" alt="Menu"/>
             </a>
@@ -137,7 +137,7 @@ export default function Pop1() {
 {recipes.slice(7,13).map((recipe,index)=>(
                 <div className="col-lg-2 col-md-4 col-4">
                   
-                    <figure key={index} className="my-3 text-center card">
+                    <figure key={index} className="my-3 text-center">
             <a href="#/" className="animation rounded-circle">
               <img src={recipe.thumbnail} className="rounded-circle img-fluid" alt="Menu"/>
             </a>
@@ -151,10 +151,10 @@ export default function Pop1() {
             </div>
                         <div className="carousel-item active">
               <div className="row">
-{recipes.slice(14,20).map((recipe, index)=>(
+                {recipes.slice(14,20).map((recipe, index)=>(
                 <div className="col-lg-2 col-md-4 col-4">
                   
-                    <figure key={index} className="my-3 text-center card">
+                    <figure key={index} className="my-3 text-center">
             <a href="#/" className="animation rounded-circle">
               <img src={recipe.thumbnail} className="rounded-circle img-fluid" alt="Menu"/>
             </a>
@@ -162,7 +162,7 @@ export default function Pop1() {
               <a href="#/" className="category-title">{recipe.title}</a>
             </figcaption>
           </figure>           
-        </div>))}
+        </div>    ))}
                 
               </div>
             </div>
