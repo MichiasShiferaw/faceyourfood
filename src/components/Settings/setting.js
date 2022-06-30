@@ -12,7 +12,7 @@ export default function Settings() {
         </div>
       </div>
       <hr/>
-      <div className="d-flex flex-wrap pt-3 pt-md-5 pb-4 mb-2 align-items-center">
+      {/* <div className="d-flex flex-wrap pt-3 pt-md-5 pb-4 mb-2 align-items-center">
         <div className="profile sm-profile">
           <img src="assets/images/avatars/avatar12.png" alt="Avatar"/>
         </div>
@@ -20,7 +20,7 @@ export default function Settings() {
           <a href="#0" className="btn btn-lg btn-primary px-4 px-md-5 ml-2 ml-md-4">Change photo</a>
           <a href="#0" className="btn btn-lg btn-outline-dark px-4 px-md-5 ml-2 ml-md-4">Delete</a>
         </div>
-      </div>
+      </div> */}
       <div className="row">
         <div className="col-lg-8">
           <form className="mt-4">

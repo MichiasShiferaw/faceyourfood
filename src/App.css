@@ -266,3 +266,7 @@ a.category-title {
 .myhome{
   background: linear-gradient(0deg, rgba(100, 203, 204, 0.7544059860272234) 0%, rgba(255, 255, 255, 0.5975432409291841) 49%, rgba(100, 203, 204, 1) 100%);
 }
+
+.recipespage{
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.7544059860272234) 0%, rgba(100, 203, 204, 1) 100%);
+}

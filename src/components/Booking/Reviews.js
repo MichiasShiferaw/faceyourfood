@@ -69,7 +69,7 @@ function Reviews() {
           <p className="mb-0 ml-auto"><a href="#0" className="text-primary">Login</a> to post a comment</p>
         </div>
         <form className="bg-lightest-gray rounded-6 mt-3 d-flex flex-wrap p-4">
-          <textarea className="form-control">I love the muffins. Amazing! 🔥|</textarea>
+          <textarea value="I love the MUFFINS"className="form-control">I love the muffins. Amazing! 🔥|</textarea>
           <div className="mt-auto ml-auto">
             <button type="button" className="btn btn-primary px-5">Post comment</button>
           </div>

@@ -11,27 +11,28 @@ export default function Recipe() {
         <div className="order-sm-2 ml-auto">
   <nav aria-label="breadcrumb">
   <ol className="breadcrumb">
-    <Link to='/categories' className="breadcrumb-item"><a href="#">Categories</a></Link>
+    <Link to='/categories' className="breadcrumb-item">Categories</Link>
     <li className="breadcrumb-item"><a href="#">Bakery</a></li>
     <li className="breadcrumb-item" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="#">Muffins</a></li>
     <li className="breadcrumb-item active" aria-current="page">Oatmeal Muffins</li>
   </ol>
 </nav>
-          <h1 className="d-flex py-3 mb-3">
+          <div className="d-flex py-3 mb-3">
  <h1 className="display-4"><strong>Best Oatmeal Muffin</strong>
            </h1> 
             <a href="#0"><i className="bi bi-bookmark-heart pe-3 display-4"></i></a>
            <a href="#0"><i className="bi bi-download px-3 display-4"></i></a>
-           <div className="display-10 ms-auto py-0 px-3">
+           <div className="display-6 ms-auto py-0 px-3">
            <i className="bi bi-star-fill"/>
               <i className="bi bi-star-fill"/>
               <i className="bi bi-star-fill"/>
               <i className="bi bi-star-fill"/>
               <i style={{color: '#f3da35'}} className="bi bi-star-half"></i>
+              <i className="bi bi-question-circle-fill"></i>
               </div>
-          <i className="bi bi-question-circle-fill"></i>
           
-          </h1>
+          
+          </div>
           
         </div>
       </div>
@@ -112,47 +113,47 @@ export default function Recipe() {
           </div>
           <div className="col-md-6">
             <div id='ingredients'className="mt-4 mt-md-5 bg-secondary bg-opacity-25">
-              <h3><strong>Ingredients</strong></h3>
+              <h3 className="ps-2"><strong>Ingredients</strong></h3>
               <div className="checklist pb-2">
-                <strong>For the crust</strong>
+                <strong className="ps-4">For the crust</strong>
                 <div className="form-check form-check-rounded mx-5 recipe-checkbox">
                   <input type="checkbox" id="crackers" name="crackers" className="form-check-input rounded-circle"/>
-                  <label className="form-check-label strikethrough strikethrough" htmlFor="crackers">400g graham crackers</label>
+                  <label className="form-check-label strikethrough strikethrough" htmlFor="crackers">1/4 cup (50g) Obtuse</label>
                 </div>
                 <div className="form-check form-check-rounded mx-5 recipe-checkbox">
                   <input type="checkbox" id="unsalted" name="unsalted" className="form-check-input rounded-circle"/>
-                  <label className="form-check-label strikethrough" htmlFor="unsalted">150g unsalted butters, melted</label>
+                  <label className="form-check-label strikethrough" htmlFor="unsalted">150g eggs, Rubber goose</label>
                 </div>
               </div>
               <div className="checklist pb-4">
-                <strong>For the cheescake</strong>
+                <strong className="ps-4">For the middle</strong>
                 <div className="form-check form-check-rounded mx-5 recipe-checkbox">
                   <input type="checkbox" id="marshmallows" name="marshmallows" className="form-check-input rounded-circle"/>
-                  <label className="form-check-label strikethrough" htmlFor="marshmallows">300g marshmallows</label>
+                  <label className="form-check-label strikethrough" htmlFor="marshmallows">1/2 cup (100g) Green Moose</label>
                 </div>
                 <div className="form-check form-check-rounded mx-5 recipe-checkbox">
                   <input type="checkbox" id="melted" name="melted" className="form-check-input rounded-circle"/>
-                  <label className="form-check-label strikethrough" htmlFor="melted">175g unsalted butter, melted</label>
+                  <label className="form-check-label strikethrough" htmlFor="melted">175g vinegar, Guava Juice</label>
                 </div>
                 <div className="form-check form-check-rounded mx-5 recipe-checkbox">
                   <input type="checkbox" id="Philadelphia" name="Philadelphia" className="form-check-input rounded-circle"/>
-                  <label className="form-check-label strikethrough" htmlFor="Philadelphia">500g Philadelphia cream cheese, softened</label>
+                  <label className="form-check-label strikethrough" htmlFor="Philadelphia">1/2 cup (115g) Giant Snake</label>
                 </div>
                 <div className="form-check form-check-rounded mx-5 recipe-checkbox">
                   <input type="checkbox" id="thickened" name="thickened" className="form-check-input rounded-circle"/>
-                  <label className="form-check-label strikethrough" htmlFor="thickened">250ml thickened/whipping cream, warm</label>
+                  <label className="form-check-label strikethrough" htmlFor="thickened">250ml Birthday Cake</label>
                 </div>
                 <div className="form-check form-check-rounded mx-5 recipe-checkbox">
                   <input type="checkbox" id="tbsppowdered" name="tbsppowdered" className="form-check-input rounded-circle"/>
-                  <label className="form-check-label strikethrough" htmlFor="tbsppowdered">3 tbsp powdered gelatin + 3 tbsp water</label>
+                  <label className="form-check-label strikethrough" htmlFor="tbsppowdered">3 tbsp Large Fries</label>
                 </div>
                 <div className="form-check form-check-rounded mx-5 recipe-checkbox">
                   <input type="checkbox" id="dropspurple" name="dropspurple" className="form-check-input rounded-circle"/>
-                  <label className="form-check-label strikethrough" htmlFor="dropspurple">5 drops purple food gel</label>
+                  <label className="form-check-label strikethrough" htmlFor="dropspurple">1/4 cup (50g) Chocolate Shake</label>
                 </div>
                 <div className="form-check form-check-rounded mx-5 recipe-checkbox">
                   <input type="checkbox" id="dropsblue" name="dropsblue" className="form-check-input rounded-circle"/>
-                  <label className="form-check-label strikethrough" htmlFor="dropsblue">3 drops blue food gel</label>
+                  <label className="form-check-label strikethrough" htmlFor="dropsblue">1/4 cup (50g) packed light or dark brown</label>
                 </div>
               </div>
             </div>
@@ -210,41 +211,41 @@ export default function Recipe() {
 </svg></h3>
               <ul id='instructions' className="instruction-list list-unstyled ps-0 mt-5">
                 <li className="d-flex align-items-start text-align-start">
-                   <input type="checkbox" id="marshmallows" name="marshmallows" className="rounded-circle"/>
+        
                   <span className="badge bg-warning rounded-pill mx-5">1</span>
-                 To prepare crust add graham crackers to a food processor and process until you reach fine crumbs. Add melted butter and pulse 3-4 times to coat crumbs with butter.
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 </li>
                 <li className="d-flex align-items-start text-align-start">
                   <span className="badge bg-primary rounded-pill mx-5">2</span>
-                  Pour mixture into a 20cm (8”) tart tin. Use the back of a spoon to firmly press the mixture out across the bottom and sides of the tart tin. Chill for 30 min.
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 </li>
                 <li className="d-flex align-items-start text-align-start">
                   <span className="badge bg-primary rounded-pill mx-5">3</span>
-                  Begin by adding the marshmallows and melted butter into a microwave safe bowl. Microwave for 30 seconds and mix to combine. Set aside.
+                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 </li>
                 <li className="d-flex align-items-start text-align-start">
                   <span className="badge bg-primary rounded-pill mx-5">4</span>
-                  Next, add the gelatine and water to a small mixing bowl and mix to combine. Microwave for 30 seconds.
+                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 </li>
                 <li className="d-flex align-items-start text-align-start">
                   <span className="badge bg-primary rounded-pill mx-5">5</span>
-                  Add the cream cheese to the marshmallow mixture and use a hand mixer or stand mixer fitted with a paddle attachment to mix until smooth.
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 </li>
                 <li className="d-flex align-items-start text-align-start">
                   <span className="badge bg-primary rounded-pill mx-5">6</span>
-                  Add the warm cream and melted gelatin mixture and mix until well combined.
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 </li>
                 <li className="d-flex align-items-start text-align-start">
                   <span className="badge bg-primary rounded-pill mx-5">7</span>
-                  Add 1/3 of the mixture to a mixing bowl, add purple food gel and mix until well combined. Colour 1/3 of the mixture blue. Split the remaining mixture into two mixing bowls, colour one pink and leave the other white.
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 </li>
                 <li className="d-flex  text-align-start align-items-start">
                   <span className="badge bg-primary rounded-pill mx-5">8</span>
-                  Pour half the purple cheesecake mixture into the chill tart crust. Add half the blue and then add the remaining purple and blue in the tart tin. Use a spoon to drizzle some pink cheesecake on top. Use a skewer or the end of a spoon to swirl the pink. Add some small dots of the plain cheesecake mixture to create stars and then sprinkle some more starts on top before chilling for 2 hours.
+                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 </li>
                 <li className="d-flex align-items-start">
                   <span className="badge bg-primary rounded-pill mx-5">9</span>
-                  Slice with a knife to serve.
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 </li>
               </ul>
             </div>
@@ -269,7 +270,7 @@ export default function Recipe() {
                 <div className="col-md-8 text-center">
                     <p className="text-muted my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eaque hic assumenda ipsam? Sapiente, facilis facere odio provident magnam voluptatem quia dolores commodi ut eveniet animi deserunt, nisi laborum totam.</p>
                     <button className="btn btn-primary"data-bs-toggle="modal" data-bs-target="#reg-modal">
-                        Subcribe Your Emails
+                        Subscribe Your Emails
                     </button>
                 </div>
             </div>
@@ -281,17 +282,6 @@ export default function Recipe() {
   </div>
 
 
-{/* <section id="reviews" className="bg-info pb-5">
-        <div className="container-lg">
-            <div className="text-center">
-                
-                <h2><i className="bi bi-stars"></i>Reviews</h2>
-                <p className="lead">What my students have said about the book...</p>
-            </div>
-
-
-        </div>
-    </section> */}
 
 
 </section>
