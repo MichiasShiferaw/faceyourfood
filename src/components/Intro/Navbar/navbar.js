@@ -1,7 +1,7 @@
-import {useNavigate, useParams,Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 import {default as Support} from "./support";
 export default function NavBar (){
-  let navigate = useNavigate();
+  // let navigate = useNavigate();
     return(
 <>
 <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
@@ -13,21 +13,22 @@ export default function NavBar (){
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/#">Home</a>
+          <Link to="/" className="nav-link active" aria-current="page">Home</Link>
         </li>
         <li className="nav-item">
           <Link to="about" className="nav-link">About Us</Link>
         </li>
         <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="/#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <Link to ='/categories' className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Popular Categories
-          </a>
+          </Link>
           <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a className="dropdown-item" href="#services">Chinese</a></li>
-            <li><a className="dropdown-item" href="#prices">Seafood</a></li>
-            <li><a className="dropdown-item" href="#prices">Breakfast</a></li>
-            <li><a className="dropdown-item" href="#prices">Lunch</a></li>
-            <li><a className="dropdown-item" href="#prices">Dinner</a></li>
+            <li><Link to="/categories/bakery" className="dropdown-item" href="#services">Bakery</Link></li>
+            <li><hr className="dropdown-divider"/></li>
+            <li><a className="dropdown-item disabled" href="#prices">Seafood</a></li>
+            <li><a className="dropdown-item disabled" href="#prices">Breakfast</a></li>
+            <li><a className="dropdown-item disabled" href="#prices">Lunch</a></li>
+            <li><a className="dropdown-item disabled" href="#prices">Dinner</a></li>
           </ul>
         </li>
         <div className="d-flex" >

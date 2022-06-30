@@ -1,4 +1,4 @@
-import {Link, useNavigate} from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 
 export default function Subsection() {
   let navigate = useNavigate();
@@ -6,7 +6,7 @@ export default function Subsection() {
 
   function toComponentB(x){
     console.log({x})
-    var hi = ("/"+`${x}`)
+    var hi = (`/categories${x}`)
     console.log(hi)
     navigate(hi)
   }
@@ -130,11 +130,11 @@ export default function Subsection() {
       <h2 className="py-3 mb-3 mb-lg-5 border-bottom border-gray-200">Pick A Choice</h2>
       <div className="row">
         {recipes.map((recipe,index)=>(
-        <div key={index} className="col-lg-3 col-md-4 col-6" title={recipe.title}onClick={()=>{toComponentB('bakery')}}>
+        <div key={index} className="col-lg-3 col-md-4 col-6" title={recipe.title}onClick={()=>{toComponentB('/bakery')}}>
           <figure className="my-3 my-md-4 text-center">
-            <Link to="/about"  className="animation rounded-circle">
+            <div  className="animation rounded-circle">
               <img src={recipe.thumbnail} className="rounded-circle img-fluid"  alt="Menu"/>
-            </Link>
+            </div>
             <figcaption className="mt-2 mt-md-3" defaultValue={"Seafood"}>
               <a href="#0" className="category-title">{recipe.title}</a>
             </figcaption>

@@ -41,7 +41,6 @@ export default function Launch (){
     <div className="bg-darkturq text-white rounded-pill m-1 p-2 d-inline-block search-item">Vegan</div>
     {/* <div className="bg-darkturq rounded-pill m-1 p-2 d-inline-block search-item">Tag4</div> */}
 
-
           </div>
 </div>
     
@@ -49,7 +48,7 @@ export default function Launch (){
 
   </div>
   <div className="card-footer">
-<Link to="recipes" href="#" className="btn btn-outline-beige1 stretched-link">Go <i className="bi bi-caret-right-fill"></i></Link>
+<Link to="/bakery/oatmealmuffin" href="#/" className="btn btn-outline-beige1 stretched-link">View <i className="bi bi-caret-right-fill"></i></Link>
   </div>
         </div>
         </div>
@@ -91,7 +90,7 @@ export default function Launch (){
 
   </div>
     <div className="card-footer">
-<a href="#" className="btn btn-outline-primary stretched-link">Go <i className="bi bi-caret-right-fill"></i></a>
+<a href="#/" className="btn btn-outline-primary stretched-link disabled">Go <i className="bi bi-caret-right-fill"></i></a>
   </div>
         </div>
         </div>
@@ -135,7 +134,7 @@ export default function Launch (){
 
   </div>
     <div className="card-footer">
-<a href="#" className="btn btn-outline-primary stretched-link">Go <i className="bi bi-caret-right-fill"></i></a>
+<a href="#/" className="btn btn-outline-primary stretched-link disabled">Go <i className="bi bi-caret-right-fill"></i></a>
   </div>
         </div>
         </div>

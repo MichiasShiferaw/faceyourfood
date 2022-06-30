@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 export default function Recipe() {
   return (
-<section className="p-0">
+<section className="recipespage p-0">
   <div className="container">
     <section className="my-4 my-md-5">
       <div>
@@ -12,8 +12,8 @@ export default function Recipe() {
   <nav aria-label="breadcrumb">
   <ol className="breadcrumb">
     <Link to='/categories' className="breadcrumb-item">Categories</Link>
-    <li className="breadcrumb-item"><a href="#">Bakery</a></li>
-    <li className="breadcrumb-item" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="#">Muffins</a></li>
+    <li className="breadcrumb-item"><a href="#/">Bakery</a></li>
+    <li className="breadcrumb-item" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="#/">Muffins</a></li>
     <li className="breadcrumb-item active" aria-current="page">Oatmeal Muffins</li>
   </ol>
 </nav>
@@ -83,30 +83,29 @@ export default function Recipe() {
           <div className="col-md-12">
             <ul className="list-unstyled component-list fyf-svg display-flex">
               <li>
-                <small>Prep Time</small>
-                <span>15 min</span>
+                <small>Prep Time: </small>
+                <span><strong>15 min</strong></span>
               </li>
               <li>
-                <small>Prep Time</small>
-                <span>15 min</span>
+                <small>Cooking Time: </small>
+                <span><strong>15 min</strong></span>
               </li>
               <li>
-                <small>Servings</small>
-                <span>4 People 
-                  <a href="#0" className="ml-2">
-                    <svg data-name="feather-icon/edit" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                      <rect data-name="Bounding Box" width="16" height="16" fill="rgba(255,255,255,0)"></rect>
-                      <path d="M2,14.747a2,2,0,0,1-2-2V3.414a2,2,0,0,1,2-2H6.667a.667.667,0,1,1,0,1.333H2a.667.667,0,0,0-.667.667v9.334A.667.667,0,0,0,2,13.414h9.334A.666.666,0,0,0,12,12.748V8.081a.667.667,0,1,1,1.333,0v4.667a2,2,0,0,1-2,2ZM4.141,10.49a.659.659,0,0,1-.121-.571l.667-2.666a.67.67,0,0,1,.176-.31L11.2.61A2.081,2.081,0,0,1,14.042.52l.1.09.09.1a2.084,2.084,0,0,1-.09,2.846L7.8,9.886a.669.669,0,0,1-.31.175l-2.666.667a.675.675,0,0,1-.165.02A.66.66,0,0,1,4.141,10.49Zm8-8.938-6.2,6.2L5.583,9.164l1.41-.352,6.2-6.2a.748.748,0,1,0-1.057-1.057Z" transform="translate(0.667 0.586)"></path>
-                    </svg>
-                  </a>
-                </span>
-              </li>
-              <li>
-                <a href="#0">
-                  <svg data-name="feather-icon/printer" xmlns="http://www.w3.org/2000/svg" width="20" height="22.041" viewBox="0 0 20 22.041">
-                    <rect data-name="Bounding Box" width="20" height="22.041" fill="rgba(255,255,255,0)"></rect>
-                    <path d="M4.166,20.2a.88.88,0,0,1-.833-.918V16.531H2.5A2.636,2.636,0,0,1,0,13.776V9.184A2.636,2.636,0,0,1,2.5,6.429h.833V.918A.879.879,0,0,1,4.167,0h10A.878.878,0,0,1,15,.918v5.51h.833a2.636,2.636,0,0,1,2.5,2.755v4.592a2.636,2.636,0,0,1-2.5,2.755H15v2.755a.88.88,0,0,1-.834.918ZM5,18.367h8.333v-5.51H5v2.718c0,.012,0,.025,0,.038s0,.025,0,.037Zm10.834-3.673a.879.879,0,0,0,.833-.918V9.184a.878.878,0,0,0-.833-.918H2.5a.879.879,0,0,0-.833.918v4.592a.879.879,0,0,0,.833.918h.833V11.938a.88.88,0,0,1,.833-.918h10a.88.88,0,0,1,.834.918v2.756Zm-2.5-8.265V1.837H5V6.429Z" transform="translate(0.833 0.918)"></path>
+                <small>Servings: </small>
+                <span title="Serving of An Average Adult"><strong>4 People  
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
+                    <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
                   </svg>
+                </strong></span>
+              </li>
+              <li>
+                <a href="#0" title="Print Page">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-printer-fill" viewBox="0 0 16 16">
+                      <path d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"/>
+                      <path d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+                    </svg>
                 </a>
               </li>
             </ul>
@@ -161,7 +160,54 @@ export default function Recipe() {
               <div className="col-lg-8">
                 <div className="rounded-12 bg-lightest-gray p-4">
                   <h6>Nutrition Facts</h6>
-                  <ul className="Nutrition-list list-unstyled">
+                  <div className="table-responsive"> 
+                  <table class="table nutrition-list" >
+  <thead>
+    <tr>
+      <th scope="col">Fact</th>
+      <th scope="col">Value</th>
+     
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Calories</th>
+      <td>219.9</td>
+
+    </tr>
+    <tr>
+      <th scope="row">Total Fat</th>
+      <td>12.2g</td>
+
+    </tr>
+    <tr>
+      <th scope="row">Saturated Fat</th>
+      <td>3.2g</td>
+    </tr>
+        <tr>
+      <th scope="row">Cholesterol</th>
+      <td>234lbs</td>
+    </tr>
+        <tr>
+      <th scope="row">Sodium</th>
+      <td>4.3g</td>
+    </tr>
+        <tr>
+      <th scope="row">Potassium</th>
+      <td>7.9g</td>
+    </tr>
+            <tr>
+      <th scope="row">Sugars</th>
+      <td>10.2g</td>
+    </tr>
+            <tr>
+      <th scope="row">Protein</th>
+      <td>8.4g</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+                  {/* <ul className="Nutrition-list list-unstyled">
                     <li>
                       <span>Calories</span>
                       <span>219.9</span>
@@ -198,7 +244,7 @@ export default function Recipe() {
                       <span>Protein</span>
                       <span>7.9 g</span>
                     </li>
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
             </div>

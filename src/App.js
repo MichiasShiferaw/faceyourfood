@@ -36,6 +36,7 @@ import Errorpage from './Pages/Errorpage';
 import Recipe from './components/Booking/Recipe';
 import Categories from './Pages/Categories';
 import Options12 from './Pages/Meals/Option';
+import FAQ from './Pages/FAQ';
 
 
 function App() {
@@ -60,13 +61,13 @@ function App() {
       <Route path="/profile/:username" element={<Profile/>}/> 
       <Route path="/categories" element={<Categories/>}/>
       <Route path="/categories/:cato/*" element={<Options12/>}/>
-      <Route path="/bakery/*" element={<Categories/>}/>
-      <Route path="/bakery/:meal/*" element={<Options12/>}/>
-      <Route path="/dessert/:meal/*" element={<About/>}/>
-      <Route path="/fastfood/:meal/*" element={<About/>}/>
-      <Route path="/breakfast/:meal/*" element={<About/>}/>
-      <Route path="/snacks/:meal/*" element={<About/>}/>
-      
+      <Route path="/bakery/:meal/*" element={<Recipe/>}/>
+      <Route path="/bakery/*" element={<Options12/>}/> 
+      <Route path="/dessert/:meal/*" element={<Errorpage/>}/>
+      <Route path="/fastfood/:meal/*" element={<Errorpage/>}/>
+      <Route path="/breakfast/:meal/*" element={<Errorpage/>}/>
+      <Route path="/snacks/:meal/*" element={<Errorpage/>}/>
+      <Route path="/faq" element={<FAQ/>}/>
       <Route path="/recipes" element={<Recipe/>}/>   
 
 

@@ -16,7 +16,7 @@ export default function Portion() {
         <p className="card-text">Descriptions of the meal: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
             <div className="card-footer">
-      <a href="#" className="w-75 btn btn-primary">Go somewhere</a>
+      <a href="#/" className="w-75 btn btn-primary">Go somewhere</a>
     </div>
         
     </div>
@@ -45,7 +45,7 @@ export default function Portion() {
       
     </div>
     <div className="card-footer">
-      <a href="#" className="w-75 btn btn-primary">Go somewhere</a>
+      <a href="#/" className="w-75 btn btn-primary">Go somewhere</a>
     </div>
                 
   </div>
@@ -61,7 +61,7 @@ export default function Portion() {
         <p className="card-text">Descriptions of the meal: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
                   <div className="card-footer">
-      <a href="#" className="btn btn-primary">Go somewhere</a>
+      <a href="#/" className="btn btn-primary">Go somewhere</a>
     </div>
     </div>
  </div> 
@@ -78,7 +78,7 @@ export default function Portion() {
         <p className="card-text">Descriptions of the meal: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
             <div className="card-footer">
-      <a href="#" className="btn btn-primary">Go somewhere</a>
+      <a href="#/" className="btn btn-primary">Go somewhere</a>
     </div>
         
     </div>
@@ -109,7 +109,7 @@ export default function Portion() {
       
     </div>
                 <div className="card-footer">
-      <a href="#" className="btn btn-primary">Go somewhere</a>
+      <a href="#/" className="btn btn-primary">Go somewhere</a>
     </div>
   </div>
  </div> 
@@ -122,7 +122,7 @@ export default function Portion() {
         <p className="card-text">Descriptions of the meal: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
                   <div className="card-footer">
-      <a href="#" className="btn btn-primary">Go somewhere</a>
+      <a href="#/" className="btn btn-primary">Go somewhere</a>
     </div>
     </div>
    </div> 

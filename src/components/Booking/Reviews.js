@@ -10,9 +10,14 @@ function Reviews() {
         </div>
 <div className="card">
   <div className="card-header">
-                                    <img className="rounded-circle shadow-1-strong me-3"
-                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar" width="45"
-                    height="45" />Jane Doe
+                                    {/* <img className="rounded-circle shadow-1-strong me-3"> */}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+</svg>
+
+{/* </img> */}
+
+Jane Doe
   </div>
   <div className="card-body">
     <div className="card-title d-flex">
@@ -29,16 +34,16 @@ function Reviews() {
     </div>
     {/* <h5 className="card-title">I LOVE IT!</h5> */}
     <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur error veniam sit expedita est illo maiores neque quos nesciunt, reprehenderit autem odio commodi labore praesentium voluptate repellat in id quisquam.</p>
-    Reply (21)
-    <button className="btn btn-outline-primary"><i className="bi bi-hand-thumbs-up-fill"></i></button><span className="me-2"><strong>42</strong></span>
-    <button className="btn btn-outline-danger"><i className="bi bi-hand-thumbs-down-fill"></i></button><span>15</span>
+    <span className='mx-2 me-4'>Reply (21)</span>
+    <button className="btn btn-outline-primary"><i className="bi bi-hand-thumbs-up-fill"></i></button><span className="me-2"><strong className="mx-2 me-4">42</strong></span>
+    <button className="btn btn-outline-danger"><i className="bi bi-hand-thumbs-down-fill"></i></button><span className="mx-2 me-4">15</span>
   </div>
 </div>
 <div className="card">
   <div className="card-header">
-                                    <img className="rounded-circle shadow-1-strong me-3"
-                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar" width="45"
-                    height="45" />Jane Doe
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+</svg>Jane Doe
   </div>
   <div className="card-body">
     <div className="card-title d-flex">
@@ -55,18 +60,18 @@ function Reviews() {
     </div>
     {/* <h5 className="card-title">I LOVE IT!</h5> */}
     <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur error veniam sit expedita est illo maiores neque quos nesciunt, reprehenderit autem odio commodi labore praesentium voluptate repellat in id quisquam.</p>
-    Reply (2)
-    <button className="btn btn-outline-primary"><i className="bi bi-hand-thumbs-up-fill"></i></button><span className="me-2"><strong>42</strong></span>
-    <button className="btn btn-outline-danger"><i className="bi bi-hand-thumbs-down-fill"></i></button><span>15</span>
+    <span className='mx-2 me-4'> Reply (2)</span>
+    <button className="btn btn-outline-primary "><i className="bi bi-hand-thumbs-up-fill"></i></button><span className="me-2"><strong className="mx-2 me-4">42</strong></span>
+    <button className="btn btn-outline-danger"><i className="bi bi-hand-thumbs-down-fill"></i></button><span className="mx-2 me-4">15</span>
   </div>
 </div>
-        <div href="#0" className="btn btn-outline-secondary d-grid col-6 mx-auto my-2 py-1 py-md-3">Load 25 more comments</div>
+        <div href="#0" className="btn btn-outline-secondary d-grid col-6 mx-auto my-2 py-1 py-md-3">Load 10 more Reviews</div>
       </div>
       
       <div className="write-comment">
         <div className="d-sm-flex align-items-center flex-wrap">
-          <h6>Write a comment</h6>
-          <p className="mb-0 ml-auto"><a href="#0" className="text-primary">Login</a> to post a comment</p>
+          <h6>Write a Review</h6>
+          {/* <p className="mb-0 ml-auto"><a href="#0" className="text-primary">Login</a> to post a comment</p> */}
         </div>
         <form className="bg-lightest-gray rounded-6 mt-3 d-flex flex-wrap p-4">
           <textarea value="I love the MUFFINS"className="form-control">I love the muffins. Amazing! 🔥|</textarea>

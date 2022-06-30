@@ -84,7 +84,7 @@ function Footer () {
           
         </div>  
         <div className="col-md-1">
-          <a href="#">
+          <a href="#/">
                 <i className="bi bi-arrow-up-circle h1"></i>
             </a>
           </div>          
