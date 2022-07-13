@@ -9,6 +9,8 @@ import {default as Portiontwo} from '../components/Intro/lastestrecipes';
 import {default as Login} from '../components/Register/Login';
 import Newsletter from '../components/Newsletter/newsletter';
 import Assistance from '../components/Assistance/assistance';
+import { welcome } from '../components/Assistance/assist_data';
+
 // import ToastDemo from '../components/ToastDemo';
 
 function Home() {
@@ -27,7 +29,7 @@ function Home() {
         <Login/>
         {/* <ToastDemo/> */}
         <hr/>
-        <Assistance/>
+        <Assistance page={welcome}/>
     </div>
   )
 }

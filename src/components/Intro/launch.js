@@ -30,17 +30,12 @@ export default function Launch (){
             <a href="#0" className="animation rounded-top-6">
               <img src="assets/images/muffins/1.png" className="w-100" alt="Menu"/>
             </a>
-            <figcaption className="mt-2 px-3 px-lg-4">
+            <figcaption className="rating mt-2 px-3 px-lg-4">
               <div className="w-100 float-left">
                 <div className="float-left">
-                  <div className="fabrx-ratings has-rating rating">
+                  <div className="rating141">
                   {stars(food.rating)}
 
-              {/* <i className="bi bi-star-fill"/>
-                            <i className="bi bi-star-fill"/>
-                                          <i className="bi bi-star-fill"/>
-                                                        <i className="bi bi-star-fill"/>
-                                                                      <i className="bi bi-star-fill"/> */}
                   </div>
                 </div>
               </div>
@@ -52,7 +47,7 @@ export default function Launch (){
 
 <div className="container p-0 ">          <div className="row row-cols-auto">
   {(food.tags).map((tags,index)=>(
-    <div key={index*200}className="bg-darkturq text-white rounded-pill m-1 p-2 d-inline-block search-item">{tags.charAt(0).toUpperCase() + tags.slice(1)}</div>
+    <div key={index*200}className="tags bg-darkturq text-white rounded-pill m-1 p-2 d-inline-block search-item">{tags.charAt(0).toUpperCase() + tags.slice(1)}</div>
     
     ))}
           </div>
@@ -67,92 +62,6 @@ export default function Launch (){
         </div>
         </div>))}
         </div>
-
-{/* 
-<div className="col-md-4">
-            <div className="card bg-light">
-          <figure className="my-1 card">
-            <a href="#0" className="animation rounded-top-6">
-              <img src="assets/images/muffins/1.png" className="w-100" alt="Menu"/>
-            </a>
-            <figcaption className="mt-2 px-3 px-lg-4">
-              <div className="w-100 float-left">
-                <div className="float-left">
-                  <div className="fabrx-ratings has-rating rating">
-              <i className="bi bi-star-fill"/>
-                            <i className="bi bi-star-fill"/>
-                                          <i className="bi bi-star-fill"/>
-                                                        <i className="bi bi-star-fill"/>
-                  </div>
-                </div>
-              </div>
-              <h5 className="card-title  f-size-25 mt-2 mb-1"><a href="#0" className="text-black d-block mt-1">Blueberry Muffin</a></h5>
-            </figcaption>
-          </figure>
-          <div className="card-body">
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-<div className="container p-0 ">          <div className="row row-cols-auto">
-            <div className="bg-darkturq text-white rounded-pill m-1 p-2 d-inline-block search-item">30 mins</div>
-    <div className="bg-darkturq text-white rounded-pill m-1 p-2 d-inline-block search-item">Carb-free</div>
-    <div className="bg-darkturq text-white rounded-pill m-1 p-2 d-inline-block search-item">Egg-free</div>
-    <div className="bg-darkturq text-white rounded-pill m-1 p-2 d-inline-block search-item">Tag: 4</div>
-
-
-          </div>
-</div>
-    
-
-  </div>
-    <div className="card-footer">
-<a href="#/" className="btn btn-outline-primary stretched-link disabled">Go <i className="bi bi-caret-right-fill"></i></a>
-  </div>
-        </div>
-        </div>
-
-
-
-<div className="col-md-4">
-            <div className="card bg-light">
-          <figure className="my-1 card">
-            <a href="#0" className="animation rounded-top-6">
-              <img src="assets/images/muffins/3.png" className="w-100" alt="Menu"/>
-            </a>
-            <figcaption className="mt-2 px-3 px-lg-4">
-              <div className="w-100 float-left">
-                <div className="float-left">
-                  <div className="fabrx-ratings has-rating rating">
-              <i className="bi bi-star-fill"/>
-                            <i className="bi bi-star-fill"/>
-                                          <i className="bi bi-star-fill"/>
-                                                        <i className="bi bi-star-fill"/>
-                                                                      <i className="bi bi-star-fill"/>
-                  </div>
-                </div>
-              </div>
-              <h5 className="card-title  f-size-25 mt-2 mb-1"><a href="#0" className="text-black d-block mt-1">Blueberry Muffin</a></h5>
-            </figcaption>
-          </figure>
-          <div className="card-body">
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-<div className="container p-0 ">          <div className="row row-cols-auto">
-            <div className="bg-darkturq text-white rounded-pill m-1 p-2 d-inline-block search-item">30 mins</div>
-    <div className="bg-darkturq text-white rounded-pill m-1 p-2 d-inline-block search-item">Carb-free</div>
-    <div className="bg-darkturq text-white rounded-pill m-1 p-2 d-inline-block search-item">Egg-free</div>
-    <div className="bg-darkturq text-white rounded-pill m-1 p-2 d-inline-block search-item">Tag4</div>
-
-
-          </div>
-</div>
-    
-
-  </div>
-    <div className="card-footer">
-<a href="#/" className="btn btn-outline-primary stretched-link disabled">Go <i className="bi bi-caret-right-fill"></i></a>
-  </div>
-        </div>
-        </div> */}
       </div>
 
 

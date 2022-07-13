@@ -19,7 +19,7 @@ function Filter2() {
                     return val;
                 }
             }).map((recipe,index)=>(
-            <p key={index}>{recipe.title}</p>
+            <p className='p-0 m-0' key={index}>{recipe.title}</p>
             ))}
         </div>
     </div>

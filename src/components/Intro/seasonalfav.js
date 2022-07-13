@@ -1,6 +1,7 @@
 export default function Portion() {
   return (
     <>
+    <div className="seasonalsect">
                 <div className="pt-3 d-flex align-items-center">
     <hr/>
     <h3 className=""><i className="bi bi-sun"></i>Seasonal Favourites</h3>
@@ -128,6 +129,7 @@ export default function Portion() {
   </div>
 </div>
 <hr/>
+</div>
 
 </>
 

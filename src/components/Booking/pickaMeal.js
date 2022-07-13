@@ -4,7 +4,7 @@ import Filter2 from '../Filter/Filter2';
 
 
 // export default function PickMeal({title1}) {
-  export default function PickMeal({title1}) {
+  export default function PickMeal({desc,title1}) {
 const [state1, setState1] = useState(15);
   const handleChange = e => {
     setState1( e.target.value);
@@ -55,7 +55,7 @@ const [state1, setState1] = useState(15);
         <div className="d-sm-flex align-items-center justify-content-between">
             <div>
         <h1 className="display-5 fw-bold">{title1}</h1>
-        <p className="lead my-4">Created in 1999, Car Doctor was ranked <span  style={{color:"#FFA500"}}><b>#1</b></span> in 21st Century Auto Repair Stores in the last three years. Car Doctor performs simple jobs to more complex with our World Class Mechanics. Car Doctor was awarded Highest Customer Satisfaction Award among all mechanic shops in North America.   </p>
+        <p className="lead my-4">{desc}</p>
         <button className="btn btn-primary btn-lg" type="button">Check Out<br/>Selections</button>
         </div><div>
         <img className="img-fluid w-100 d-none d-sm-block" src="assets/images/me.png" alt="" />
@@ -79,6 +79,29 @@ const [state1, setState1] = useState(15);
   <label htmlFor="customRange2" className="ps-2 form-label">Timings</label>
   <input type="range" className="ps-2 form-range" min="15" max="120" id="customRange2" value={state1} onChange={handleChange}/>
        <h6 className="ps-2">Max time : {state1} mins</h6>
+      </div>
+
+      <div className="ps-2">
+        <h4>Star Ratings</h4>
+          <div className="row">
+        <div class="btn-group flex-wrap" role="group" aria-label="Basic checkbox toggle button group">
+
+  <input type="checkbox" class="col btn-check" id="btncheck1" autocomplete="off"/>
+  <label class="btn btn-outline-primary" for="btncheck1">1 Star<i className="bi bi-star-fill"/></label>
+
+  <input type="checkbox" class="col btn-check" id="btncheck2" autocomplete="off"/>
+  <label class="btn btn-outline-primary" for="btncheck2">2 Stars<i className="bi bi-star-fill"/></label>
+
+  <input type="checkbox" class="col btn-check" id="btncheck3" autocomplete="off"/>
+  <label class="btn btn-outline-primary" for="btncheck3">3 Stars<i className="bi bi-star-fill"/></label>
+    <input type="checkbox" class="col btn-check" id="btncheck4" autocomplete="off"/>
+  <label class="btn btn-outline-primary" for="btncheck4">4 Stars <i className="bi bi-star-fill"/></label>
+
+  <input type="checkbox" class="col btn-check" id="btncheck5" autocomplete="off"/>
+  <label class="btn btn-outline-success" for="btncheck5">5 Star<i className="bi bi-star-fill"/></label>
+</div>
+</div>
+
       </div>
         <div className="p-4">
           <h4 className="fst-italic">Archives</h4>

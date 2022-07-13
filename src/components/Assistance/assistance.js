@@ -1,24 +1,5 @@
 import React, { Component } from "react";
-import { welcome } from '../Assistance/assist_data';
 import { Steps, Hints } from "intro.js-react";
-
-
-
-// const welcome1 = [
-
-//             {
-//           element: ".navbar-brand",
-//           intro: "Hello step"
-//         },
-//         {
-//           element: ".language",
-//           intro: "World step"
-//         },
-//         {
-//           element: ".signin",
-//           intro: "Dynamic step"
-//         }
-// ];
 
 
 
@@ -27,16 +8,23 @@ export default class Assistance extends Component {
   constructor(props) {
     super(props);
 
+    let stepsource= this.props["page"];
+    
     this.state = {
     //   stepsEnabled: true,
       initialStep: 0,
-     steps:welcome,
+     steps:stepsource,
       hintsEnabled: true,
       hints: [
         {
-          element: ".hello",
-          hint: "Hello hint",
-          hintPosition: "middle-right"
+          element: ".rating",
+          hint: "Rating and Name",
+          hintPosition: "middle-left"
+        },
+                {
+          element: ".tags",
+          hint: "Tags",
+          hintPosition: "middle-middle"
         }
       ],
       showDynamicElement: false
@@ -44,6 +32,7 @@ export default class Assistance extends Component {
   }
 
   render() {
+    // console.log(this.props["page"]);
     const {
       stepsEnabled,
       steps,
@@ -70,24 +59,10 @@ export default class Assistance extends Component {
             {/* <button onClick={this.addStep}>Add Step</button> */}
           </div>
           <div>
-            {/* <button onClick={this.toggleHints}>Toggle Hints</button>
-            <button onClick={this.addHint}>Add Hint</button> */}
+            {/* <button onClick={this.toggleHints}>Toggle Hints</button> */}
+             {/*<button onClick={this.addHint}>Add Hint</button> */}
           </div>
         </div>
-
-        {/* <h1 className="hello">Hello,</h1>
-        <hr />
-        <h1 className="world">World!</h1>
-        <hr />
-        <h1 className="alive">It's alive!</h1> */}
-
-
-        {/* {this.state.showDynamicElement && (
-          <div>
-            <br />
-            <h1 className="dynamic">I'm dynamic!</h1>
-          </div>
-        )} */}
       </div>
     );
   }

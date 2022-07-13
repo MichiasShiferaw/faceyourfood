@@ -6,9 +6,7 @@ export default function Subsection() {
 
 
   function toComponentB(x){
-    //console.log({x})
     var hi = (`/categories/${x}`)
-    //console.log(hi)
     navigate(hi)
   }
 

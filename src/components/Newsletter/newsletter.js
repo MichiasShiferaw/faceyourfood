@@ -2,7 +2,7 @@ import React from 'react'
 
 function Newsletter() {
   return (
-    <section className="bg-light text-dark p-5">
+    <section className="newlettersect bg-light text-dark p-5">
         <div className="container">
             <div className="d-md-flex justify-content-between align-items-center">
                 <h3 className="mb-3 mb-md-0">Love the content? <br/> Sign Up For FYF Newsletter</h3>

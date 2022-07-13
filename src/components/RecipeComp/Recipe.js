@@ -18,7 +18,7 @@ export default function Recipe() {
   </ol>
 </nav>
           <div className="d-flex py-3 mb-3">
- <h1 className="display-4"><strong>Best Oatmeal Muffin</strong>
+ <h1 className="display-4 recipeheader"><strong>Best Oatmeal Muffin</strong>
            </h1> 
             <a href="#0"><i className="bi bi-bookmark-heart pe-3 display-4"></i></a>
            <a href="#0"><i className="bi bi-download px-3 display-4"></i></a>
@@ -95,7 +95,7 @@ export default function Recipe() {
                 <span title="Serving of An Average Adult"><strong>4 People  
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-people-fill" viewBox="0 0 16 16">
                     <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                    <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
+                    <path fillRule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
                     <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
                   </svg>
                 </strong></span>
@@ -111,7 +111,7 @@ export default function Recipe() {
             </ul>
           </div>
           <div className="col-md-6">
-            <div id='ingredients'className="mt-4 mt-md-5 bg-secondary bg-opacity-25">
+            <div id='ingredients'className="ingredientssect mt-4 mt-md-5 bg-secondary bg-opacity-25">
               <h3 className="ps-2"><strong>Ingredients</strong></h3>
               <div className="checklist pb-2">
                 <strong className="ps-4">For the crust</strong>

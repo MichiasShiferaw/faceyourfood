@@ -4,6 +4,7 @@ function Reviews() {
   return (
     <>
     <div className="my-5 pt-0 pt-md-3">
+      <div className='reviewsect'>
         <div className="border-bottom mb-4 pb-3">
           <h2 className="d-inline-block">Reviews</h2>
           <span className="f-size-24">(25)</span>
@@ -74,11 +75,12 @@ Jane Doe
           {/* <p className="mb-0 ml-auto"><a href="#0" className="text-primary">Login</a> to post a comment</p> */}
         </div>
         <form className="bg-lightest-gray rounded-6 mt-3 d-flex flex-wrap p-4">
-          <textarea value="I love the MUFFINS"className="form-control">I love the muffins. Amazing! 🔥|</textarea>
+          <textarea value="I love the MUFFINS"className="form-control" readOnly>I love the muffins. Amazing! 🔥|</textarea>
           <div className="mt-auto ml-auto">
             <button type="button" className="btn btn-primary px-5">Post comment</button>
           </div>
         </form>
+      </div>
       </div>
       </>
   )

@@ -2,7 +2,7 @@
 
 export default function Recommended() {
   return (
-    <section className="my-4 my-md-5">
+    <section className="recommendationsect my-4 my-md-5">
       <h3 className="py-3 mb-0">You might also like</h3>
       <div className="row">
         <div className="col-lg-3 col-md-4 col-6">

@@ -2,117 +2,143 @@
         {
             title: "Italian",
             image: "/img/gallery/img_1.jpg",
+            description:"description on Italian",
             thumbnail: "/assets/images/categories/Italian.jpg",
         }, 
         {
             title: "Halal",
             image: "/img/gallery/img_4.jpg",
+            description:"description on Halal",
             thumbnail: "/assets/images/categories/Halal.jpg",
         },
         {
             title: "Chinese",
             image: "/img/gallery/img_5.jpg",
+            description:"description on Chinese",
             thumbnail: "/assets/images/categories/Chinese.jpg",
         },
         {
             title: "Middle-Eastern",
             image: "/img/gallery/img_6.jpg",
+            description:"description on Middle Eastern",
             thumbnail: "/assets/images/categories/Middle_Eastern.jpg",
         },
         {
             title: "Vegan",
             image: "/img/gallery/img_10.jpg",
+            description:"description on Vegan",
             thumbnail: "/assets/images/categories/Vegetarian.jpg",
         },
         {
             title: "Desserts",
             image: "/img/gallery/img_1.jpg",
+            description:"description on Desserts",
             thumbnail: "/assets/images/categories/Desserts.jpg",
         }, {
             title: "Smoothies",
             image: "/img/gallery/img_4.jpg",
+            description:"description on Smoothies",
             thumbnail: "/assets/images/categories/Smoothie.jpg",
         },
         {
             title: "Breakfasts",
             image: "/img/gallery/img_5.jpg",
+            description:"description on breakfasts",
+
             thumbnail: "/assets/images/categories/Breakfast.jpg",
         },
         {
             title: "Thai",
             image: "/img/gallery/img_6.jpg",
+            description:"description on Thai",
+
             thumbnail: "/assets/images/categories/Thai.jpg",
         },
         {
             title: "Greek",
             image: "/img/gallery/img_10.jpg",
+            description:"description on Greek",
+
             thumbnail: "/assets/images/categories/Greek.jpg",
         },
         {
             title: "Bakery",
             image: "/img/gallery/img_5.jpg",
+            description:"description on bakery",
             thumbnail: "/assets/images/categories/Bakery.jpg",
         },
         {
             title: "Mexican",
             image: "/img/gallery/img_6.jpg",
+            description:"description on mexican",
             thumbnail: "/assets/images/categories/Mexican.jpg",
         },
         {
             title: "Vietnamese",
             image: "/img/gallery/img_6.jpg",
+            description:"description on vietnamese",
             thumbnail: "/assets/images/categories/Vietnamese.jpg",
         },
         {
             title: "BBQ",
             image: "/img/gallery/img_6.jpg",
+            description:"description on BBQ",
             thumbnail: "/assets/images/categories/BBQ.jpg",
         },
         {
             title: "Gluten-Friendly",
             image: "/img/gallery/img_6.jpg",
+            description:"description on Gluten-Friendly",
             thumbnail: "/assets/images/categories/Gluten-Friendly.jpg",
         },
         {
             title: "Sandwiches",
             image: "/img/gallery/img_6.jpg",
+            description:"description on Sandwiches",
             thumbnail: "/assets/images/categories/Sandwiches.jpg",
         },
         {
             title: "French",
             image: "/img/gallery/img_6.jpg",
+            description:"description on French",
             thumbnail: "/assets/images/categories/French.jpg",
         },
         {
             title: "Indian",
             image: "/img/gallery/img_6.jpg",
+            description:"description on Indian",
             thumbnail: "/assets/images/categories/Indian.jpg",
         },
         {
             title: "Chicken",
             image: "/img/gallery/img_6.jpg",
+            description:"description on Chicken",
             thumbnail: "/assets/images/categories/Chicken.jpg",
         }
         ,
         {
             title: "Cheap",
             image: "/img/gallery/img_6.jpg",
+            description:"description on Cheap",
             thumbnail: "/assets/images/categories/Offers_2.png",
         },
         {
             title: "Japanese",
             image: "/img/gallery/img_6.jpg",
+            description:"description on Japanese",
             thumbnail: "/assets/images/categories/Japanese.jpg",
         },
         {
             title: "Pizza",
             image: "/img/gallery/img_6.jpg",
+            description:"description on Pizza",
             thumbnail: "/assets/images/categories/another/Pizza.jpg",
         }
 
     ].sort(() => Math.random() - 0.5)
 
  const categoriesOpt = [
+    
                 
 "italian",
 "halal",
