@@ -263,6 +263,15 @@ a.category-title {
 
 }
 
+.tourguide {
+  position: fixed;
+  bottom: 6px;
+  left: 10px;
+  z-index: 2;
+  
+
+}
+
 .myhome{
   background: linear-gradient(0deg, rgba(100, 203, 204, 0.7544059860272234) 0%, rgba(255, 255, 255, 0.5975432409291841) 49%, rgba(100, 203, 204, 1) 100%);
 }
@@ -270,3 +279,97 @@ a.category-title {
 .recipespage{
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.7544059860272234) 0%, rgba(100, 203, 204, 1) 100%);
 }
+
+input[type='radio']:checked+label {
+  background-color: aqua;
+}
+
+label.hello+input[type='radio']:checked {
+  background-color: aqua;
+}
+
+.settingoptions input[type='radio']{
+  display: none;
+}
+
+/* .loader {
+  position: absolute;
+  top: calc(50% - 4em);
+  left: calc(50% - 4em);
+  width: 6em;
+  height: 6em;
+  border: 1.1em solid rgba(0, 0, 0, 0.2);
+  border-left: 1.1em solid #000000;
+  border-radius: 50%;
+  animation: load8 1.1s infinite linear;
+  transition: opacity 0.3s;
+}
+
+.loader--hide {
+  opacity: 0;
+}
+
+@keyframes load8 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+/* #mytoa.show{
+  background-color: #61dafb !important;
+  visibility: visible;
+} */
+
+/* hr {
+  border: 0;
+  border-top: 1px solid DimGray;
+  margin: 10px;
+}
+
+.controls {
+  border-bottom: 1px solid black;
+  padding: 10px;
+  background-color: Gainsboro;
+}
+
+.controls>div {
+  margin-bottom: 10px;
+}
+
+.controls>div:last-child {
+  margin-bottom: 0px;
+}
+
+.controls button {
+  outline: 0;
+  cursor: pointer;
+  width: 150px;
+  height: 30px;
+  font-size: .85rem;
+  border: 1px solid RoyalBlue;
+  background-color: LightSteelBlue;
+  margin-right: 10px;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.controls button:hover {
+  color: Snow;
+  background-color: RoyalBlue;
+} */
+
+#mytoa{
+  background-color: aqua;
+  visibility: visible;
+  /* display: block; */
+}
+
+.mytoa.show{
+  text-align: justify;
+  background-color: brown;
+}
+
