@@ -78,6 +78,10 @@ function Sidebar () {
     <button className="btn btn-outline-primary btn-lg mb-2 ">
           More to be Added! 
         </button>
+
+        <button className="btn btn-outline-primary btn-lg mb-2 ">
+          View All
+        </button>
   </div>
 </div>
 
