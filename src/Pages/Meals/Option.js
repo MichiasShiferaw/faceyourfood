@@ -1,23 +1,28 @@
 import React from 'react'
-import {useParams, Route,Routes} from "react-router-dom";
-import Pickmuffin from '../../components/Booking/pickaMuffinMeal';
-import Recipe from '../../components/Booking/Recipe';
-// import Subsection from '../../components/Booking/subsection';
+import {useParams, Route,Routes, Link, useNavigate} from "react-router-dom";
+import PickMeal from '../../components/Booking/pickaMeal';
+import { categoriesOpt } from '../../components/Data/Data';
+import Recipe from '../../components/RecipeComp/Recipe';
 
 
-function Options1() {
-    // let navigate = useNavigate();
-    let {cato} = useParams();
+const Mealoption= () => {
+  let navigate = useNavigate();
+  let {cato} = useParams();
+  let isValid = categoriesOpt.includes(cato);
+
   return (
-    <div>These are the {cato}'s options
-    {/* <button
-onClick={()=>{
-    navigate("/bakery/oatmealmuffin");
-}}>
-    Change to about page
-</button> */}
-   <Pickmuffin/>
-<Routes>
+    <div >
+      {/* <button className='btn btn-outline-primary'>Hi</button> */}
+
+      {isValid ? 
+        <>
+        {/* <h1>{cato}</h1> */}
+        <PickMeal title1={cato.toUpperCase()} /></>
+        :<h2>Unfortunately this is not a valid page</h2>}
+      <button onClick={() => navigate(-1)}>go back</button>
+
+       
+      <Routes>
         <Route path="/recipe" element={<Recipe />} />
       </Routes>
 
@@ -25,4 +30,4 @@ onClick={()=>{
   )
 }
 
-export default Options1
+export default Mealoption
