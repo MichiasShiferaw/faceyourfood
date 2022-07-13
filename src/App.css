@@ -292,76 +292,6 @@ label.hello+input[type='radio']:checked {
   display: none;
 }
 
-/* .loader {
-  position: absolute;
-  top: calc(50% - 4em);
-  left: calc(50% - 4em);
-  width: 6em;
-  height: 6em;
-  border: 1.1em solid rgba(0, 0, 0, 0.2);
-  border-left: 1.1em solid #000000;
-  border-radius: 50%;
-  animation: load8 1.1s infinite linear;
-  transition: opacity 0.3s;
-}
-
-.loader--hide {
-  opacity: 0;
-}
-
-@keyframes load8 {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-} */
-
-/* #mytoa.show{
-  background-color: #61dafb !important;
-  visibility: visible;
-} */
-
-/* hr {
-  border: 0;
-  border-top: 1px solid DimGray;
-  margin: 10px;
-}
-
-.controls {
-  border-bottom: 1px solid black;
-  padding: 10px;
-  background-color: Gainsboro;
-}
-
-.controls>div {
-  margin-bottom: 10px;
-}
-
-.controls>div:last-child {
-  margin-bottom: 0px;
-}
-
-.controls button {
-  outline: 0;
-  cursor: pointer;
-  width: 150px;
-  height: 30px;
-  font-size: .85rem;
-  border: 1px solid RoyalBlue;
-  background-color: LightSteelBlue;
-  margin-right: 10px;
-  font-weight: bold;
-  border-radius: 3px;
-}
-
-.controls button:hover {
-  color: Snow;
-  background-color: RoyalBlue;
-} */
-
 #mytoa{
   background-color: aqua;
   visibility: visible;
@@ -385,8 +315,6 @@ label.hello+input[type='radio']:checked {
 
 
  .tester101{
-  /* width: auto;
-  height: auto; */
     position: fixed !important;
       top: auto;
       right: auto;

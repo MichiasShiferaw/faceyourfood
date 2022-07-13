@@ -66,21 +66,3 @@ const welcome = [
 
 export { welcome,recipeTour };
 
-
-
-//   {
-//     element: '.navbar-brand',
-//     intro: 'Welcome to FYF',
-//     position: 'right',
-//     tooltipClass: 'myTooltipClass',
-//     highlightClass: 'myHighlightClass',
-//   },
-//   {
-//     // element: '.navbar-brand',
-//     // intro: 'Language',
-//     element: '.navbar-brand',
-//     intro: 'Welcome to FYF',
-//     position: 'right',
-//     tooltipClass: 'myTooltipClass',
-//     highlightClass: 'myHighlightClass',
-//   }
