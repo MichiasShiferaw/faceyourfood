@@ -2,7 +2,7 @@ import './App.css';
 
 ////Need these
  import {default as Footer} from './components/Footer/footer';
- import {default as Sidebar} from './components/sidebar';
+ import {default as Sidebar} from './components/Sidebar/sidebar';
 
   import {default as NavBar } from './components/Intro/Navbar/navbar'
 
@@ -40,18 +40,8 @@ class App extends Component {
 
 
          <Route path="/categories" element={<Categories/>}/> 
-         {/* <Route path="/categories/:cato" element={<Options12/>}/>  */}
-         {/*  <Route path="/categories/:cato" element={<Options12 category={"bakery"}/>}> */}
-         <Route path="/categories/:cato/*" element={<Options12/>}>
-          {/* <Route path="/categories/:cato" element={<Options12 />}/> */}
-          </Route>
-         {/* </Route> */}
-        {/* <Route path="/categories"> 
-          {/*<Route path="pick" element={<Categories/>}/>*/}
-          {/* <Route path=":cato" element={<Options12/>} /> */}
-        {/* <Route path="me" element={...} /> */}
-        {/* </Route> */}
-        
+         <Route path="/categories/:cato/*" element={<Options12/>}/>
+
         <Route path="/bakery/:meal/*" element={<Recipes/>}/>
         <Route path="/bakery/*" element={<Options12/>}/> 
         <Route path="/dessert/:meal/*" element={<Errorpage/>}/>

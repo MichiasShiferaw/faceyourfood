@@ -1,4 +1,4 @@
-import {default as Pickmuffin} from "../Booking/pickaMeal"
+import {default as Pickmuffin} from "../PickingComp/pickaMeal"
 
 
 export default function Modal() {

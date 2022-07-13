@@ -180,7 +180,6 @@ export default function Login(){
             <div className="form-check">
             <input type="checkbox" className="form-check-input" id="save-info"/>
             <label className="form-check-label" htmlFor="save-info">I have read and agree with the <strong>Terms</strong> &amp; <strong>Privacy Policy</strong></label>
-            <label className="form-check-label" htmlFor="save-info">I have read and agree with the</label>
           </div>
           {/* </form> */}
         </div>

@@ -1,6 +1,6 @@
 import Data from '../Data/RecipeDB.json';
 import React from "react";
-
+//Change this to a button of popular choices in the options
 const FilterFunc = ({ filterItem, setItem, menuItems }) => {
   return (
     <>

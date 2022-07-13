@@ -1,6 +1,6 @@
 import React from 'react'
 import {useNavigate, useParams} from "react-router-dom";
-import Subsection from '../../components/Booking/subsection';
+import Subsection from '../../components/PickingComp/subsection';
 
 
 

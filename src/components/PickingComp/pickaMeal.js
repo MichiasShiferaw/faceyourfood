@@ -49,7 +49,7 @@ const [state1, setState1] = useState(15);
 <>
 
 
-<div className='pb-5'>
+<div className='pb-2'>
          <div className="p-5 mb-4 bg-light rounded-3">
       <div className="container-fluid py-5">
         <div className="d-sm-flex align-items-center justify-content-between">
@@ -84,21 +84,21 @@ const [state1, setState1] = useState(15);
       <div className="ps-2">
         <h4>Star Ratings</h4>
           <div className="row">
-        <div class="btn-group flex-wrap" role="group" aria-label="Basic checkbox toggle button group">
+        <div className="btn-group flex-wrap" role="group" aria-label="Basic checkbox toggle button group">
 
-  <input type="checkbox" class="col btn-check" id="btncheck1" autocomplete="off"/>
-  <label class="btn btn-outline-primary" for="btncheck1">1 Star<i className="bi bi-star-fill"/></label>
+  <input type="checkbox" className="col btn-check" id="btncheck1" autoComplete="off"/>
+  <label className="btn btn-outline-primary" htmlFor="btncheck1">1 Star<i className="bi bi-star-fill"/></label>
 
-  <input type="checkbox" class="col btn-check" id="btncheck2" autocomplete="off"/>
-  <label class="btn btn-outline-primary" for="btncheck2">2 Stars<i className="bi bi-star-fill"/></label>
+  <input type="checkbox" className="col btn-check" id="btncheck2" autoComplete="off"/>
+  <label className="btn btn-outline-primary" htmlFor="btncheck2">2 Stars<i className="bi bi-star-fill"/></label>
 
-  <input type="checkbox" class="col btn-check" id="btncheck3" autocomplete="off"/>
-  <label class="btn btn-outline-primary" for="btncheck3">3 Stars<i className="bi bi-star-fill"/></label>
-    <input type="checkbox" class="col btn-check" id="btncheck4" autocomplete="off"/>
-  <label class="btn btn-outline-primary" for="btncheck4">4 Stars <i className="bi bi-star-fill"/></label>
+  <input type="checkbox" className="col btn-check" id="btncheck3" autoComplete="off"/>
+  <label className="btn btn-outline-primary" htmlFor="btncheck3">3 Stars<i className="bi bi-star-fill"/></label>
+    <input type="checkbox" className="col btn-check" id="btncheck4" autoComplete="off"/>
+  <label className="btn btn-outline-primary" htmlFor="btncheck4">4 Stars <i className="bi bi-star-fill"/></label>
 
-  <input type="checkbox" class="col btn-check" id="btncheck5" autocomplete="off"/>
-  <label class="btn btn-outline-success" for="btncheck5">5 Star<i className="bi bi-star-fill"/></label>
+  <input type="checkbox" className="col btn-check" id="btncheck5" autoComplete="off"/>
+  <label className="btn btn-outline-success" htmlFor="btncheck5">5 Star<i className="bi bi-star-fill"/></label>
 </div>
 </div>
 
@@ -259,6 +259,28 @@ const [state1, setState1] = useState(15);
       </nav>
 
     </div> */}
+
+    {/* align-items-end col-sm-3 input-small offset-md-11 */}
+
+         {/* <div className="container w-50 offset-md-10 align-items-end mb-3"> 
+          <div className="sort-filter d-flex flex-column"> */}
+
+            {/* <span>Sort by:</span> */}
+            {/* <label for="sort" className="control-label me-2">Select list (select one):</label> */}
+           <div className="sort-filter d-flex justify-content-end me-2">
+            <div >
+              <label htmlFor="sort" className="control-label me-2"><strong><i className="bi bi-filter"></i>Select list (select one):</strong></label>
+            <select className=" form-select someInput me-2 mb-2" id="sort">
+              <option></option>
+              <option>Quickest TIme</option>
+              <option>Highest Ratings</option>
+              <option>Lowest Ratings</option>
+              <option>Easy</option>
+              <option>Advance Level</option>
+            </select>
+          </div>
+        </div> 
+
 
     <div className="vstack gap-3">
         <div className="card mb-3">

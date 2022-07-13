@@ -1,6 +1,6 @@
 import React from 'react'
 import {useParams, Route,Routes, useNavigate} from "react-router-dom";
-import PickMeal from '../../components/Booking/pickaMeal';
+import PickMeal from '../../components/PickingComp/pickaMeal';
 import {categoriesPreview } from '../../components/Data/Data';
 import Recipe from '../../components/RecipeComp/Recipe';
 

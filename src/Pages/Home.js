@@ -10,6 +10,8 @@ import {default as Login} from '../components/Register/Login';
 import Newsletter from '../components/Newsletter/newsletter';
 import Assistance from '../components/Assistance/assistance';
 import { welcome } from '../components/Assistance/assist_data';
+import Cookies from '../components/Cookies/Cookie';
+
 
 // import ToastDemo from '../components/ToastDemo';
 
@@ -26,10 +28,12 @@ function Home() {
         {/* <Sidebar/> */}
         {/* <Modal1/>
         <Modal2/> */}
+        <Cookies/>
         <Login/>
-        {/* <ToastDemo/> */}
         <hr/>
         <Assistance page={welcome}/>
+
+        {/* <Cookies/> */}
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import {useNavigate, useParams} from "react-router-dom";
-import Settings from '../components/ProfileComp/index';
+import Settings from '../components/ProfileComp/profileindex';
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 const auth = getAuth();
 
