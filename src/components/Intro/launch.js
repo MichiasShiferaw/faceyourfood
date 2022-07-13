@@ -1,5 +1,16 @@
 
 import {Link } from 'react-router-dom'
+import { trendingNow } from '../Data/TrendingNow'
+
+
+function stars(a){
+  let menuItems = [];
+  for (let index = 0; index < a; index++) {
+    menuItems.push(<i key={index} className="bi bi-star-fill"/>);
+    // console.log(a)
+  }
+  return(menuItems);
+}
 export default function Launch (){
 
     return(
@@ -11,8 +22,10 @@ export default function Launch (){
     <hr className="flex-grow-1" />
 </div>
       <div className="row">
-        <div className="col-md-4">
-            <div className="card bg-light">
+         <div className="card-group"> 
+        {trendingNow.slice(0,3).map((food,index)=>(
+        <div key={index} className="col-md-4">
+            <div className="card h-100 bg-light">
           <figure className="my-1 card">
             <a href="#0" className="animation rounded-top-6">
               <img src="assets/images/muffins/1.png" className="w-100" alt="Menu"/>
@@ -21,26 +34,27 @@ export default function Launch (){
               <div className="w-100 float-left">
                 <div className="float-left">
                   <div className="fabrx-ratings has-rating rating">
-              <i className="bi bi-star-fill"/>
+                  {stars(food.rating)}
+
+              {/* <i className="bi bi-star-fill"/>
                             <i className="bi bi-star-fill"/>
                                           <i className="bi bi-star-fill"/>
                                                         <i className="bi bi-star-fill"/>
-                                                                      <i className="bi bi-star-fill"/>
+                                                                      <i className="bi bi-star-fill"/> */}
                   </div>
                 </div>
               </div>
-              <h5 className="card-title font-weight-semibold inter-font f-size-25 mt-2 mb-1"><a href="#0" className="text-black d-block mt-1">Oatmeal Muffin</a></h5>
+              <h5 className="card-title  f-size-25 mt-2 mb-1"><a href="#0" className="text-black d-block mt-1">{food.name}</a></h5>
             </figcaption>
           </figure>
           <div className="card-body">
     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
 <div className="container p-0 ">          <div className="row row-cols-auto">
-            <div className="bg-darkturq text-white rounded-pill m-1 p-2 d-inline-block search-item">30 mins</div>
-    <div className="bg-darkturq text-white rounded-pill m-1 p-2 d-inline-block search-item">Carb-free</div>
-    <div className="bg-darkturq text-white rounded-pill m-1 p-2 d-inline-block search-item">Vegan</div>
-    {/* <div className="bg-darkturq rounded-pill m-1 p-2 d-inline-block search-item">Tag4</div> */}
-
+  {(food.tags).map((tags,index)=>(
+    <div key={index*200}className="bg-darkturq text-white rounded-pill m-1 p-2 d-inline-block search-item">{tags.charAt(0).toUpperCase() + tags.slice(1)}</div>
+    
+    ))}
           </div>
 </div>
     
@@ -51,9 +65,10 @@ export default function Launch (){
 <Link to="/bakery/oatmealmuffin" href="#/" className="btn btn-outline-beige1 stretched-link">View <i className="bi bi-caret-right-fill"></i></Link>
   </div>
         </div>
+        </div>))}
         </div>
 
-
+{/* 
 <div className="col-md-4">
             <div className="card bg-light">
           <figure className="my-1 card">
@@ -71,7 +86,7 @@ export default function Launch (){
                   </div>
                 </div>
               </div>
-              <h5 className="card-title font-weight-semibold inter-font f-size-25 mt-2 mb-1"><a href="#0" className="text-black d-block mt-1">Blueberry Muffin</a></h5>
+              <h5 className="card-title  f-size-25 mt-2 mb-1"><a href="#0" className="text-black d-block mt-1">Blueberry Muffin</a></h5>
             </figcaption>
           </figure>
           <div className="card-body">
@@ -115,7 +130,7 @@ export default function Launch (){
                   </div>
                 </div>
               </div>
-              <h5 className="card-title font-weight-semibold inter-font f-size-25 mt-2 mb-1"><a href="#0" className="text-black d-block mt-1">Blueberry Muffin</a></h5>
+              <h5 className="card-title  f-size-25 mt-2 mb-1"><a href="#0" className="text-black d-block mt-1">Blueberry Muffin</a></h5>
             </figcaption>
           </figure>
           <div className="card-body">
@@ -137,7 +152,7 @@ export default function Launch (){
 <a href="#/" className="btn btn-outline-primary stretched-link disabled">Go <i className="bi bi-caret-right-fill"></i></a>
   </div>
         </div>
-        </div>
+        </div> */}
       </div>
 
 

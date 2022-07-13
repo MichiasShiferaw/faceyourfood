@@ -1,9 +1,14 @@
 import {Link} from "react-router-dom";
 import {default as Support} from "./support";
+import {default as LangModal} from "../../Modal/langModal";
+import Modal from "../../Modal/modal";
+import {useNavigate} from "react-router-dom";
 export default function NavBar (){
   // let navigate = useNavigate();
+  let navigate = useNavigate();
     return(
 <>
+
 <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
   <div className="container-fluid">
     <Link to="/" className="navbar-brand" href="/home"><span style={{color:"#FFA500"}}><img src="/assets/images/Logo2.png" height={'24px'} alt="FaceYourFood"/></span>  FaceYourFood</Link>
@@ -16,10 +21,10 @@ export default function NavBar (){
           <Link to="/" className="nav-link active" aria-current="page">Home</Link>
         </li>
         <li className="nav-item">
-          <Link to="about" className="nav-link">About Us</Link>
+          <Link to="about" className="aboutus nav-link">About Us</Link>
         </li>
         <li className="nav-item dropdown">
-          <Link to ='/categories' className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <Link to ='/categories' className="popcat nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Popular Categories
           </Link>
           <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -32,17 +37,41 @@ export default function NavBar (){
           </ul>
         </li>
         <div className="d-flex" >
-        <a className="btn btn-primary text-white" href="#login" type="button"><i className="bi bi-person-circle"></i>  Sign In</a>
+        <a className="signin btn btn-primary text-white" href="#login" type="button"><i className="bi bi-person-circle"></i>  Sign In</a>
 
       </div>
       </ul>
       
-      <form className="d-flex" role="search">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-success" type="submit">Search</button>
-      </form>
+
+
+
+      {/* <form className="d-flex" role="search">
+        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/> */}
+        <div className="btn-group">
+          <button id= "language" className="language btn btn-outline-success" type="submit">EN</button>
+           {/* <button type="button" className="btn btn-danger dropdown-toggle dropdown-toggle-split" aria-haspopup="true" data-bs-toggle="dropdown" aria-expanded="true"> */}
+           <button className="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    {/* <span className="visually-hidden">Toggle Dropdown</span> */}
+  </button>
+        <ul className="dropdown-menu">
+          <li><a className="dropdown-item" href="#prices">English</a></li>
+          <li><a className="dropdown-item" href="#prices">Français</a></li>
+          <li><a className="dropdown-item" href="#prices">Español</a></li>
+          <li><hr className="dropdown-divider"/></li>
+          <button type="button" className="btn btn-outline-secondary" onClick={()=>{
+    navigate("/profile");}}>
+              
+              View More Language
+          </button>
+          {/* <LangModal/>
+          <Modal/> */}
+        </ul>
+
+        </div>
+        
+      {/* </form> */}
       <form className="d-flex ms-4">
-        <button style={{backgroundColor:"#1F4690"}}className="btn text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas"><strong><i className="bi bi-plus-lg"></i> See More</strong></button>
+        <button style={{backgroundColor:"#1F4690"}}className="seemore btn text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas"><strong><i className="bi bi-plus-lg"></i> See More</strong></button>
       </form>
     </div>
   </div>

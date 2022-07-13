@@ -1,8 +1,9 @@
 import React from 'react'
+import {default as Aboutcomp} from '../components/About'
 
 function About() {
   return (
-    <div>This is the About Page</div>
+    <div><Aboutcomp/></div>
   )
 }
 

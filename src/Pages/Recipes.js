@@ -1,9 +1,9 @@
 import React from 'react'
-import {default as Recipes} from '../components/Booking/Recipe';
+import {default as RecipeComp} from '../components/RecipeComp/Recipe';
 function Recipes() {
   return (
     <div className='recipespage container'>
-        <Recipes/>
+        <RecipeComp/>
         </div>
   )
 }

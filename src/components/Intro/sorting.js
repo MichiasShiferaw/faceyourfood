@@ -24,7 +24,7 @@ export default function Portiontwo() {
               <img src="assets/images/menus/menu117.jpg" className="w-100" alt="Menu"/>
             </a>
             <figcaption className="mt-2">
-              <a href="#0" className="text-black d-block mt-1 font-weight-semibold big">Decadent Raspberry and Cream Cake</a>
+              <a href="#0" className="text-black d-block mt-1  big">Decadent Raspberry and Cream Cake</a>
             </figcaption>
           </figure>
         </div>
@@ -34,7 +34,7 @@ export default function Portiontwo() {
               <img src="assets/images/menus/menu118.jpg" className="w-100" alt="Menu"/>
             </a>
             <figcaption className="mt-2">
-              <a href="#0" className="text-black d-block mt-1 font-weight-semibold big">Tripple Chocolate Mousse Cake</a>
+              <a href="#0" className="text-black d-block mt-1  big">Tripple Chocolate Mousse Cake</a>
             </figcaption>
           </figure>
         </div>
@@ -44,7 +44,7 @@ export default function Portiontwo() {
               <img src="assets/images/menus/menu119.jpg" className="w-100" alt="Menu"/>
             </a>
             <figcaption className="mt-2">
-              <a href="#0" className="text-black d-block mt-1 font-weight-semibold big">Cranberry Curd Layered Sponge Cake</a>
+              <a href="#0" className="text-black d-block mt-1  big">Cranberry Curd Layered Sponge Cake</a>
             </figcaption>
           </figure>
         </div>
@@ -54,7 +54,7 @@ export default function Portiontwo() {
               <img src="assets/images/menus/menu120.jpg" className="w-100" alt="Menu"/>
             </a>
             <figcaption className="mt-2">
-              <a href="#0" className="text-black d-block mt-1 font-weight-semibold big">Orange and Lemon Curd Tartlets</a>
+              <a href="#0" className="text-black d-block mt-1  big">Orange and Lemon Curd Tartlets</a>
             </figcaption>
           </figure>
         </div>
@@ -64,7 +64,7 @@ export default function Portiontwo() {
               <img src="assets/images/menus/menu121.jpg" className="w-100" alt="Menu"/>
             </a>
             <figcaption className="mt-2">
-              <a href="#0" className="text-black d-block mt-1 font-weight-semibold big">Creamt Chocolate Nutella Fudge Cake</a>
+              <a href="#0" className="text-black d-block mt-1  big">Creamt Chocolate Nutella Fudge Cake</a>
             </figcaption>
           </figure>
         </div>
@@ -74,7 +74,7 @@ export default function Portiontwo() {
               <img src="assets/images/menus/menu122.jpg" className="w-100" alt="Menu"/>
             </a>
             <figcaption className="mt-2">
-              <a href="#0" className="text-black d-block mt-1 font-weight-semibold big">Homemade Mixed Berries Wedding Cake</a>
+              <a href="#0" className="text-black d-block mt-1  big">Homemade Mixed Berries Wedding Cake</a>
             </figcaption>
           </figure>
         </div>
@@ -84,7 +84,7 @@ export default function Portiontwo() {
               <img src="assets/images/menus/menu123.jpg" className="w-100" alt="Menu"/>
             </a>
             <figcaption className="mt-2">
-              <a href="#0" className="text-black d-block mt-1 font-weight-semibold big">Black Forest Birthday Cake</a>
+              <a href="#0" className="text-black d-block mt-1  big">Black Forest Birthday Cake</a>
             </figcaption>
           </figure>
         </div>
@@ -94,7 +94,7 @@ export default function Portiontwo() {
               <img src="assets/images/menus/menu124.jpg" className="w-100" alt="Menu"/>
             </a>
             <figcaption className="mt-2">
-              <a href="#0" className="text-black d-block mt-1 font-weight-semibold big">Double Thick Layered Sponge Cake</a>
+              <a href="#0" className="text-black d-block mt-1  big">Double Thick Layered Sponge Cake</a>
             </figcaption>
           </figure>
         </div>
@@ -104,7 +104,7 @@ export default function Portiontwo() {
               <img src="assets/images/menus/menu125.jpg" className="w-100" alt="Menu"/>
             </a>
             <figcaption className="mt-2">
-              <a href="#0" className="text-black d-block mt-1 font-weight-semibold big">Lemon Cake with Chocolate Ganache</a>
+              <a href="#0" className="text-black d-block mt-1  big">Lemon Cake with Chocolate Ganache</a>
             </figcaption>
           </figure>
         </div>
@@ -114,7 +114,7 @@ export default function Portiontwo() {
               <img src="assets/images/menus/menu126.jpg" className="w-100" alt="Menu"/>
             </a>
             <figcaption className="mt-2">
-              <a href="#0" className="text-black d-block mt-1 font-weight-semibold big">Cranberry Macaroon Ice Cream Cake</a>
+              <a href="#0" className="text-black d-block mt-1  big">Cranberry Macaroon Ice Cream Cake</a>
             </figcaption>
           </figure>
         </div>
@@ -124,7 +124,7 @@ export default function Portiontwo() {
               <img src="assets/images/menus/menu127.jpg" className="w-100" alt="Menu"/>
             </a>
             <figcaption className="mt-2">
-              <a href="#0" className="text-black d-block mt-1 font-weight-semibold big">No Bake Cheesecake</a>
+              <a href="#0" className="text-black d-block mt-1  big">No Bake Cheesecake</a>
             </figcaption>
           </figure>
         </div>
@@ -134,7 +134,7 @@ export default function Portiontwo() {
               <img src="assets/images/menus/menu128.jpg" className="w-100" alt="Menu"/>
             </a>
             <figcaption className="mt-2">
-              <a href="#0" className="text-black d-block mt-1 font-weight-semibold big">Almond Cinnamon Sponge Cake</a>
+              <a href="#0" className="text-black d-block mt-1  big">Almond Cinnamon Sponge Cake</a>
             </figcaption>
           </figure>
         </div>
@@ -144,7 +144,7 @@ export default function Portiontwo() {
               <img src="assets/images/menus/menu129.jpg" className="w-100" alt="Menu"/>
             </a>
             <figcaption className="mt-2">
-              <a href="#0" className="text-black d-block mt-1 font-weight-semibold big">Mixed Candy Cake</a>
+              <a href="#0" className="text-black d-block mt-1  big">Mixed Candy Cake</a>
             </figcaption>
           </figure>
         </div>
@@ -154,7 +154,7 @@ export default function Portiontwo() {
               <img src="assets/images/menus/menu130.jpg" className="w-100" alt="Menu"/>
             </a>
             <figcaption className="mt-2">
-              <a href="#0" className="text-black d-block mt-1 font-weight-semibold big">Cherry Ice Cream Cake</a>
+              <a href="#0" className="text-black d-block mt-1  big">Cherry Ice Cream Cake</a>
             </figcaption>
           </figure>
         </div>
@@ -164,7 +164,7 @@ export default function Portiontwo() {
               <img src="assets/images/menus/menu131.jpg" className="w-100" alt="Menu"/>
             </a>
             <figcaption className="mt-2">
-              <a href="#0" className="text-black d-block mt-1 font-weight-semibold big">Four Layer Coffee Cake</a>
+              <a href="#0" className="text-black d-block mt-1  big">Four Layer Coffee Cake</a>
             </figcaption>
           </figure>
         </div>
@@ -174,7 +174,7 @@ export default function Portiontwo() {
               <img src="assets/images/menus/menu132.jpg" className="w-100" alt="Menu"/>
             </a>
             <figcaption className="mt-2">
-              <a href="#0" className="text-black d-block mt-1 font-weight-semibold big">Oreo Brownie Ice Cream Cake</a>
+              <a href="#0" className="text-black d-block mt-1  big">Oreo Brownie Ice Cream Cake</a>
             </figcaption>
           </figure>
         </div>
@@ -184,7 +184,7 @@ export default function Portiontwo() {
               <img src="assets/images/menus/menu133.jpg" className="w-100" alt="Menu"/>
             </a>
             <figcaption className="mt-2">
-              <a href="#0" className="text-black d-block mt-1 font-weight-semibold big">Caramel Glaze Cake</a>
+              <a href="#0" className="text-black d-block mt-1  big">Caramel Glaze Cake</a>
             </figcaption>
           </figure>
         </div>
@@ -194,7 +194,7 @@ export default function Portiontwo() {
               <img src="assets/images/menus/menu134.jpg" className="w-100" alt="Menu"/>
             </a>
             <figcaption className="mt-2">
-              <a href="#0" className="text-black d-block mt-1 font-weight-semibold big">No Bake Cinnamon Cheesecake</a>
+              <a href="#0" className="text-black d-block mt-1  big">No Bake Cinnamon Cheesecake</a>
             </figcaption>
           </figure>
         </div>
@@ -204,7 +204,7 @@ export default function Portiontwo() {
               <img src="assets/images/menus/menu135.jpg" className="w-100" alt="Menu"/>
             </a>
             <figcaption className="mt-2">
-              <a href="#0" className="text-black d-block mt-1 font-weight-semibold big">Apple Cinnamon Bundt Cake</a>
+              <a href="#0" className="text-black d-block mt-1  big">Apple Cinnamon Bundt Cake</a>
             </figcaption>
           </figure>
         </div>
@@ -214,7 +214,7 @@ export default function Portiontwo() {
               <img src="assets/images/menus/menu136.jpg" className="w-100" alt="Menu"/>
             </a>
             <figcaption className="mt-2">
-              <a href="#0" className="text-black d-block mt-1 font-weight-semibold big">Rainbow Explosion Birthday Cake</a>
+              <a href="#0" className="text-black d-block mt-1  big">Rainbow Explosion Birthday Cake</a>
             </figcaption>
           </figure>
         </div>
@@ -224,7 +224,7 @@ export default function Portiontwo() {
               <img src="assets/images/menus/menu137.jpg" className="w-100" alt="Menu"/>
             </a>
             <figcaption className="mt-2">
-              <a href="#0" className="text-black d-block mt-1 font-weight-semibold big">Chocolate Peanut Butter Mini Cupcakes</a>
+              <a href="#0" className="text-black d-block mt-1  big">Chocolate Peanut Butter Mini Cupcakes</a>
             </figcaption>
           </figure>
         </div>
@@ -234,7 +234,7 @@ export default function Portiontwo() {
             <img src="assets/images/menus/menu138.jpg" className="w-100" alt="Menu"/>
           </a>
             <figcaption className="mt-2">
-              <a href="#0" className="text-black d-block mt-1 font-weight-semibold big">M&amp;M’s Chocolate Cake</a>
+              <a href="#0" className="text-black d-block mt-1  big">M&amp;M’s Chocolate Cake</a>
             </figcaption>
           </figure>
         </div>
@@ -244,7 +244,7 @@ export default function Portiontwo() {
               <img src="assets/images/menus/menu139.jpg" className="w-100" alt="Menu"/>
             </a>
             <figcaption className="mt-2">
-              <a href="#0" className="text-black d-block mt-1 font-weight-semibold big">Strawberry Cream Cake Bites</a>
+              <a href="#0" className="text-black d-block mt-1  big">Strawberry Cream Cake Bites</a>
             </figcaption>
           </figure>
         </div>
@@ -254,7 +254,7 @@ export default function Portiontwo() {
               <img src="assets/images/menus/menu140.jpg" className="w-100" alt="Menu"/>
             </a>
             <figcaption className="mt-2">
-              <a href="#0" className="text-black d-block mt-1 font-weight-semibold big">Tiramisu Cheescake</a>
+              <a href="#0" className="text-black d-block mt-1  big">Tiramisu Cheescake</a>
             </figcaption>
           </figure>
         </div>

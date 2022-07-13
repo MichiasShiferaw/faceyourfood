@@ -1,4 +1,4 @@
-import {default as Recommended} from "./subsection"
+import {default as Recommended} from "../Booking/subsection"
 
 
 export default function Modal() {
