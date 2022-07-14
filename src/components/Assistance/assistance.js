@@ -8,6 +8,7 @@ export default class Assistance extends Component {
   constructor(props) {
     super(props);
 
+
     let stepsource= this.props["page"];
     
     this.state = {
@@ -55,7 +56,7 @@ export default class Assistance extends Component {
 
         <div className="controls">
           <div>
-            <button className="btn btn-outline-secondary btn-lg m-3 rounded-pill" onClick={this.toggleSteps}>View Demo</button>
+            <button className="btn btn-outline-secondary btn-lg m-3 rounded-pill" title="View a Demo of the current page"  onClick={this.toggleSteps}>View Demo</button>
             {/* <button onClick={this.addStep}>Add Step</button> */}
           </div>
           <div>

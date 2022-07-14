@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { trendingNow } from "../Data/TrendingNow";
+import Toggle from "../RecipeComp/Togglelike";
 
 function stars(a) {
   let menuItems = [];
@@ -67,10 +68,11 @@ export default function Launch() {
                   <Link
                     to="/bakery/oatmealmuffin"
                     href="#/"
-                    className="btn btn-outline-beige1 stretched-link"
+                    className="btn btn-outline-beige1"
                   >
                     View <i className="bi bi-caret-right-fill"></i>
                   </Link>
+                  <Toggle icon={"bi bi-bookmark"}/>
                 </div>
               </div>
             </div>
@@ -82,3 +84,5 @@ export default function Launch() {
     </section>
   );
 }
+
+// stretched-link

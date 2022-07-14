@@ -21,8 +21,8 @@ export default function Recipe() {
           <div className="d-flex py-3 mb-3">
  <h1 className="display-4 recipeheader"><strong>Best Oatmeal Muffin</strong>
            </h1> 
-              <Toggle/>
-
+              <span className="ms-2 pe-3 display-4"><Toggle className="pe-3 display-4" icon={"bi bi-heart"}/>
+              </span>
            <a href="#0"><i className="bi bi-download px-3 display-4"></i></a>
            <div className="display-6 ms-auto py-0 px-3">
            <i className="bi bi-star-fill"/>
