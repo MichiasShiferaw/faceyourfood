@@ -149,8 +149,8 @@ setPhotoURL(user.photoURL);
               </div>
             </div>
             <div className="mt-3 mt-md-5 pt-2 pt-md-4 pb-1">
-              <h3 className="text-center mb-3 mb-md-5">Connect Your Social Media to keep your friends and family up-to-date</h3>
-                    <label htmlFor="email" className="form-label">Password:</label>
+              <h3 className="text-center mb-3 mb-md-5">Connect your Social Media to keep your friends and family up-to-date</h3>
+                    <label htmlFor="email" className="form-label">Facebook:</label>
                         <div className="mb-4 input-group">
                             <span className="input-group-text">
                                <i className="bi bi-facebook"></i>

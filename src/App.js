@@ -6,9 +6,9 @@ import './App.css';
 
   import {default as NavBar } from './components/Intro/Navbar/navbar'
 
-import React, {Component, useState} from "react";
+import React, {Component, useEffect, useState} from "react";
 //Link
-import {BrowserRouter as Router, Routes, Route, } from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route, useLocation} from 'react-router-dom'
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Profile from './Pages/Profile';
@@ -20,12 +20,23 @@ import Options12 from './Pages/Meals/Option';
 import FAQ from './Pages/FAQ';
 import Recipes1 from './Pages/Recipes1';
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 class App extends Component {
   render() { 
   return (
     
     
     <Router>
+      <ScrollToTop/>
       <NavBar/>
       <Sidebar/>
 
@@ -41,6 +52,7 @@ class App extends Component {
 
          <Route path="/categories" element={<Categories/>}/> 
          <Route path="/categories/:cato/*" element={<Options12/>}/>
+         <Route path="/categories/:cato/:meal" element={<Recipes/>}/>
 
         <Route path="/bakery/:meal/*" element={<Recipes/>}/>
         <Route path="/bakery/*" element={<Options12/>}/> 
@@ -50,7 +62,11 @@ class App extends Component {
         <Route path="/snacks/:meal/*" element={<Errorpage/>}/>
         <Route path="/faq" element={<FAQ/>}/>
         <Route path="/recipes" element={<Recipes1/>}/>  
-         
+         {/* <Route path="user" element={<About />}>
+          <Route path="profile" element={<Profile />} />
+          <Route path="account" element={<FAQ />} />
+          <Route path="*" element={<Errorpage />} />
+        </Route> */}
         <Route path="*" element={<Errorpage/>}/>    
       </Routes>
 

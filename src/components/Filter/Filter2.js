@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { categoriesPreview } from "../Data/Data";
 
-// let filterarray=[];
-
 function Filter2() {
   const [searchTerm, setSearchTerm] = useState("");
   return (
     <div>
+      <label for="exampleDataList" className="form-label">Search</label>
       <input
+        list="datalistOptions"
         type="text"
         className="form-control mt-3 ps-4 col-md-2"
         id="myinput"
@@ -17,7 +17,7 @@ function Filter2() {
         placeholder="Searching..."
       />
       <div>
-        <ul className="list-group mt-2">
+        <datalist id="datalistOptions" className="my-2">
           {categoriesPreview
             .filter((val) => {
               if (searchTerm == "") {
@@ -30,11 +30,9 @@ function Filter2() {
               }
             })
             .map((recipe, index) => (
-              <li className="list-group-item" key={index}>
-                {recipe.title}
-              </li>
+              <option value={recipe.title} key={index}/>
             ))}
-        </ul>
+        </datalist>
       </div>
     </div>
   );

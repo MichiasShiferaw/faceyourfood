@@ -1,9 +1,27 @@
 import Recommended from "./recommendation";
 import Reviews from "./Reviews/Reviews";
-import {Link} from "react-router-dom";
+import {Link,useParams, useNavigate} from "react-router-dom";
 import Toggle from "./Togglelike";
 
-export default function Recipe() {
+function stars(a) {
+  let menuItems = [];
+  for (let index = 0; index < a; index++) {
+    menuItems.push(<i key={index} className="bi bi-star-fill" />);
+    // console.log(a)
+  }
+  return menuItems;
+}
+
+export default function Recipe({currRecipe}) {
+  // let {meal} = useParams();
+  let navigate = useNavigate();
+  // let currRecipe=currRecipe;
+  // console.log(currRecipe);
+  // console.log(meal);
+    function toComponentB(x){
+    var hi = (`/categories/${x}`)
+    navigate(hi);
+  }
   return (
 <section className="p-0">
   <div className="container">
@@ -13,34 +31,56 @@ export default function Recipe() {
   <nav aria-label="breadcrumb">
   <ol className="breadcrumb">
     <Link to='/categories' className="breadcrumb-item">Categories</Link>
-    <li className="breadcrumb-item"><a href="#/">Bakery</a></li>
-    <li className="breadcrumb-item" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="#/">Muffins</a></li>
-    <li className="breadcrumb-item active" aria-current="page">Oatmeal Muffins</li>
+    <Link to={`/categories/${currRecipe.category}`} className="breadcrumb-item">{currRecipe.category}</Link>
+    {/* <li className="breadcrumb-item" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="#/">Muffins</a></li> */}
+    <li className="breadcrumb-item active" aria-current="page">{currRecipe.name} <i className="bi bi-question-circle-fill"></i></li>
+    
   </ol>
 </nav>
-          <div className="d-flex py-3 mb-3">
- <h1 className="display-4 recipeheader"><strong>Best Oatmeal Muffin</strong>
+          {/* <div className="d-flex py-3 mb-3 text-wrap overflow-auto  white-space: nowrap"> */}
+          {/* <div className="row">
+            <div className="col">
+              
+ <h1 className="display-4 recipeheader"><strong>{currRecipe.name}</strong>
            </h1> 
+           </div>
+           <div className="col">
               <span className="ms-2 pe-3 display-4"><Toggle className="pe-3 display-4" icon={"bi bi-heart"}/>
               </span>
            <a href="#0"><i className="bi bi-download px-3 display-4"></i></a>
            <div className="display-6 ms-auto py-0 px-3">
-           <i className="bi bi-star-fill"/>
-              <i className="bi bi-star-fill"/>
-              <i className="bi bi-star-fill"/>
-              <i className="bi bi-star-fill"/>
-              <i style={{color: '#f3da35'}} className="bi bi-star-half"></i>
+              {stars(currRecipe.rating)}
               <i className="bi bi-question-circle-fill"></i>
               </div>
+          </div>
           
+          </div> */}
+
+                    <div className="row">
+            <div className="col-sm-6 col-md-8">
+              
+ <h1 className="display-4 recipeheader"><strong>{currRecipe.name}</strong>
+ 
+             
+           </h1> 
+           </div>
+           <div className="col-6 col-md-4 p-0">
+              <span className="ms-2 pe-3 display-4"><Toggle className="pe-3 display-4" icon={"bi bi-heart"}/> </span>
+           <a href="#0"><i className="bi bi-download px-3 display-4"></i></a>
+           <span className="display-6 ms-auto me-4 px-3">
+              {stars(currRecipe.rating)}
+              
+              </span>
+          </div>
           
           </div>
+          
           
         </div>
       </div>
       <div className="blog-detail pb-0 mb-0">
         <hr style={{height: '5px'}}/>
-        <p className="pb-0 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+        <p className="pb-0 mb-0"><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</em></p> 
         <br/> 
 <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">
   <div className="carousel-indicators">
@@ -86,15 +126,15 @@ export default function Recipe() {
             <ul className="list-unstyled component-list fyf-svg display-flex">
               <li>
                 <small>Prep Time: </small>
-                <span><strong>15 min</strong></span>
+                <span><strong>{currRecipe.preptime} mins</strong></span>
               </li>
               <li>
                 <small>Cooking Time: </small>
-                <span><strong>15 min</strong></span>
+                <span><strong>{currRecipe.cooktime} min</strong></span>
               </li>
               <li>
                 <small>Servings: </small>
-                <span title="Serving of An Average Adult"><strong>4 People  
+                <span title="Serving of An Average Adult"><strong>{currRecipe.servings} People  
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-people-fill" viewBox="0 0 16 16">
                     <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                     <path fillRule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
@@ -116,46 +156,22 @@ export default function Recipe() {
             <div id='ingredients'className="ingredientssect mt-4 mt-md-5 bg-secondary bg-opacity-25">
               <h3 className="ps-2"><strong>Ingredients</strong></h3>
               <div className="checklist pb-2">
-                <strong className="ps-4">For the crust</strong>
-                <div className="form-check form-check-rounded mx-5 recipe-checkbox">
-                  <input type="checkbox" id="crackers" name="crackers" className="form-check-input rounded-circle"/>
-                  <label className="form-check-label strikethrough" htmlFor="crackers">1/4 cup (50g) Obtuse</label>
+                <strong className="ps-4">First Part</strong>
+                {(currRecipe["ingredients"]).map((ingred,index)=>(
+                  <div key={index} className="form-check form-check-rounded mx-5 recipe-checkbox">
+                  <input type="checkbox" id={index} name={index} className="form-check-input rounded-circle"/>
+                  <label className="form-check-label strikethrough" htmlFor={index}>{ingred}</label>
                 </div>
-                <div className="form-check form-check-rounded mx-5 recipe-checkbox">
-                  <input type="checkbox" id="unsalted" name="unsalted" className="form-check-input rounded-circle"/>
-                  <label className="form-check-label strikethrough" htmlFor="unsalted">150g eggs, Rubber goose</label>
-                </div>
+                ))}
               </div>
-              <div className="checklist pb-4">
-                <strong className="ps-4">For the middle</strong>
-                <div className="form-check form-check-rounded mx-5 recipe-checkbox">
-                  <input type="checkbox" id="marshmallows" name="marshmallows" className="form-check-input rounded-circle"/>
-                  <label className="form-check-label strikethrough" htmlFor="marshmallows">1/2 cup (100g) Green Moose</label>
+              <div className="checklist pb-2">
+                <strong className="ps-4">Second Part</strong>
+                {(currRecipe["ingredients"]).map((ingred,index)=>(
+                  <div key={index} className="form-check form-check-rounded mx-5 recipe-checkbox">
+                  <input type="checkbox" id={index} name={index} className="form-check-input rounded-circle"/>
+                  <label className="form-check-label strikethrough" htmlFor={index}>{ingred}</label>
                 </div>
-                <div className="form-check form-check-rounded mx-5 recipe-checkbox">
-                  <input type="checkbox" id="melted" name="melted" className="form-check-input rounded-circle"/>
-                  <label className="form-check-label strikethrough" htmlFor="melted">175g vinegar, Guava Juice</label>
-                </div>
-                <div className="form-check form-check-rounded mx-5 recipe-checkbox">
-                  <input type="checkbox" id="Philadelphia" name="Philadelphia" className="form-check-input rounded-circle"/>
-                  <label className="form-check-label strikethrough" htmlFor="Philadelphia">1/2 cup (115g) Giant Snake</label>
-                </div>
-                <div className="form-check form-check-rounded mx-5 recipe-checkbox">
-                  <input type="checkbox" id="thickened" name="thickened" className="form-check-input rounded-circle"/>
-                  <label className="form-check-label strikethrough" htmlFor="thickened">250ml Birthday Cake</label>
-                </div>
-                <div className="form-check form-check-rounded mx-5 recipe-checkbox">
-                  <input type="checkbox" id="tbsppowdered" name="tbsppowdered" className="form-check-input rounded-circle"/>
-                  <label className="form-check-label strikethrough" htmlFor="tbsppowdered">3 tbsp Large Fries</label>
-                </div>
-                <div className="form-check form-check-rounded mx-5 recipe-checkbox">
-                  <input type="checkbox" id="dropspurple" name="dropspurple" className="form-check-input rounded-circle"/>
-                  <label className="form-check-label strikethrough" htmlFor="dropspurple">1/4 cup (50g) Chocolate Shake</label>
-                </div>
-                <div className="form-check form-check-rounded mx-5 recipe-checkbox">
-                  <input type="checkbox" id="dropsblue" name="dropsblue" className="form-check-input rounded-circle"/>
-                  <label className="form-check-label strikethrough" htmlFor="dropsblue">1/4 cup (50g) packed light or dark brown</label>
-                </div>
+                ))}
               </div>
             </div>
             <div className="row mt-4 g-0 bg-info">
@@ -174,79 +190,37 @@ export default function Recipe() {
   <tbody>
     <tr>
       <th scope="row">Calories</th>
-      <td>219.9</td>
+      <td>{currRecipe.calories}</td>
 
     </tr>
     <tr>
       <th scope="row">Total Fat</th>
-      <td>12.2g</td>
+      <td>{currRecipe.fat}</td>
 
     </tr>
     <tr>
       <th scope="row">Saturated Fat</th>
-      <td>3.2g</td>
+      <td>{currRecipe.satfat}</td>
     </tr>
         <tr>
-      <th scope="row">Cholesterol</th>
-      <td>234lbs</td>
+      <th scope="row">Fiber</th>
+      <td>{currRecipe.fiber}</td>
     </tr>
         <tr>
       <th scope="row">Sodium</th>
-      <td>4.3g</td>
-    </tr>
-        <tr>
-      <th scope="row">Potassium</th>
-      <td>7.9g</td>
+      <td>{currRecipe.satfat}</td>
     </tr>
             <tr>
       <th scope="row">Sugars</th>
-      <td>10.2g</td>
+      <td>{currRecipe.sugar}</td>
     </tr>
             <tr>
       <th scope="row">Protein</th>
-      <td>8.4g</td>
+      <td>{currRecipe.protein}</td>
     </tr>
   </tbody>
 </table>
 </div>
-                  {/* <ul className="Nutrition-list list-unstyled">
-                    <li>
-                      <span>Calories</span>
-                      <span>219.9</span>
-                    </li>
-                    <li>
-                      <span>Total Fat</span>
-                      <span>10.7 g</span>
-                    </li>
-                    <li>
-                      <span>Saturated Fat</span>
-                      <span>2.2 g</span>
-                    </li>
-                    <li>
-                      <span>Cholesterol</span>
-                      <span>37.4 mg</span>
-                    </li>
-                    <li>
-                      <span>Sodium</span>
-                      <span>120.3 mg</span>
-                    </li>
-                    <li>
-                      <span>Potassium</span>
-                      <span>32.8 mg</span>
-                    </li>
-                    <li>
-                      <span>Total Carbohydrate</span>
-                      <span>22.3 g</span>
-                    </li>
-                    <li>
-                      <span>Sugars</span>
-                      <span>8.4 g</span>
-                    </li>
-                    <li>
-                      <span>Protein</span>
-                      <span>7.9 g</span>
-                    </li>
-                  </ul> */}
                 </div>
               </div>
             </div>
@@ -300,9 +274,9 @@ export default function Recipe() {
           </div>
         </div>
       </div>
-      <div className="my-0 my-md-5 py-1 py-md-5">
+      <div className="feedback my-0 my-md-5 py-1 py-md-5">
         <h2 className="mb-3">Already made this?</h2>
-        <a href="#0" className="btn btn-outline-dark px-5">Share your feedback</a>
+        <a href="#reviewtitle" className="btn btn-outline-dark px-5">Share your feedback</a>
         <br/>
         <br/>
         <hr className="lh-lg"/>

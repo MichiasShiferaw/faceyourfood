@@ -36,7 +36,7 @@ const [email, setEmail] = useState("");
             >
               Add
             </button>
-             <small class="w-100 ms-2 form-text text-muted">{memo}</small>
+             <small className="w-100 ms-2 form-text text-muted">{memo}</small>
           {/* </div> */}
           </form>
           

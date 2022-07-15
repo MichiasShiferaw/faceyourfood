@@ -26,7 +26,7 @@ export default class Cookiemodal extends Component {
       </div>
       <div className="modal-body">
 <h2>Cookie Description</h2>
-<p className='p-0 fs-5 mt-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, .</p>
+<p className='p-0 fs-5 mt-4'>We at FaceYourFood use cookies to ensure you have a personalised user experience, as well as to analyse our traffic and tailor content, ads and social media features. We share some of this information with our technology, analytics and marketing partners.</p>
       </div>
                  <div className="form-check h5">
             <input type="checkbox" className="form-check-input" id="agree-marketing"defaultChecked/>

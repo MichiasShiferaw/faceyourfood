@@ -17,7 +17,7 @@ export default function Portiontwo() {
                 </div>
               </div>
               <h6 className=" mt-2 mb-3"><a href="#0" className="text-black">Sloppy Joe</a></h6>
-              <p className="font-weight-medium">Description of the meal above will be placed here.</p><p className="font-weight-medium"> Source=https://ourfoodfix.com/paleofied-sloppy-joes-with-oven-baked-sweet-potatoes/</p>
+              <p className="font-weight-medium">Description of the meal above will be placed here.</p>
             </figcaption>
           </figure>
           <hr/>

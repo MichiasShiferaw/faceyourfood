@@ -45,7 +45,7 @@ Toggle for Preference
         </option>))}
   </select>
   <button className='btn btn-lg btn-primary'>Save</button>
-  <small class="w-100 ms-2 form-text text-muted">Select a Language</small>
+  <small className="w-100 ms-2 form-text text-muted">Select a Language</small>
 </div>
 
 </div>

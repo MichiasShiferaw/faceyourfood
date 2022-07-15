@@ -262,15 +262,25 @@ a.category-title {
       z-index: 2;
 
 }
-
 .tourguide {
   position: fixed;
   bottom: 6px;
   left: 10px;
   z-index: 2;
-  
+
 
 }
+@media (max-width: 640px) {
+  .supporting {
+    display: none;
+  }
+    .tourguide {
+      display: none;
+      }
+
+}
+
+
 
 .myhome{
   background: linear-gradient(0deg, rgba(100, 203, 204, 0.7544059860272234) 0%, rgba(255, 255, 255, 0.5975432409291841) 49%, rgba(100, 203, 204, 1) 100%);

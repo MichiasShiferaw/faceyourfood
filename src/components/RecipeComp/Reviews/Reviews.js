@@ -6,7 +6,7 @@ function Reviews() {
     <div className="my-5 pt-0 pt-md-3">
       <div className='reviewsect'>
         <div className="border-bottom mb-4 pb-3">
-          <h2 className="d-inline-block">Reviews</h2>
+          <h2 id="reviewtitle" className="d-inline-block">Reviews</h2>
           <span className="f-size-24">(25)</span>
         </div>
 <div className="card">

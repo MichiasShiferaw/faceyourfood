@@ -1,26 +1,10 @@
 const welcome = [
 
-            {
-          element: ".navbar-brand",
-          intro: "Tester"
-        },
         {
-          element: ".language",
-          intro: "World step"
+          element: ".seemore",
+          intro: "Welcome to a Demo through the Launch Page of Face Your Food, continue by clicking 'Next'"
         },
-        {
-          element: ".signin",
-          intro: "Dynamic step"
-        },
-        {
-          element:".popularcatosect",
-          intro:"Popular Categories"
-        },
-        {
-          element:".seasonalsect",
-          intro:"TheSeasonal Fav",
-        },
-        {
+                {
           element: ".aboutus",
           intro: "Click here to year the companies growth"
         },
@@ -30,12 +14,22 @@ const welcome = [
           intro: "See some of our popular categories"
         },
                 {
-          element: ".seemore",
-          intro: "Can to see more? Click here"
+          element: ".signin",
+          intro: "Here is where to sign up"
         },
         {
-          element: ".footer",
-          intro: "This is the footer"
+          element: ".language",
+          intro: "Here you can find options to modify the language of the application"
+        },
+
+        {
+          element:".popularcatosect",
+          intro:"Here you browse through some of our popular categories",
+          position:'auto'
+        },
+        {
+          element:".seasonalheader",
+          intro:"This summer, we want to make sure it is vibrant, so checkout some of our Seasonal Fav",
         },
         ];
 
@@ -43,7 +37,8 @@ const welcome = [
         const recipeTour = [
 {
           element: ".ingredientssect",
-          intro: "Ingredients"
+          intro: "Ingredients",
+          position: 'middle',
         },
             {
           element: ".recipeheader",

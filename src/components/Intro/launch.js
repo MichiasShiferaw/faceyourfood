@@ -64,11 +64,11 @@ export default function Launch() {
                     </div>
                   </div>
                 </div>
-                <div className="card-footer">
+                <div className=" fs-3 card-footer d-flex justify-content-between align-items-center">
                   <Link
-                    to="/bakery/oatmealmuffin"
+                    to="/categories/bakery/oatmeal_muffin"
                     href="#/"
-                    className="btn btn-outline-beige1"
+                    className=" fs-4 btn btn-outline-beige1"
                   >
                     View <i className="bi bi-caret-right-fill"></i>
                   </Link>

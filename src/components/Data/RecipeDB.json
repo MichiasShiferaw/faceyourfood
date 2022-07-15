@@ -33,21 +33,22 @@
             "3 tablespoon olive oil\r",
             "2 pound frozen shrimp"
         ],
-        "tags": [
+
+                "category":"Seafood", "tags": [
             "seafood",
             "shrimp",
             "main"
         ]
     },
-    "Strawberries Romanov (La Madeleine copycat)": {
+    "Strawberries Romanov": {
         "id": "4",
-        "name": "Strawberries Romanov (La Madeleine copycat)",
+        "name": "Strawberries Romanov",
         "source": "http:\/\/cookeatshare.com\/recipes\/la-madeleine-s-strawberries-romanov-318025",
         "preptime": 0,
         "waittime": 0,
         "cooktime": 0,
         "rating":4,
-        "servings": 4,
+        "servings": 5,
         "comments": "",
         "calories": 0,
         "fat": 0,
@@ -63,7 +64,7 @@
             "1 lb strawberries, (2 pints)\r",
             "4 tbsp brandy"
         ],
-        "tags": [
+                "category":"bakery", "tags": [
             "fruit",
             "dessert",
             "strawberries",
@@ -97,7 +98,7 @@
             "Salt\r",
             "1\/4 tsp black pepper"
         ],
-        "tags": [
+                "category":"bakery", "tags": [
             "soup",
             "tomatoes",
             "copycat",
@@ -131,7 +132,7 @@
             "2 cup pecans, chopped \r",
             "9-inch unbaked pie shell"
         ],
-        "tags": [
+                "category":"bakery", "tags": [
             "dessert",
             "pie",
             "untried"
@@ -169,7 +170,7 @@
             "3 1\/2 tbsp whipped-style cream cheese, at room temperature\r",
             "2 servings [cocktail sauce](http:\/\/www.xanthir.com\/recipes\/showrecipe.php?id=id50)"
         ],
-        "tags": [
+                "category":"bakery", "tags": [
             "salmon",
             "ebelskivers",
             "main"
@@ -204,7 +205,7 @@
             "1 tsp vanilla\r",
             "1 cup heavy cream, whipped"
         ],
-        "tags": [
+                "category":"bakery", "tags": [
             "chocolate",
             "dessert",
             "pie",
@@ -241,7 +242,7 @@
             "2 tablespoon finely grated Parmesan, plus extra for garnish\r",
             "Salt and freshly ground black pepper"
         ],
-        "tags": [
+                "category":"bakery", "tags": [
             "german",
             "noodles",
             "sides"
@@ -277,7 +278,7 @@
             "1 tablespoon dried thyme\r",
             "1 cup beef stock"
         ],
-        "tags": [
+                "category":"bakery", "tags": [
             "beef",
             "main"
         ]
@@ -318,7 +319,7 @@
             "1 16oz can green beans\r",
             "1 16oz can green peas"
         ],
-        "tags": [
+                "category":"bakery", "tags": [
             "soup",
             "beef",
             "family_recipes",
@@ -351,7 +352,7 @@
             "1\/2 cup butter, divided use\r",
             "3 large onions"
         ],
-        "tags": [
+                "category":"bakery", "tags": [
             "onion",
             "casserole",
             "main",
@@ -384,7 +385,7 @@
             "2 egg yolks\r",
             "1 3\/4 tablespoon cr\u00e8me faiche"
         ],
-        "tags": [
+                "category":"bakery", "tags": [
             "cheesecake",
             "dessert",
             "pie",
@@ -424,7 +425,7 @@
             "2 teaspoon dried oregano\r",
             "Freshly ground black pepper"
         ],
-        "tags": [
+                "category":"bakery", "tags": [
             "main",
             "greek",
             "salad",
@@ -458,7 +459,7 @@
             "2 tablespoon butter, melted\r",
             "1 1\/4 cup buttermilk, cold"
         ],
-        "tags": [
+                "category":"bakery", "tags": [
             "biscuits",
             "bread",
             "sides"
@@ -491,7 +492,7 @@
             "2 tablespoon fresh chives, finely chopped, for garnish, optional\r",
             "1 serving [Sherry Vinaigrette](http:\/\/www.xanthir.com\/recipes\/showrecipe.php?id=18)"
         ],
-        "tags": [
+                "category":"bakery", "tags": [
             "vegetarian",
             "main",
             "mushrooms",
@@ -523,7 +524,7 @@
             "1\/4 teaspoon freshly ground black pepper\r",
             "1\/2 cup olive oil"
         ],
-        "tags": [
+                "category":"bakery", "tags": [
             "dressing",
             "components"
         ]
@@ -565,7 +566,7 @@
             "3\/4 bunch fresh basil, chiffonade\r",
             "8 ounce bocconcini (mozzarella), quartered"
         ],
-        "tags": [
+                "category":"bakery", "tags": [
             "salad",
             "dressing",
             "main"

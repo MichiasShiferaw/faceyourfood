@@ -7,7 +7,9 @@ function History() {
 }
 
 function Favourite() {
-  return <div> My Favourite</div>;
+  return <div> My Favourite
+    
+  </div>;
 }
 
 class Index extends Component {
@@ -18,6 +20,7 @@ class Index extends Component {
     };
     this.onChangeValue = this.onChangeValue.bind(this);
   }
+
 
   onChangeValue(event) {
     this.setState({
@@ -47,7 +50,7 @@ class Index extends Component {
             <h4 className="pt-2">Settings</h4>
             <div
               onChange={this.onChangeValue}
-              className="settingoptions list-group-sm w-50 list-group list-group-checkable d-grid gap-2 border-0  bg-light pe-2 pb-5"
+              className="settingoptions list-group-sm list-group list-group-checkable gap-2 border-0  bg-light pe-2 pb-5"
             >
               <input
                 type="radio"
@@ -55,16 +58,21 @@ class Index extends Component {
                 id="myAccount"
                 value="Account"
               />
+              
               <label
+              
                 className="list-group-item hello rounded-3 py-3"
                 type="radio"
                 htmlFor="myAccount"
-              >
+                
+              ><a href="#account" className="streched-link">
                 My Account
+                </a>
               </label>
+              
 
               <input
-                className="list-group-item-check w-50 pe-none"
+                className="list-group-item-check pe-none"
                 type="radio"
                 name="listGroupCheckableRadios"
                 id="favourites"
@@ -78,7 +86,7 @@ class Index extends Component {
               </label>
 
               <input
-                className="list-group-item-check w-50 pe-none"
+                className="list-group-item-check pe-none"
                 type="radio"
                 name="listGroupCheckableRadios"
                 id="history"
@@ -88,7 +96,7 @@ class Index extends Component {
                 className="list-group-item rounded-3 py-3"
                 htmlFor="history"
               >
-                History/Bookmarked
+                Bookmark
               </label>
 
               <input
@@ -102,7 +110,7 @@ class Index extends Component {
                 className="list-group-item rounded-3 py-3"
                 htmlFor="preference"
               >
-                My Preferences
+                Settings
               </label>
             </div>
             </div>

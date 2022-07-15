@@ -127,9 +127,9 @@ function Footer() {
           <hr />
           <div className="row pb-4 pt-2 align-items-center">
             <div className="col-md-6 order-2 order-md-0">
-              <p className="text-gray-300 small text-left mb-0">
+              <Link to="/about" className=" text-decoration-none text-dark small text-left mb-0">
                 © 2022 FaceYourFood | All rights reserved
-              </p>
+              </Link>
             </div>
             <div className="col-md-5">
               <div className="social text-left text-md-right my-4 my-md-0">
@@ -183,11 +183,11 @@ function Footer() {
                 </Link>
               </div>
             </div>
-            <div className="col-md-1">
+            {/* <div className="col-md-1">
               <a href="#/">
                 <i className="bi bi-arrow-up-circle h1"></i>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </footer>

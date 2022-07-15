@@ -6,7 +6,6 @@ export default class Toggle extends Component {
     this.state = {
       toggle1: true
     };
-    console.log(props["icon"]);
 
     let stepsource= this.props["icon"];
 
@@ -15,7 +14,6 @@ export default class Toggle extends Component {
 
   onToggle(e) {
     this.setState({ toggle1: !this.state.toggle1 });
-    console.log("Icon Clicked")
   }
 
   render() {

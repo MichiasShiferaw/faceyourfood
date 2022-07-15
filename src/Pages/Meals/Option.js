@@ -12,15 +12,14 @@ const Mealoption= () => {
    let descrips="";
   {categoriesPreview.map((val,index)=>{
                 if(val.title.toLowerCase().includes(cato)){
-                  console.log(isValid);
                   isValid=true;
-                  console.log(index);
+                  // console.log(index);
                     // return val;
                     descrips=categoriesPreview[index].description;
                 }
               }
             )}
-            console.log(descrips);
+            // console.log(descrips);
 
   return (
     <div >

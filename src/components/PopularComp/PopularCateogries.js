@@ -26,8 +26,8 @@ export default function Pop1() {
               <div className="row">
                 
           {categoriesPreview.slice(0,6).map((recipe, index)=>(
-                <div className="col-lg-2 col-md-4 col-4">
-                    <figure key={recipe.title} className="my-3 text-center">
+                <div  key={index} className="col-lg-2 col-md-4 col-4">
+                    <figure className="my-3 text-center">
                      <Link to={`/categories/${(recipe.title).toLowerCase()}`} className="animation rounded-circle">
             {/* <a href=`/catgories/${recipe.title}` className="animation rounded-circle"> */}
               <img src={recipe.thumbnail} className="rounded-circle img-fluid" alt="Menu"/>
@@ -45,9 +45,9 @@ export default function Pop1() {
             <div className="carousel-item">
               <div className="row">
 {categoriesPreview.slice(6,12).map((recipe,index)=>(
-                <div className="col-lg-2 col-md-4 col-4">
+                <div key={index+6} className="col-lg-2 col-md-4 col-4">
                   
-                    <figure key={recipe.title} className="my-3 text-center">
+                    <figure  className="my-3 text-center">
             <Link to={`/categories/${(recipe.title).toLowerCase()}`} className="animation rounded-circle">
               <img src={recipe.thumbnail} className="rounded-circle img-fluid" alt="Menu"/>
             </Link>
@@ -62,9 +62,9 @@ export default function Pop1() {
                         <div className="carousel-item">
               <div className="row">
                 {categoriesPreview.slice(13,19).map((recipe, index)=>(
-                <div className="col-lg-2 col-md-4 col-4">
+                <div key={index+13} className="col-lg-2 col-md-4 col-4">
                   
-                    <figure key={recipe.title} className="my-3 text-center">
+                    <figure className="my-3 text-center">
             <Link to={`/categories/${(recipe.title).toLowerCase()}`} className="animation rounded-circle">
               <img src={recipe.thumbnail} className="rounded-circle img-fluid" alt="Menu"/>
             </Link>
