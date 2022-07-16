@@ -2,9 +2,11 @@ import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import Filter2 from '../Filter/Filter2';
 import Data from "../Data/RecipeDB.json";
+import {useTranslation} from "react-i18next";
 
 // export default function PickMeal({title1}) {
   export default function PickMeal({desc,title1}) {
+    const {t} = useTranslation(["optionPage"]);
     // {Object.key(Data).map((muffin)=>(
     //   console.log(muffin)
     // ))}
@@ -118,45 +120,31 @@ const [state1, setState1] = useState(15);
       </div>
 
       <div className="ps-2">
-        <h4>Star Ratings</h4>
+        <h4>{t("starRating")}</h4>
           <div className="row">
         <div className="btn-group flex-wrap" role="group" aria-label="Basic checkbox toggle button group">
 
   <input type="checkbox" className="col btn-check" id="btncheck1" autoComplete="off"/>
-  <label className="btn btn-outline-primary" htmlFor="btncheck1">1 Star<i className="bi bi-star-fill"/></label>
+  <label className="btn btn-outline-primary" htmlFor="btncheck1">{t("1star")}<i className="bi bi-star-fill"/></label>
 
   <input type="checkbox" className="col btn-check" id="btncheck2" autoComplete="off"/>
-  <label className="btn btn-outline-primary" htmlFor="btncheck2">2 Stars<i className="bi bi-star-fill"/></label>
+  <label className="btn btn-outline-primary" htmlFor="btncheck2">{t("2stars")}<i className="bi bi-star-fill"/></label>
 
   <input type="checkbox" className="col btn-check" id="btncheck3" autoComplete="off"/>
-  <label className="btn btn-outline-primary" htmlFor="btncheck3">3 Stars<i className="bi bi-star-fill"/></label>
+  <label className="btn btn-outline-primary" htmlFor="btncheck3">{t("3stars")}<i className="bi bi-star-fill"/></label>
     <input type="checkbox" className="col btn-check" id="btncheck4" autoComplete="off"/>
-  <label className="btn btn-outline-primary" htmlFor="btncheck4">4 Stars<i className="bi bi-star-fill"/></label>
+  <label className="btn btn-outline-primary" htmlFor="btncheck4">{t("4stars")}<i className="bi bi-star-fill"/></label>
 
   <input type="checkbox" className="col btn-check" id="btncheck5" autoComplete="off"/>
-  <label className="btn btn-outline-success" htmlFor="btncheck5">5 Stars<i className="bi bi-star-fill"/></label>
+  <label className="btn btn-outline-success" htmlFor="btncheck5">{t("5stars")}<i className="bi bi-star-fill"/></label>
 </div>
 </div>
 
       </div>
         <div className="p-4">
           <h4 className="fst-italic">Another Form</h4>
-          {/* <ol className="list-unstyled mb-0">
-            <li><a href="#/">March 2021</a></li>
-            <li><a href="#/">February 2021</a></li>
-            <li><a href="#/">January 2021</a></li>
-            <li><a href="#/">December 2020</a></li>
-            <li><a href="#/">November 2020</a></li>
-            <li><a href="#/">October 2020</a></li>
-            <li><a href="#/">September 2020</a></li>
-            <li><a href="#/">August 2020</a></li>
-            <li><a href="#/">July 2020</a></li>
-            <li><a href="#/">June 2020</a></li>
-            <li><a href="#/">May 2020</a></li>
-            <li><a href="#/">April 2020</a></li>
-          </ol> */}
         </div>
-
+{/* 
         <div className="p-4">
           <h4 className="fst-italic">Elsewhere</h4>
           <ol className="list-unstyled">
@@ -164,20 +152,20 @@ const [state1, setState1] = useState(15);
             <li><a href="#/">Twitter</a></li>
             <li><a href="#/">Facebook</a></li>
           </ol>
-        </div>
+        </div> */}
       </div>
     </div>
     <div className="col-md-10">
            <div className="sort-filter d-flex justify-content-end me-2">
             <div >
-              <label htmlFor="sort" className="control-label me-2"><strong><i className="bi bi-filter"></i>Select list (select one):</strong></label>
+              <label htmlFor="sort" className="control-label me-2"><strong><i className="bi bi-filter"></i>{t("sortBy")}:</strong></label>
             <select className=" form-select someInput me-2 mb-2" id="sort">
               <option></option>
-              <option>Quickest TIme</option>
-              <option>Highest Ratings</option>
-              <option>Lowest Ratings</option>
-              <option>Easy</option>
-              <option>Advance Level</option>
+              <option>{t("recommended")}</option>
+              <option>{t("quickestTime")}</option>
+              <option>{t("highestRating")}</option>
+              <option>{t("lowestRating")}</option>
+              <option>{t("easy")}</option>
             </select>
           </div>
         </div> 
@@ -214,7 +202,7 @@ const [state1, setState1] = useState(15);
         <h5 className="card-title">{(Data[muffin]).name}</h5>
         <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
-        <Link to={`${(Data[muffin]).name}`.split(" ").join("_")} className="btn btn-outline-primary">Go to see {(Data[muffin]).name} Recipe!</Link>
+        <Link to={`${(Data[muffin]).name}`.split(" ").join("_")} className="btn btn-outline-primary">{t("seeRecipe")} {(Data[muffin]).name}!</Link>
       </div>
     </div>
   </div>

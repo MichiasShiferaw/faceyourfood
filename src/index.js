@@ -5,7 +5,7 @@ import './sass/main.scss';
 import App from './App';
 import 'intro.js/introjs.css';
 import "bootstrap/dist/css/bootstrap.css";
-
+import i18n from './18n';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
   root.render(

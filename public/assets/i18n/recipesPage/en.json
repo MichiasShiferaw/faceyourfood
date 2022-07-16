@@ -1,0 +1,23 @@
+{
+    "Preptime"	:"Prep time",
+    "cookingtime":"Cooking time",
+    "servings":"Servings",
+    "people":"People",
+    "instructions":"Instructions",
+    "ingredients":"Ingredients",
+    "firstPart":"First Part",
+    "secondPart":"Second Part",
+    "nutritionFacts":"Nutrition Facts",
+    "calories":"Calories",
+    "totalFat":"Total Fat",
+    "saturatedFat":"Saturated Fat",
+    "fiber":"Fiber",
+    "sodium":"Sodium",
+    "sugars":"Sugars",
+    "protein":"Protein",
+    "already":"Already made this?",
+    "shareFeedback":"Share your feedback",
+    "writeReview":"Write a Review",
+    "alsoLike":"You might also like",
+    "postComment":"Post comment"
+}

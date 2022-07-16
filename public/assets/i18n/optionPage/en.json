@@ -1,0 +1,21 @@
+{
+    "1star":"1 Star",
+    "2stars":"2 Stars" ,
+    "3stars":"3 Stars" ,
+    "4stars":"4 Stars" ,
+    "5stars":"5 Stars",
+    "seeRecipe":"See recipe of ",
+    "search": "Search",
+    "searching":"Searching",
+    "maxTime": "Max Time",
+    "starRating": "Star Ratings",
+    "specials": "Specials",
+    "sortBy":"Sort By",
+    "recommended":"Recommended",
+    "highestRating":"Highest Ratings",
+    "lowestRating": "Lowest Ratings",
+    "easy": "easy",
+    "min": "min",
+    "quickestTime":"Quickest Time",
+    "checkOptions":"Check Our Options"
+}

@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import { trendingNow } from "../Data/TrendingNow";
 import Toggle from "../RecipeComp/Togglelike";
-
+import {useTranslation} from "react-i18next";
 
 export default function Portion() {
+  const {t} = useTranslation(["homePage"]);
   // console.log(trendingNow[choice()]);
   var num = Array.from({length: 6}, () =>(Math.floor(Math.random()*trendingNow.length)));
   // console.log(randomArr);
@@ -14,7 +15,7 @@ export default function Portion() {
         <div className="pt-3 d-flex align-items-center">
           <hr />
           <h3 className="seasonalheader">
-            <i className="bi bi-sun"></i> Seasonal Favourites 
+            <i className="bi bi-sun"></i> {t("seasonalFavourites")} 
           </h3>
           <hr className="flex-grow-1" />
         </div>
@@ -40,7 +41,7 @@ export default function Portion() {
                     href="#/"
                     className=" fs-4 btn btn-outline-beige1"
                   >
-                    View <i className="bi bi-caret-right-fill"></i>
+                    {t("view")} <i className="bi bi-caret-right-fill"></i>
                   </Link>
                   <Toggle icon={"bi bi-bookmark"}/>
                 </div>
@@ -79,7 +80,7 @@ export default function Portion() {
                     href="#/"
                     className=" fs-4 btn btn-outline-beige1"
                   >
-                    View <i className="bi bi-caret-right-fill"></i>
+                    {t("view")} <i className="bi bi-caret-right-fill"></i>
                   </Link>
                   <Toggle icon={"bi bi-bookmark"}/>
                 </div>
@@ -122,7 +123,7 @@ Descriptions of the {trendingNow[num[2]].name} : Lorem ipsum dolor sit amet, con
                     href="#/"
                     className=" fs-4 btn btn-outline-beige1"
                   >
-                    View <i className="bi bi-caret-right-fill"></i>
+                    {t("view")} <i className="bi bi-caret-right-fill"></i>
                   </Link>
                   <Toggle icon={"bi bi-bookmark"}/>
                 </div>
@@ -152,7 +153,7 @@ Descriptions of the {trendingNow[num[2]].name} : Lorem ipsum dolor sit amet, con
                     href="#/"
                     className=" fs-4 btn btn-outline-beige1"
                   >
-                    View <i className="bi bi-caret-right-fill"></i>
+                    {t("view")} <i className="bi bi-caret-right-fill"></i>
                   </Link>
                   <Toggle icon={"bi bi-bookmark"}/>
                 </div>
@@ -191,7 +192,7 @@ Descriptions of the {trendingNow[num[2]].name} : Lorem ipsum dolor sit amet, con
                     href="#/"
                     className=" fs-4 btn btn-outline-beige1"
                   >
-                    View <i className="bi bi-caret-right-fill"></i>
+                    {t("view")} <i className="bi bi-caret-right-fill"></i>
                   </Link>
                   <Toggle icon={"bi bi-bookmark"}/>
                 </div>
@@ -217,7 +218,7 @@ Descriptions of the {trendingNow[num[5]].name} : Lorem ipsum dolor sit amet, con
                     href="#/"
                     className=" fs-4 btn btn-outline-beige1"
                   >
-                    View <i className="bi bi-caret-right-fill"></i>
+                    {t("view")} <i className="bi bi-caret-right-fill"></i>
                   </Link>
                   <Toggle icon={"bi bi-bookmark"}/>
                 </div>

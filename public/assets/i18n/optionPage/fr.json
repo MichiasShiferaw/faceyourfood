@@ -1,0 +1,21 @@
+{
+    "1star": "1 Étoile",
+    "2stars": "2 Étoiles",
+    "3stars": "3 Étoiles",
+    "4stars": "4 Étoiles",
+    "5stars": "5 Étoiles",
+    "seeRecipe": "Voir la recette de ",
+    "search": "Chercher",
+    "searching": "Recherche",
+    "maxTime": "temps maximum",
+    "starRating": "Classement par Étoiles",
+    "specials": "Spéciaux",
+    "sortBy": "Trier par",
+    "recommended": "Recommandé",
+    "highestRating": "Le prix le plus élevé",
+    "lowestRating": "Le prix le plus bas",
+    "easy":"Facile",
+    "min": "min",
+    "quickestTime": "Temps le plus rapide",
+    "checkOptions": "Vérifiez nos options"
+}

@@ -2,11 +2,10 @@ import './App.css';
 
 ////Need these
  import {default as Footer} from './components/Footer/footer';
- import {default as Sidebar} from './components/Sidebar/sidebar';
 
   import {default as NavBar } from './components/Intro/Navbar/navbar'
 
-import React, {Component, useEffect, useState} from "react";
+import React, {Component, Suspense, useEffect} from "react";
 //Link
 import {BrowserRouter as Router, Routes, Route, useLocation} from 'react-router-dom'
 import Home from './Pages/Home';
@@ -33,12 +32,11 @@ function ScrollToTop() {
 class App extends Component {
   render() { 
   return (
-    
-    
+    // Loading... instead of null
+    <Suspense fallback={null}>
     <Router>
       <ScrollToTop/>
       <NavBar/>
-      <Sidebar/>
 
 
 
@@ -72,6 +70,7 @@ class App extends Component {
 
       <Footer/>
     </Router>
+    </Suspense>
     
   );
 }

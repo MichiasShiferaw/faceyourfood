@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import {useTranslation} from "react-i18next";
 
 function Newsletter() {
-  var memo= "Enter email to join, must include @";
+    const {t} = useTranslation(["homePage"]);
   
 const [email, setEmail] = useState("");
   const onSubmit=(e)=>{
@@ -36,7 +37,7 @@ const [email, setEmail] = useState("");
             >
               Add
             </button>
-             <small className="w-100 ms-2 form-text text-muted">{memo}</small>
+             <small className="w-100 ms-2 form-text text-muted">{t("enterEmail")}</small>
           {/* </div> */}
           </form>
           

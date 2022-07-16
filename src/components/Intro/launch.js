@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { trendingNow } from "../Data/TrendingNow";
 import Toggle from "../RecipeComp/Togglelike";
-
+import {useTranslation} from "react-i18next";
 function stars(a) {
   let menuItems = [];
   for (let index = 0; index < a; index++) {
@@ -11,11 +11,12 @@ function stars(a) {
   return menuItems;
 }
 export default function Launch() {
+  const {t} = useTranslation(["homePage"]);
   return (
     <section className="p-0 mb-4 mb-md-5">
       <div className="pt-3 d-flex align-items-center">
         <hr />
-        <h3 className="">Trending This Week</h3>
+        <h3 className="">{t("trending")}</h3>
         <hr className="flex-grow-1" />
       </div>
       <div className="row">
@@ -70,7 +71,7 @@ export default function Launch() {
                     href="#/"
                     className=" fs-4 btn btn-outline-beige1"
                   >
-                    View <i className="bi bi-caret-right-fill"></i>
+                    {t("view")} <i className="bi bi-caret-right-fill"></i>
                   </Link>
                   <Toggle icon={"bi bi-bookmark"}/>
                 </div>

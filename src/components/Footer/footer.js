@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
+import {useTranslation} from "react-i18next";
 function Footer() {
+    const {t} = useTranslation(["footerPage"]);
   return (
     <>
       <footer className="footer pt-3 pt-md-5 mt-5 bg-light">
@@ -15,9 +17,7 @@ function Footer() {
                   />
                 </a>
                 <p className="mt-1 text-gray-300 pr-0 pr-lg-5 mr-0 mr-lg-4">
-                  "Welcome to FaceYourFood, a top-tier group that provides a
-                  plethora of reciepes for all levels of cooks. This is a Demo
-                  Site for SEG3125."
+                  {t("declare")}
                 </p>
                 <Link to="/profile">
                   <svg
@@ -55,54 +55,54 @@ function Footer() {
               <ul className="list-unstyled text-small">
                 <li>
                   <a className="link-secondary" href="/#">
-                    Customer Service
+                    {t("customerService")}
                   </a>
                 </li>
                 <li>
                   <a className="link-secondary" href="/#">
-                    My Account
+                    {t("myAccount")}
                   </a>
                 </li>
                 <li>
                   <a className="link-secondary" href="/#">
-                    Kitchen Glossary
+                    {t("kitchenGlossary")}
                   </a>
                 </li>
                 <li>
                   <a className="link-secondary" href="/#">
-                    News &amp; Events
+                    {t("newsEvents")}
                   </a>
                 </li>
               </ul>
             </div>
 
             <div className="col-6 col-md">
-              <h5>Legal</h5>
+              <h5>{t("legal")}</h5>
               <ul className="list-unstyled text-small">
                 <li>
                   <a className="link-secondary" href="/#">
-                    Terms
+                    {t("terms")}
                   </a>
                 </li>
                 <li>
                   <a className="link-secondary" href="/#">
-                    Conditions
+                    {t("conditions")}
                   </a>
                 </li>
                 <li>
                   <a className="link-secondary" href="/#">
-                    Cookies
+                    {t("cookies")}
                   </a>
                 </li>
                 <li>
                   <a className="link-secondary" href="/#">
-                    Copyright
+                    {t("copyright")}
                   </a>
                 </li>
               </ul>
             </div>
             <div className="col-6 col-md">
-              <h5>Contact Us</h5>
+              <h5>{t("contactUs")}</h5>
               <ul className="list-unstyled text-small">
                 <li>
                   <a className="link-secondary" href="/#">
@@ -128,7 +128,7 @@ function Footer() {
           <div className="row pb-4 pt-2 align-items-center">
             <div className="col-md-6 order-2 order-md-0">
               <Link to="/about" className=" text-decoration-none text-dark small text-left mb-0">
-                © 2022 FaceYourFood | All rights reserved
+                © 2022 FaceYourFood | {t("reserved")}
               </Link>
             </div>
             <div className="col-md-5">

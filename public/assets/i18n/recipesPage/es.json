@@ -1,0 +1,23 @@
+{
+    "Preptime": "Tiempo de preparación",
+    "cookingtime": "Hora de cocinar",
+    "servings": "Porciones",
+    "people": "Gente",
+    "instructions": "Instrucciones",
+    "ingredients": "Ingredientes",
+    "firstPart": "Primera parte",
+    "secondPart": "Segunda parte",
+    "nutritionFacts": "Información Nutricional",
+    "calories": "Calorías",
+    "totalFat": "Grasa total",
+    "saturatedFat": "Grasa saturada",
+    "fiber": "Fibra",
+    "sodium": "Sodio",
+    "sugars": "Azúcar",
+    "protein": "Proteína",
+    "already": "Ya hizo esto?",
+    "shareFeedback": "Comparte tus comentarios",
+    "writeReview": "Escribe una reseña",
+    "alsoLike": "También podría gustarte",
+    "postComment": "Publicar comentario"
+}
