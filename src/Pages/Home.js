@@ -3,7 +3,7 @@ import React from 'react'
 import {default as Launch} from '../components/Intro/launch';
 import {default as Portion} from '../components/Intro/seasonalfav';
 import {default as Portiontwo} from '../components/Intro/lastestrecipes';
-import {default as Login} from '../components/Register/Login';
+import {default as Login} from '../components/Register/Logincomp';
 import Newsletter from '../components/Newsletter/newsletter';
 import Assistance from '../components/Assistance/assistance';
 import { welcome } from '../components/Assistance/assist_data';

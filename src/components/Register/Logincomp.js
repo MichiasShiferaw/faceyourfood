@@ -6,7 +6,7 @@ import { useRef, useState,useEffect } from "react";
 import { Popover } from 'bootstrap/dist/js/bootstrap.esm.min.js';
 import { signup, login, logout, useAuth } from "../../firebase-config";
 import {useTranslation} from "react-i18next";
-export default function Login(){
+export default function Logincomp(){
   const {t} = useTranslation(["homePage"]);
 
 
@@ -107,8 +107,6 @@ const togglePassword = () => {
     return(
 
       <>
-        <section className="login mb-5 pb-5" id="login">
-        <div className="col-md-7 col-lg-8 mx-auto">
         <h2 className="mb-3 text-center"><strong>{t("getStarted")}</strong></h2>
         <hr className="my-4"/>
         {!currentUser&&
@@ -210,13 +208,17 @@ const togglePassword = () => {
       </div>
     </section>
     </div>
+        <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember"/> Remember me For Future Events
+      </label>
+    </div>
+    <p class="mt-5 mb-3 text-muted">Don't have an Account</p>
     <div className="">
           <button className="col align-self-start w-100 btn btn-primary btn-lg pb-3" onClick={handleSignup}>{t("login")}</button>
            </div>
         </form>
         </>}
-      </div>
-      </section>
        </>
     )
 }
