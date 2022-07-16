@@ -2,9 +2,8 @@ import React, { Component } from "react";
 import { Steps, Hints } from "intro.js-react";
 
 
-
-
 export default class Assistance extends Component {
+  
   constructor(props) {
     super(props);
 
@@ -33,7 +32,6 @@ export default class Assistance extends Component {
   }
 
   render() {
-    // console.log(this.props["page"]);
     const {
       stepsEnabled,
       steps,

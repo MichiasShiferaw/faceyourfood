@@ -15,40 +15,6 @@ const [state1, setState1] = useState(15);
     setState1( e.target.value);
   }
 
-  const muffinRecipes = [
-        {
-            title: "Mixed Berries Muffin",
-            //image: "/img/gallery/img_1.png",
-            thumbnail: "/assets/images/muffins/1.png",
-        },
-        {
-            title: "Carrot Muffin",
-            //image: "/img/gallery/img_5.png",
-            thumbnail: "/assets/images/muffins/2.png",
-        },
-        {
-            title: "Rasisn Muffin",
-            //image: "/img/gallery/img_6.png",
-            thumbnail: "/assets/images/muffins/3.png",
-        },
-        {
-            title: "Blueberry Muffin",
-            //image: "/img/gallery/img_4.png",
-            thumbnail: "/assets/images/muffins/1.png",
-        },
-        {
-            title: "Triple Mix Muffin",
-            //image: "/img/gallery/img_10.png",
-            thumbnail: "/assets/images/muffins/4.png",
-        },
-        {
-            title: "Chocolate Chip",
-            //image: "/img/gallery/img_1.png",
-            thumbnail: "/assets/images/muffins/5.png",
-        }, ]
-
-
-
   return (
 
 <>

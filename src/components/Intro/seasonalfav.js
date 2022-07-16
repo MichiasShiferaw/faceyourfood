@@ -11,12 +11,12 @@ export default function Portion() {
   // let num= choice();
   return (
     <>
-      <div className="seasonalsection">
+      <div className="mt-5 seasonalsection">
         <div className="pt-3 d-flex align-items-center">
           <hr />
-          <h3 className="seasonalheader">
+          <h1 className="seasonalheader">
             <i className="bi bi-sun"></i> {t("seasonalFavourites")} 
-          </h3>
+          </h1>
           <hr className="flex-grow-1" />
         </div>
 

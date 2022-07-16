@@ -26,7 +26,7 @@ function Home() {
         {/* <Modal1/>
         <Modal2/> */}
         <Cookies/>
-        <Login/>
+        {/* <Login/> */}
         <hr/>
         <Assistance page={welcome}/>
 

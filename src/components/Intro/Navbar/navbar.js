@@ -9,7 +9,6 @@ import i18next from "i18next";
 export default function NavBar (){
 
 
-
   const { i18n, t } = useTranslation(["common"]);
 
 	useEffect(() => {
@@ -26,10 +25,10 @@ export default function NavBar (){
 	};
 
   useEffect(() => {
-  Array.from(document.querySelectorAll('a[data-bs-toggle="popover"]'))
+  Array.from(document.querySelectorAll('[data-bs-toggle="popover"]'))
     .forEach(popoverNode => new Popover(popoverNode))
  });
-var popoverTriggerList = [].slice.call(document.querySelectorAll('a[data-bs-toggle="popover"]'))
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
 var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
     return new Popover(popoverTriggerEl,{html: true})
 });
@@ -60,7 +59,7 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
           <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><Link to="/categories/bakery" className="dropdown-item" href="#services">Bakery</Link></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item disabled" href="#prices">Seafood</a></li>
+            <li><a data-bs-toggle="modal" href="#exampleModalToggle" role="button" className="dropdown-item" >Seafood</a></li>
             <li><a className="dropdown-item disabled" href="#prices">Breakfast</a></li>
             <li><a className="dropdown-item disabled" href="#prices">Lunch</a></li>
             <li><a className="dropdown-item disabled" href="#prices">Dinner</a></li>
@@ -70,7 +69,7 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 
       
       </ul>
-      <div className="d-flex justify-content-end align-items-center" >
+      {/* <div className="d-flex justify-content-end align-items-center" >
                 <ul className="navbar-nav ml-auto">
           <select className="nav-link bg-light border-0 ml-1 mr-2 mt-1" value={localStorage.getItem("i18nextLng")}
 							onChange={handleLanguageChange}>
@@ -86,22 +85,50 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
           
         </ul>
         <div className="me-5 fs-5">
-           <a  tabIndex="0" data-bs-trigger="focus" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true" data-bs-content='<div class="popover fs-6" role="tooltip">
- <div class="popover-body"><a href="#/" class="btn btn-lg btn-dark px-5 mx-5"> Signup</a><a href="#/" class="text-decoration-none text-dark px-5 mx-5"> My Account </a> <a href="#/" class="text-decoration-none text-dark text-align-left px-5 mx-5"> Not a member yet? Join here! </a></div></div>' className="signin text-decoration-none text-dark " type="button"><i className="bi bi-person mx-2"></i>  {t("signin")}</a>
+           <a  tabIndex="0" data-bs-trigger="focus" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true" data-bs-content='<div class="popover fs-6" role="tooltip">
+ <div class="popover-body"><a href="#/" class="btn btn-lg btn-dark px-5 mx-5"> Signup</a><a href="#/" class="text-decoration-none text-dark px-5 mx-2"> My Account </a> <a href="#/" class=" text-dark text-align-left px-3"> Not a member yet? Join here! </a></div></div>' className="signin text-decoration-none text-dark " type="button"><i className="bi bi-person mx-2"></i>  {t("signin")}</a>
     
         <a href="#/2" className="menu text-decoration-none text-dark"><i className="bi bi-heart mx-2"></i>{t("favourites")}</a>
-        {/* <a className="signin btn btn-primary text-white" href="#login" type="button"  ><i className="bi bi-person-circle"></i>  Forhet this</a> */}
+       
         </div>
 
-      </div>
+      </div> */}
+
+					<ul className="navbar-nav ml-auto mr-2 mt-1 fs-5">
+            <li className="nav-item">
+          <select className="nav-link bg-light border-0 ml-1 mr-2 mt-1" value={localStorage.getItem("i18nextLng")}
+							onChange={handleLanguageChange}>
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+            <option value="es">Spanish</option>
+            <option value="other" >
+              
+              Others
+          </option>
+            </select>
+                 </li>     
+          
+
+        <li className="nav-item fs-5">
+           <a  tabIndex="0" data-bs-trigger="focus" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true" 
+           data-bs-content='<div class="popover fs-6" role="tooltip">
+ <div class="popover-body bg-light px-2"><button type="button" class="btn btn-primary"disabled>Toggle PopOver</button><a href="/sign/1" type="button" class="btn btn-lg btn-dark px-5" rounded-3> Signup</a><a href="#/" class="text-decoration-none text-align-center text-center text-dark"> My Account </a> <br/> <a href="/sign/2" class="small text-dark text-align-center text-center"> Not a member yet? Join here! </a></div></div>' 
+ className="signin text-decoration-none nav-link" type="button"><i className="bi bi-person mx-2"></i>  {t("signin")}</a>
+    </li>
+    <li className="nav-item fs-5">
+        <a href="#/2" className="nav-link menu text-decoration-none"><i className="bi bi-heart mx-2"></i>{t("favourites")}</a>
+				</li>
+        </ul>
 
 
     </div>
   </div>
 </nav>
 <Support/>
+
 </>
         
 
     )};
 
+  

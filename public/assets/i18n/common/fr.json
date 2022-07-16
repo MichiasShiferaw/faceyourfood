@@ -1,11 +1,12 @@
 {
     "submit": "Soumettre",
     "aboutUs": "À propos de nous",
-    "faceyourfood": "faceyourFood",
+    "faceyourfood": "FaceYourFood",
     "favourites": "Favories",
     "home": "Accueil",
     "login": "Login",
     "popularcategories": "Catégories populaires",
     "signin": "Connexion",
-    "myAccount":"Mon compte"
+    "myAccount":"Mon compte",
+    "demo": "Voir une démo"
 }

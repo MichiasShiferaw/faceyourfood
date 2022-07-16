@@ -18,6 +18,7 @@ import Categories from './Pages/Categories/Categories';
 import Options12 from './Pages/Meals/Option';
 import FAQ from './Pages/FAQ';
 import Recipes1 from './Pages/Recipes1';
+import Login from './Pages/Login';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -60,6 +61,7 @@ class App extends Component {
         <Route path="/snacks/:meal/*" element={<Errorpage/>}/>
         <Route path="/faq" element={<FAQ/>}/>
         <Route path="/recipes" element={<Recipes1/>}/>  
+        <Route path="/sign/:id1" element={<Login/>}/> 
          {/* <Route path="user" element={<About />}>
           <Route path="profile" element={<Profile />} />
           <Route path="account" element={<FAQ />} />

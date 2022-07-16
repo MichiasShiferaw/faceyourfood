@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Settings from "./Settings/setting";
 import Preference from "./Preference";
+import { Link } from "react-router-dom";
 
 function History() {
   return <div>Yo</div>;
@@ -26,6 +27,8 @@ class Index extends Component {
     this.setState({
       selectedOpt: event.target.value,
     });
+    console.log(event.target.value);
+    <Link to={event.target.value}/>
   }
 
   renderSwitch(param) {
@@ -48,30 +51,25 @@ class Index extends Component {
           <div className="col-md-2">
             <div className="position-sticky">
             <h4 className="pt-2">Settings</h4>
-            <div
-              onChange={this.onChangeValue}
-              className="settingoptions list-group-sm list-group list-group-checkable gap-2 border-0  bg-light pe-2 pb-5"
-            >
-              <input
+            <ul class="settingoptions nav nav-pills flex-column mb-auto fs-5" onChange={this.onChangeValue}>
+      <li class="nav-item">
+        <input
                 type="radio"
                 name="listGroupCheckableRadios"
                 id="myAccount"
                 value="Account"
               />
-              
               <label
               
-                className="list-group-item hello rounded-3 py-3"
+                className="list-group-item hello rounded-3 py-3 nav-link link-dark"
                 type="radio"
                 htmlFor="myAccount"
                 
-              ><a href="#account" className="streched-link">
-                My Account
-                </a>
+              >My Account
               </label>
-              
-
-              <input
+      </li>
+      <li className="nav-item">
+       <input
                 className="list-group-item-check pe-none"
                 type="radio"
                 name="listGroupCheckableRadios"
@@ -79,13 +77,15 @@ class Index extends Component {
                 value="Favourites"
               />
               <label
-                className="list-group-item hello rounded-3 py-3"
+                className="list-group-item hello rounded-3 py-3 nav-link link-dark"
                 htmlFor="favourites"
               >
                 My Favourites
               </label>
 
-              <input
+      </li>
+      <li className="nav-item">
+                      <input
                 className="list-group-item-check pe-none"
                 type="radio"
                 name="listGroupCheckableRadios"
@@ -93,13 +93,14 @@ class Index extends Component {
                 value="History"
               />
               <label
-                className="list-group-item rounded-3 py-3"
+                className="list-group-item rounded-3 py-3 nav-link link-dark"
                 htmlFor="history"
               >
                 Bookmark
               </label>
-
-              <input
+      </li>
+      <li className="nav-item">
+        <input
                 className="list-group-item-check pe-none"
                 type="radio"
                 name="listGroupCheckableRadios"
@@ -107,12 +108,15 @@ class Index extends Component {
                 value="Preferences"
               />
               <label
-                className="list-group-item rounded-3 py-3"
+                className="list-group-item rounded-3 py-3 nav-link link-dark"
                 htmlFor="preference"
               >
                 Settings
               </label>
-            </div>
+      </li>
+
+    </ul>
+           
             </div>
           </div>
           <div className="col-md-10">
