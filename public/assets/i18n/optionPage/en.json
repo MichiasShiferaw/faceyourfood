@@ -14,8 +14,11 @@
     "recommended":"Recommended",
     "highestRating":"Highest Ratings",
     "lowestRating": "Lowest Ratings",
-    "easy": "easy",
+    "easy": "Easy",
     "min": "min",
     "quickestTime":"Quickest Time",
-    "checkOptions":"Check Our Options"
+    "checkOptions":"Check Our Options",
+    "checkOut": "Check Out Our Selections",
+        "view": "View"
+
 }

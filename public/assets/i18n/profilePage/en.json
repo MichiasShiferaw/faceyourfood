@@ -1,0 +1,16 @@
+{
+    "setting":"Settings",
+    "myAccount": "My Account",
+    "myfav": "My Favourites",
+    "prefer": "My Preferences",
+    "preferOpt": "",
+    "manageWhat": "Manage what you share on FaceYourFood",
+    "chooseWhat": "Choose what we can seel to the black web",
+    "togglePre": "Toggle for Preference",
+    "recommendRec": "Recommend Recipes",
+    "cookieEna": "Cookie Enabled",
+    "recordActivity": "Record Activity on My Account",
+    "keepFav": "Keep my favourites private",
+    "selectLang": "Select a Language",
+    "save": "save"
+}

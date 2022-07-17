@@ -33,7 +33,7 @@ export default function langModal() {
               ></button>
             </div>
             <div className="modal-body">
-              <PickMeal title1={"japanese"} />
+              <PickMeal />
             </div>
             <div className="modal-footer">
               <button

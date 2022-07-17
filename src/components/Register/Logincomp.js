@@ -200,22 +200,24 @@ const togglePassword = () => {
                 </div>
               </div>
             </div>
+             <a href="#/" className="d-block p mb-3 text-center text-muted">Don't have an Account</a>
             <div className="form-check">
+            
             <input type="checkbox" className="form-check-input" id="save-info"/>
             <label className="form-check-label" htmlFor="save-info">{t("agree")}</label>
+            
           </div>
+          <div className="form-check">
+          <input type="checkbox" value="remember1" className="form-check-input" id="remember"/>
+            <label className="form-check-label" htmlFor="remember">Remember me</label>
+            </div>
         </div>
       </div>
     </section>
     </div>
-        <div class="checkbox mb-3">
-      <label>
-        <input type="checkbox" value="remember"/> Remember me For Future Events
-      </label>
-    </div>
-    <p class="mt-5 mb-3 text-muted">Don't have an Account</p>
+   
     <div className="">
-          <button className="col align-self-start w-100 btn btn-primary btn-lg pb-3" onClick={handleSignup}>{t("login")}</button>
+          <button className="col align-self-start w-100 btn btn-forgreen btn-lg pb-3" onClick={handleSignup}>{t("login")}</button>
            </div>
         </form>
         </>}

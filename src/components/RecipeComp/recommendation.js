@@ -1,9 +1,11 @@
 // Map for 4 rows of recommended meal
+import { useTranslation } from "react-i18next";
 
 export default function Recommended() {
+    const {t } = useTranslation(["recipesPage"]);
   return (
     <section className="recommendationsect my-4 my-md-5">
-      <h3 className="py-3 mb-0">You might also like</h3>
+      <h3 className="py-3 mb-0">{t("alsoLike")}</h3>
       <div className="row">
         <div className="col-lg-3 col-md-4 col-6">
           <figure className="my-3 my-md-4 fyf-card">

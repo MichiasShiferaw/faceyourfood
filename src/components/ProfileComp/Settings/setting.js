@@ -35,8 +35,20 @@ setPhotoURL(user.photoURL);
     <section className="my-4 my-md-5">
       <div className="row align-items-center pt-0 pt-md-5">
         <div className="col-lg-9 col-8 col-6">
-          <h2 className="py-2 py-md-3 mb-0">My Profile</h2>
+          <h2 className="py-2 py-md-3 mb-0"><span className="py-2 py-md-3 mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" className="bi bi-person" viewBox="0 0 16 16">
+  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+</svg></span>My Account
+<img className="pb-4 mb-2" src="/assets/images/avatar1.png" width="105" height="105" alt="Avatar"/>
+                 
+          </h2>
+          
+          
         </div>
+        {/* <div className="d-flex flex-wrap pt-3 pt-md-5 pb-4 mb-2 align-items-center">
+        <div className="profile sm-profile">
+          
+        </div>
+        </div> */}
         <div className="col-lg-3 col-4 text-right">
           <a href="#0" className="btn btn-lg btn-primary px-4 px-md-5 text-uppercase">Save</a>
         </div>
@@ -69,16 +81,16 @@ setPhotoURL(user.photoURL);
 
 
 
-       <div className="d-flex flex-wrap pt-3 pt-md-5 pb-4 mb-2 align-items-center">
-        <div className="profile sm-profile">
-          <img src="assets/images/avatars/avatar12.png" alt="Avatar"/>
-        </div>
-        </div>
+
         {/*<div>
           <a href="#0" className="btn btn-lg btn-primary px-4 px-md-5 ml-2 ml-md-4">Change photo</a>
           <a href="#0" className="btn btn-lg btn-outline-dark px-4 px-md-5 ml-2 ml-md-4">Delete</a>
         </div>
       </div> */}
+
+
+      {/*Watch OUT!!!! */}
+
       <div className="row">
         <div className="col-lg-8">
           <form className="mt-4">
@@ -90,7 +102,7 @@ setPhotoURL(user.photoURL);
                             <span className="input-group-text">
                                 <i className="bi bi-person-fill"></i>
                             </span>
-                            <input type="text" className="form-control" id="name" placeholder="e.g.Jane Doe"/>
+                            <input type="text" className="form-control" id="name" placeholder="e.g.Jane Doe" />
                             <span className="input-group-text">
                                 
                                 <i className="bi bi-question-circle text-muted"></i>
@@ -176,6 +188,8 @@ setPhotoURL(user.photoURL);
                             </span>
                         </div>
             </div>
+
+            
             <div className="mt-3 mt-md-5">
               <h6 className="f-size-20 mb-2 mb-md-4 pb-2">Newsletter</h6>
               <div className="d-md-flex align-items-center">
@@ -185,7 +199,7 @@ setPhotoURL(user.photoURL);
                 </div>
               </div>
             </div>
-            <hr className="my-4 my-md-5"/>
+            <hr/>
             <div className="d-flex align-items-center flex-wrap svg mb-4 mb-md-5">
               <a href="#0">
                 <svg data-name="feather-icon/log-out" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">

@@ -1,8 +1,8 @@
 import React from 'react'
  import {default as Pop} from '../components/PopularComp/PopularCateogries';
 import {default as Launch} from '../components/Intro/launch';
-import {default as Portion} from '../components/Intro/seasonalfav';
-import {default as Portiontwo} from '../components/Intro/lastestrecipes';
+import {default as Seasonalfav} from '../components/Intro/seasonalfav';
+import {default as Lastestrecipes} from '../components/Intro/lastestrecipes';
 import {default as Login} from '../components/Register/Logincomp';
 import Newsletter from '../components/Newsletter/newsletter';
 import Assistance from '../components/Assistance/assistance';
@@ -19,9 +19,9 @@ function Home() {
         <Pop/>
 
         <Newsletter/>
-        <Portiontwo/>
+        <Lastestrecipes/>
         
-        <Portion/>
+        <Seasonalfav/>
         {/* <Sidebar/> */}
         {/* <Modal1/>
         <Modal2/> */}

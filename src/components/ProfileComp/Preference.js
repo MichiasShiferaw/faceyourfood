@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { useEffect} from "react";
 import i18next from "i18next";
 function Preference() {
-    const { i18n, t } = useTranslation(["common"]);
+    const { i18n, t } = useTranslation(["common","profilePage"]);
 
 	useEffect(() => {
 		if (localStorage.getItem("i18nextLng")?.length > 2) {
@@ -17,30 +17,30 @@ function Preference() {
 	};
   return (
     <div>
-        <h3>Manage what you share on Youtube</h3>
-        <p>Choose what we can sell to the black web</p>
+        <h3>{t("profilePage:manageWhat")}</h3>
+        <p>{t("profilePage:chooseWhat")}</p>
         <hr/>
 
 <div>
 
-Toggle for Preference
+{t("profilePage:togglePre")}
 <div className='fs-4'>
     <div className="form-check form-switch ">
     <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
-    <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Recommend Recipes</label>
+    <label className="form-check-label" htmlFor="flexSwitchCheckDefault">{t("profilePage:recommendRec")}</label>
     </div>
 
     <div className="form-check form-switch">
     <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
-    <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Cookies Enabled</label>
+    <label className="form-check-label" htmlFor="flexSwitchCheckDefault">{t("profilePage:cookieEna")}</label>
     </div>
     <div className="form-check form-switch">
     <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-    <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Record Activity on my Account</label>
+    <label className="form-check-label" htmlFor="flexSwitchCheckDefault">{t("profilePage:recordActivity")}</label>
     </div>
     <div className="form-check form-switch">
     <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
-    <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Keep my favourites private</label>
+    <label className="form-check-label" htmlFor="flexSwitchCheckDefault">{t("profilePage:keepFav")}</label>
     </div>
     </div>
 </div>
@@ -63,8 +63,8 @@ Toggle for Preference
 
         </option>))}
   </select>
-  <button className='btn btn-lg btn-primary'>Save</button>
-  <small className="w-100 ms-2 form-text text-muted">Select a Language</small>
+  <button className='btn btn-lg btn-primary'>{t("profilePage:save")}</button>
+  <small className="w-100 ms-2 form-text text-muted">{t("profilePage:selectLang")}</small>
 </div>
 
 </div>

@@ -19,5 +19,12 @@
     "shareFeedback": "Comparte tus comentarios",
     "writeReview": "Escribe una reseña",
     "alsoLike": "También podría gustarte",
-    "postComment": "Publicar comentario"
+    "postComment": "Publicar comentario",
+    "categories": "Categorías",
+    "posted":"",
+    "reply":"",
+    "loadmore":"",
+    "fact":"",
+    "value":""
+
 }

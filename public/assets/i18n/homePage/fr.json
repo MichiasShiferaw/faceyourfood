@@ -1,17 +1,20 @@
 {
     "trending": "Tendance Cette Semaine",
     "view": "Voir",
-    "newletter": "Vous aimez le contenu? Inscrivez-vous à la newsletter FYF",
+    "newletter": "Vous aimez le contenu?",
+    "newletter2":"Inscrivez-vous à la newsletter FYF",
     "latestRecipes": "Dernières recettes",
     "sloppyJoe": "Sloppy Joe",
     "seasonalFavourites": "Favoris saisonnier",
     "getStarted": "Commencer",
     "fullName": "Nom",
     "username": "Nom d'utilisateur",
-    "emailAddress": "adresse e-mail",
+    "emailAddress": "Adresse e-mail",
     "password": "Mot de passe",
     "agree": "J'ai lu et convenu avec la politique des conditions et de la confidentialité",
     "freshFavRecipes": "Recettes préférées fraîches",
     "enterEmail": "Entrez le courrier électronique pour rejoindre, doit inclure @",
-    "login": "Connexion"
+    "login": "Connexion",
+    "enterEmailPlaceholder":"Entrez votre Adresse Courriel",
+    "join": "S'inscrive"
 }

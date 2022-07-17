@@ -1,6 +1,8 @@
 import React from 'react'
+import { useTranslation } from "react-i18next";
 
 function Reviews() {
+   const {t } = useTranslation(["recipesPage"]);
   return (
     <>
     <div className="my-5 pt-0 pt-md-3">
@@ -60,8 +62,8 @@ Jane Doe
     {/* <h5 className="card-title">I LOVE IT!</h5> */}
     <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur error veniam sit expedita est illo maiores neque quos nesciunt, reprehenderit autem odio commodi labore praesentium voluptate repellat in id quisquam.</p>
     <span className='mx-2 me-4'> Reply (2)</span>
-    <button className="btn btn-outline-primary "><i className="bi bi-hand-thumbs-up-fill"></i></button><span className="me-2"><strong className="mx-2 me-4">42</strong></span>
-    <button className="btn btn-outline-danger"><i className="bi bi-hand-thumbs-down-fill"></i></button><span className="mx-2 me-4">15</span>
+    <button type="button" className="btn btn-outline-primary "><i className="bi bi-hand-thumbs-up-fill"></i></button><span className="me-2"><strong className="mx-2 me-4">42</strong></span>
+    <button  type="button" className="btn btn-outline-danger"><i className="bi bi-hand-thumbs-down-fill"></i></button><span className="mx-2 me-4">15</span>
   </div>
 </div>
         <div href="#0" className="btn btn-outline-secondary d-grid col-6 mx-auto my-2 py-1 py-md-3">Load 10 more Reviews</div>
@@ -69,13 +71,13 @@ Jane Doe
       
       <div className="write-comment">
         <div className="d-sm-flex align-items-center flex-wrap">
-          <h6>Write a Review</h6>
+          <h6>{t("writeReview")}</h6>
           {/* <p className="mb-0 ml-auto"><a href="#0" className="text-primary">Login</a> to post a comment</p> */}
         </div>
         <form className="bg-lightest-gray rounded-6 mt-3 d-flex flex-wrap p-4">
           <textarea value="I love the MUFFINS"className="form-control" readOnly>I love the muffins. Amazing! 🔥|</textarea>
           <div className="mt-auto ml-auto">
-            <button type="button" className="btn btn-primary px-5">Post comment</button>
+            <button type="button" className="btn btn-stitch px-5">{t("postComment")}</button>
           </div>
         </form>
       </div>

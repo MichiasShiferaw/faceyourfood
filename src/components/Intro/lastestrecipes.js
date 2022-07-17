@@ -10,7 +10,7 @@ export default function Portiontwo() {
           
           <h1 className="mt-3 mb-4"> Latest Recipes </h1>
           <figure className="my-3 border">
-            <img src="assets/images/muffins/sloppyjoe.png" className="w-100 rounded-top-12" alt="Menu"/>
+            <img src="assets/images/muffins/Moussaka.png" className="w-100 rounded-top-12" alt="Menu"/>
             <figcaption className="bg-white px-4 px-lg-5 pt-4 mb-4 collection border-top-0 rounded-bottom-6">
               <div className="w-100 float-left my-3">
                 <div className="float-left">

@@ -16,7 +16,7 @@ export default function Launch() {
     <section className="p-0 mb-4 mb-md-5">
       <div className="pt-3 d-flex align-items-center">
         <hr />
-        <h3 className="">{t("trending")}</h3>
+        <h3 className="text-grite">{t("trending")}</h3>
         <hr className="flex-grow-1" />
       </div>
       <div className="row">
@@ -57,7 +57,7 @@ export default function Launch() {
                       {food.tags.map((tags, index) => (
                         <div
                           key={index * 200}
-                          className="tags bg-darkturq text-white rounded-pill m-1 p-2 d-inline-block search-item"
+                          className="tags bg-darkness text-white rounded-pill m-1 p-2 d-inline-block search-item"
                         >
                           {tags.charAt(0).toUpperCase() + tags.slice(1)}
                         </div>
@@ -69,11 +69,11 @@ export default function Launch() {
                   <Link
                     to="/categories/bakery/oatmeal_muffin"
                     href="#/"
-                    className=" fs-4 btn btn-outline-beige1"
+                    className=" fs-4 btn btn-outline-stitch"
                   >
                     {t("view")} <i className="bi bi-caret-right-fill"></i>
                   </Link>
-                  <Toggle icon={"bi bi-bookmark"}/>
+                  <Toggle className="bg-success" icon={"bi bi-heart"}/>
                 </div>
               </div>
             </div>
@@ -85,5 +85,3 @@ export default function Launch() {
     </section>
   );
 }
-
-// stretched-link

@@ -1,7 +1,8 @@
 {
     "trending":"Trending This Week",
     "view":"View",
-    "newletter":"Love the content? Sign Up For FYF Newsletter",
+    "newletter":"Love the content?",
+    "newletter2": "Sign Up For FYF Newsletter",
     "latestRecipes":"Latest Recipes",
     "sloppyJoe":"Sloppy Joe",
     "seasonalFavourites":"Seasonal Favourites",
@@ -13,5 +14,7 @@
     "agree":"I have read and agree with the Terms & Privacy Policy",
     "freshFavRecipes":"Fresh Favourite Recipes",
     "enterEmail":"Enter email to join, must include @",
-        "login": "Login"
+        "login": "Login",
+        "enterEmailPlaceholder": "Enter email",
+        "join":"Join"
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link,useParams, useNavigate, Navigate} from "react-router-dom";
+import {useParams, Navigate} from "react-router-dom";
 
 import Assistance from '../components/Assistance/assistance';
 import {default as RecipeComp} from '../components/RecipeComp/Recipe';

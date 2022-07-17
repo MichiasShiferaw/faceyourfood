@@ -5,7 +5,7 @@ import Data from "../Data/RecipeDB.json";
 import {useTranslation} from "react-i18next";
 
 // export default function PickMeal({title1}) {
-  export default function PickMeal({desc,title1}) {
+  export default function PickMeal({cuisine}) {
     const {t} = useTranslation(["optionPage"]);
     // {Object.key(Data).map((muffin)=>(
     //   console.log(muffin)
@@ -21,15 +21,15 @@ const [state1, setState1] = useState(15);
 
 <div className="container">
 <div className='pb-2'>
-         <div className="p-5 mb-4 bg-light rounded-3">
+         <div className="mb-4 bg-light rounded-3">
       <div className="container-fluid py-5">
-        <div className="d-sm-flex align-items-center justify-content-between">
-            <div>
-        <h1 className="display-5 fw-bold">{title1}</h1>
-        <p className="lead my-4">{desc}</p>
-        <button className="btn btn-primary btn-lg" type="button">Check Out<br/>Selections</button>
-        </div><div>
-        <img className="img-fluid w-100 d-none d-sm-block" src="assets/images/me.png" alt="" />
+        <div className="row justify-content-center align-items-center">
+            <div className="col-md-7 text-center text-md-start">
+        <h1 className="display-5 fw-bold">{cuisine.title}</h1>
+        <p className="lead my-4">{cuisine.description}</p>
+        <a href="#selection"className="btn btn-darkness btn-lg" type="button">{t("checkOut")}</a>
+        </div><div className="col-md-4 text-center d-none d-md-block">
+        <img className="img-fluid d-none d-md-block" src={cuisine.image} alt="" />
         </div>
       </div>
       </div>
@@ -38,11 +38,10 @@ const [state1, setState1] = useState(15);
     <div className="col-md-6">
       <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div className="col p-4 d-flex flex-column position-static">
-          <strong className="d-inline-block mb-2 text-primary">{title1} Specials</strong>
-          <h3 className="mb-0">Featured post</h3>
+          <strong className="d-inline-block mb-2 text-stitch">LOREM Specials</strong>
           <div className="mb-1 text-muted">Nov 12</div>
           <p className="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" className="stretched-link">Continue reading</a>
+          <a href="#/" className="text-decoration-none stretched-link text-stitch">{t("view")}</a>
         </div>
         <div className="col-auto d-none d-lg-block">
           <svg className="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
@@ -53,11 +52,10 @@ const [state1, setState1] = useState(15);
     <div className="col-md-6">
       <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div className="col p-4 d-flex flex-column position-static">
-          <strong className="d-inline-block mb-2 text-success">{title1} Favourites</strong>
-          <h3 className="mb-0">Post title</h3>
+          <strong className="d-inline-block mb-2 text-forgreen">LOREM Favourites</strong>
           <div className="mb-1 text-muted">Nov 11</div>
           <p className="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" className="stretched-link">Continue reading</a>
+          <a href="#/" className="text-decoration-none stretched-link text-stitch">{t("view")}</a>
         </div>
         <div className="col-auto d-none d-lg-block">
           <svg className="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
@@ -70,23 +68,22 @@ const [state1, setState1] = useState(15);
 
 
    <div className="row g-5">
-    <div className="col-md-2 flex-wrap">
+    <div className="col-md-3 flex-wrap">
       <div className="position-sticky " style={{top: "2rem"}}>
-        <div className="p-4 mb-3 bg-light rounded ">
+        {/* <div className="p-4 mb-3 bg-light rounded ">
           <h4 className="fst-italic">Categories</h4>
           <p className="mb-0">Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit, sed do eiusmod tempor</p>
-        </div>
-        <Filter2/>
+        </div> */}
+        <Filter2 cuisine1={cuisine.title}/>
 
-<div className="ps-2 mt-4 range border-success">
-  <label htmlFor="customRange2" className="ps-2 form-label">Maxmimum Amount of Time</label>
+<div className="mt-4 range border-success">
+  <label htmlFor="customRange2" className="ps-2 form-label">Maxmimum Amount of Time You Would Like to Cook: {state1} mins</label>
   <input type="range" className="ps-2 form-range" min="15" max="120" id="customRange2" value={state1} onChange={handleChange}/>
-       <h6 className="ps-2">Max time : {state1} mins</h6>
       </div>
 
       <div className="ps-2">
-        <h4>{t("starRating")}</h4>
+        <h4 className="fst-italic py-5">{t("starRating")}</h4>
           <div className="row">
         <div className="btn-group flex-wrap" role="group" aria-label="Basic checkbox toggle button group">
 
@@ -107,24 +104,12 @@ const [state1, setState1] = useState(15);
 </div>
 
       </div>
-        <div className="p-4">
-          <h4 className="fst-italic">Another Form</h4>
-        </div>
-{/* 
-        <div className="p-4">
-          <h4 className="fst-italic">Elsewhere</h4>
-          <ol className="list-unstyled">
-            <li><a href="#/">GitHub</a></li>
-            <li><a href="#/">Twitter</a></li>
-            <li><a href="#/">Facebook</a></li>
-          </ol>
-        </div> */}
       </div>
     </div>
-    <div className="col-md-10">
+    <div id="selection" className="col-md-9">
            <div className="sort-filter d-flex justify-content-end me-2">
             <div >
-              <label htmlFor="sort" className="control-label me-2"><strong><i className="bi bi-filter"></i>{t("sortBy")}:</strong></label>
+              <label htmlFor="sort"  className="control-label me-2"><strong><i className="bi bi-filter"></i>{t("sortBy")}:</strong></label>
             <select className=" form-select someInput me-2 mb-2" id="sort">
               <option></option>
               <option>{t("recommended")}</option>
@@ -138,25 +123,12 @@ const [state1, setState1] = useState(15);
 
 
     <div className="vstack gap-3">
-        <div className="card mb-3">
-  <div className="row g-0">
-    <div className="col-md-4 bg-light border border-primary">
-      <img src="/assets/images/muffins/4.png" className="img-fluid rounded-start" alt="..."/>
-    </div>
-    <div className="col-md-8">
-      <div className="card-body">
-        <h5 className="card-title">{title1}</h5>
-        <p className="card-text">The <strong>Best</strong> Homemade Muffin In The World. Must Try!</p>
-        <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
-        <Link to='/bakery/oatmealmuffin' className="btn btn-primary stretched-link">View the Recipe</Link>
-      </div>
-    </div>
-  </div>
-</div>
-{Object.keys(Data).map((muffin,index)=>(
-  // Data[{muffin}].
-  // {
-  //   (Data[muffin]).map((sub,subindex)=>(
+
+{Object.keys(Data).map((muffin,index)=>{
+  // console.log(Data[muffin].category);
+  if((Data[muffin].category).toLowerCase()===(cuisine.title).toLowerCase()){
+ console.log(`${(Data[muffin]).name}`);
+return(
 
         <div className="card mb-3" key={index}>
   <div className="row g-0">
@@ -168,14 +140,15 @@ const [state1, setState1] = useState(15);
         <h5 className="card-title">{(Data[muffin]).name}</h5>
         <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
-        <Link to={`${(Data[muffin]).name}`.split(" ").join("_")} className="btn btn-outline-primary">{t("seeRecipe")} {(Data[muffin]).name}!</Link>
+        <Link to={`${(Data[muffin]).name}`.split(" ").join("_")} className="btn btn-outline-darkness">{t("seeRecipe")} {(Data[muffin]).name}!</Link>
       </div>
     </div>
   </div>
-</div>
-  //   ))
-  // }
-)) }
+</div>)
+
+ } else{
+  return(null);
+ }}) }
 </div>
 
     

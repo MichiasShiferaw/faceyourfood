@@ -1,7 +1,8 @@
 {
     "trending": "Tendencias esta semana",
     "view": "Vista",
-    "newletter": "¿Te encanta el contenido? Regístrese en el boletín de FYF",
+    "newletter": "¿Te encanta el contenido?",
+    "newletter2":"Regístrese en el boletín de FYF",
     "latestRecipes": "Últimas recetas",
     "seasonalFavourites": "Favoritos de temporada",
     "getStarted": "Empezar",
@@ -12,5 +13,7 @@
     "agree": "He leído y de acuerdo con los Términos y la Política de privacidad.",
     "freshFavRecipes": "Recetas favoritas frescas",
     "enterEmail": "Ingrese el correo electrónico para unirse, debe incluir @",
-    "login": "Iniciar sesión"
+    "login": "Iniciar sesión",
+    "enterEmailPlaceholder": "Ingresar dirección de email",
+    "join": "Unirse"
 }

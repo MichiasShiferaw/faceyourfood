@@ -7,7 +7,6 @@ function Newsletter() {
 const [email, setEmail] = useState("");
   const onSubmit=(e)=>{
      e.preventDefault();
-     console.log("Hi");
      console.log(email);
     //  memo=`${email} will be sent out shortly`;
   }
@@ -16,7 +15,7 @@ const [email, setEmail] = useState("");
       <div className="container">
         <div className="d-md-flex align-items-center">
           <h3 className="mb-3 mb-md-0">
-            Love the content? <br /> Sign Up For FYF Newsletter
+            {t("newletter")} <br /> {t("newletter2")}
           </h3>
           <img src="/assets/images/chef.gif" height={"80px"} alt="Cooking" />
           {/* <form> */}
@@ -29,13 +28,13 @@ const [email, setEmail] = useState("");
               onChange={(event)=>setEmail(event.target.value)}
             />
             <button
-              className="btn btn-dark btn-lg"
+              className="btn btn-lg bg-forgreen"
               type="submit"
               onClick={() => {
                 console.log("Signedup");
               }}
             >
-              Add
+              {t("join")}
             </button>
              <small className="w-100 ms-2 form-text text-muted">{t("enterEmail")}</small>
           {/* </div> */}

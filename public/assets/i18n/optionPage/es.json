@@ -15,7 +15,8 @@
         "highestRating": "Mayor precio",
         "lowestRating": "Menor precio",
         "easy": "Fácil",
-        "min": "min",
+        "min": "min","view": "Vista",
         "quickestTime": "El tiempo más rápido",
-        "checkOptions": "Verifique nuestras opciones"
+        "checkOptions": "Verifique nuestras opciones",
+        "checkOut": "Consulta Nuestra Selección"
 }

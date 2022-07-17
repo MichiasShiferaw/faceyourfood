@@ -7,13 +7,12 @@ const auth = getAuth();
 function Profile() {
     let navigate = useNavigate();
   return (
-     <div>
-   <div>
+     <div className='myprofile container'>
+
     {/* onAuthStateChanged(auth, (user) => {
       {{user && <Settings/>}}
     }) */}
 <Settings/>
-</div>
 
 
   {/* // if (user) {

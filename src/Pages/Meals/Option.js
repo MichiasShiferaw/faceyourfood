@@ -15,7 +15,7 @@ const Mealoption= () => {
                   isValid=true;
                   // console.log(index);
                     // return val;
-                    descrips=categoriesPreview[index].description;
+                    descrips=categoriesPreview[index];
                 }
               }
             )}
@@ -26,7 +26,7 @@ const Mealoption= () => {
 
       {isValid ? 
         <>
-        <PickMeal desc={descrips} title1={cato.toUpperCase()} /></>
+        <PickMeal cuisine={descrips} /></>
         :<h2>Unfortunately this is not a valid page</h2>}
       <button onClick={() => navigate(-1)}>go back</button>
 

@@ -72,6 +72,7 @@ function FAQ() {
     //console.log("Jane")
     //console.log(usersCollectionRef)
   return (
+    <div className='myhome container'>
     <div>This is the FYF FAQ Page
                 {/* { recipes.map((ingredient, i) => (
                   <li key={i}>{ ingredient.id }</li>
@@ -88,6 +89,7 @@ function FAQ() {
                             <option onChange={event=> options(event)} value="NA">Health Beauty</option>
                         </select> */}
 
+    </div>
     </div>
   )
 }

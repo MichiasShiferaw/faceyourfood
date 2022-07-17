@@ -8,7 +8,12 @@ $custom-theme-colors: (
     "turq": #54BAB9,
     "darkturq": #18978F,
     "beige1": #E9DAC1,
-    "beige2": #F7ECDE
+    "beige2": #F7ECDE,
+    "grite":#EBECF1,
+    "forgreen":#206A5D,
+    "stitch": #1F4068,
+    "darkness":#1B1C25
+
 );
 
 $theme-colors: map-merge($theme-colors, $custom-theme-colors);
