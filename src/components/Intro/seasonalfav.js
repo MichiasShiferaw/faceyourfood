@@ -26,10 +26,10 @@ export default function Portion() {
   
  
         <div className="col" key={index}>
-          <div className="card shadow-sm">
+          <div className="card shadow-sm bg-transparent rounded">
             {/* <svg className="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> */}
-            <img src="assets/images/categories/IceCream.jpg" className="card-img-top img-fluid" width="100%" height="225" />
-            <div className="card-body">
+            <img src="assets/images/categories/categoriesThumbnail/IceCream.jpg" className="card-img-top img-fluid" width="100%" height="225" />
+            <div className="card-body bg-transparent">
                             {/* <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> */}
                             <div className="imgoverlay">
                               <div className="image__title">Bricks</div>

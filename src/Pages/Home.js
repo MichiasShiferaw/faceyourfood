@@ -1,6 +1,6 @@
 import React from 'react'
  import {default as Pop} from '../components/PopularComp/PopularCateogries';
-import {default as Launch} from '../components/Intro/launch';
+import {default as Homecomp} from '../components/Intro/Homecomp';
 import {default as Seasonalfav} from '../components/Intro/seasonalfav';
 import {default as Lastestrecipes} from '../components/Intro/lastestrecipes';
 import {default as Login} from '../components/Register/Logincomp';
@@ -15,7 +15,7 @@ function Home() {
   
   return (
     <div className='myhome container'>
-        <Launch/>
+        <Homecomp/>
         <Pop/>
 
         <Newsletter/>

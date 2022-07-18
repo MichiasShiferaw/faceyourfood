@@ -375,3 +375,18 @@ label.hello+input[type='radio']:checked {
   /* "forgreen";
   border-color: #0d6efd; */
 }
+.hero-btm-curve {
+  border-bottom-left-radius: 60%;
+  border-bottom-right-radius: 60%;
+  height: 10vh;
+}
+
+.hero-btm-curve1 {
+  border-top-left-radius: 60%;
+  border-top-right-radius: 60%;
+  height: 10vh;
+}
+
+/* #section2{
+  height: 70vh;
+} */

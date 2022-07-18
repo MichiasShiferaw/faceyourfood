@@ -64,6 +64,74 @@ function About() {
           </div>
         </div>
       </div>
+
+      <div className="mt-5 text-white">
+            <div class="text-center">
+                <h2>Get In Touch</h2>
+                <p class="lead">Question to ask? Fill out the form to contact the team directly...</p>
+            </div>
+
+            <div class="row justify-content-center my-5">
+                <div class="col-lg-6">
+                    <form>
+                        <label for="email" class="form-label">Email Address:</label>
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope-fill"></i>
+                            </span>
+                            <input type="email" class="form-control" id="email" placeholder="e.g. mario@example.com"/>
+
+                            <span class="input-group-text">
+                                <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to">
+                                <i class="bi bi-question-circle text-muted"></i>
+                                </span>
+                            </span>
+                        </div>
+
+                       
+
+                        <label for="name" class="form-label">Name:</label>
+
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-person-fill"></i>
+                            </span>
+                            <input type="text" class="form-control" id="name" placeholder="e.g. Mario"/>
+
+                            <span class="input-group-text">
+                                <span class="tt" data-bs-placement="bottom" title="Pretty self explanatory really">
+                                    <i class="bi bi-question-circle text-muted"></i>
+                                </span>
+                            </span>
+                        </div>
+
+
+
+                        <label for="subject" class="form-label">What is your question about?</label>
+                        
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <i class="bi bi-chat-right-dots-fill"></i>
+                            </span>
+                        <select id="subject" class="form-select">
+                            <option value="recipe" selected>Recipe</option>
+                            <option value="application" >Application</option>
+                            <option value="other">Other query</option>
+                        </select>
+                        </div>
+
+                        <div class="form-floating mb-4 mt-5">
+                            <textarea id="query" class="form-control"></textarea>
+                            <label for="query">Enter your feedback here</label>
+                        </div>
+
+                        <div class="mb-4 text-center">
+                            <button type="submit" class="btn btn-secondary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </div> 
     </div>
   );
 }

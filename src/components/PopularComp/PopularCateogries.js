@@ -1,22 +1,25 @@
 import {categoriesPreview} from "../Data/Data";
 import { Link } from "react-router-dom";
-
+import { useTranslation } from "react-i18next";
 export default function Pop1() {
-  var index1=0;
+const { t } = useTranslation(["common"]);
   return (
   <section className="pt-2 pb-5">
   <div className="container">
     <div className="row popularcatosect">
-      <div className="col-6">
-        <h3 className="mb-2 text-white">Popular Categories </h3>
+      <div className="col-6 d-flex">
+        <h3 className="mb-2 me-4 text-white">{t("popularcategories")} </h3>
+        <Link to='/categories'>
+          <button className="btn bg-grite">View All</button>
+        </Link>
       </div>
       <div className="col-6 text-end">
-        <a className="btn btn-outline-grite mb-2 mr-1" data-bs-target="#carouselExampleIndicators2" role="button" data-bs-slide="prev" title="previous">
+        <a className="btn bg-grite mb-2 mr-1" data-bs-target="#carouselExampleIndicators2" role="button" data-bs-slide="prev" title="previous">
                     <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" className="bi bi-arrow-left-circle" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
 </svg>
         </a>
-        <button className="btn btn-outline-grite mb-2 " data-bs-target="#carouselExampleIndicators2" data-bs-slide="next" role="button" title="next">
+        <button className="btn bg-grite mb-2 " data-bs-target="#carouselExampleIndicators2" data-bs-slide="next" role="button" title="next">
 <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" className="bi bi-arrow-right-circle" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
 </svg>

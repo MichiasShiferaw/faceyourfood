@@ -22,6 +22,8 @@ import Login from './Pages/Login';
 import Account from './components/ProfileComp/Settings/Account';
 import Favourite from './components/ProfileComp/Settings/Favourite';
 import Preference from './components/ProfileComp/Settings/Preference';
+import Launch from './Pages/Launch';
+
 function ScrollToTop() {
   const { pathname } = useLocation();
 
@@ -44,7 +46,9 @@ class App extends Component {
 
 
       <Routes>
-        <Route path="/" element={<Home/>}/>  
+        {/* Change this */}
+        <Route path="/" element={<Launch/>}/>  
+        <Route path="/home" element={<Home/>}/>  
         <Route path="/about" element={<About/>}/>
          <Route path="profile" element={<Profile/>}>
           <Route path="account" element={<Account />} />

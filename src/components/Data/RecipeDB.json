@@ -16855,7 +16855,7 @@
             "sandwich"
         ]
     },
-    "id567": {
+    "Broccoli and Mozzarella Pizza": {
         "id": "id567",
         "name": "Broccoli and Mozzarella Pizza",
         "source": "Blue Apron",
@@ -16885,7 +16885,7 @@
             "1\/2 cup part-skim ricotta\r",
             "1 1\/2 tsp calabrian chile paste"
         ],
-        "category":"bakery", "tags": [
+        "category":"pizza", "tags": [
             "vegetarian",
             "pizza",
             "main"

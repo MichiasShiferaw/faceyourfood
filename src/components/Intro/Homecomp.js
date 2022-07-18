@@ -10,7 +10,7 @@ function stars(a) {
   }
   return menuItems;
 }
-export default function Launch() {
+export default function Homecomp() {
   const {t} = useTranslation(["homePage"]);
   return (
     <section className="p-0 mb-4 mb-md-5">

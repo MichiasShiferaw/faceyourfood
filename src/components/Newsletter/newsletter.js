@@ -28,7 +28,7 @@ const [email, setEmail] = useState("");
               onChange={(event)=>setEmail(event.target.value)}
             />
             <button
-              className="btn btn-lg bg-forgreen"
+              className="btn btn-lg bg-forgreen text-grite"
               type="submit"
               onClick={() => {
                 console.log("Signedup");
