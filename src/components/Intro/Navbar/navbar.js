@@ -86,7 +86,7 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
         </ul>
         <div className="me-5 fs-5">
            <a  tabIndex="0" data-bs-trigger="focus" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-html="true" data-bs-content='<div class="popover fs-6" role="tooltip">
- <div class="popover-body"><a href="#/" class="btn btn-lg btn-dark px-5 mx-5"> Signup</a><a href="#/" class="text-decoration-none text-dark px-5 mx-2"> My Account </a> <a href="#/" class=" text-dark text-align-left px-3"> Not a member yet? Join here! </a></div></div>' className="signin text-decoration-none text-dark " type="button"><i className="bi bi-person mx-2"></i>  {t("signin")}</a>
+ <div class="popover-body"><a href="#/" class="btn btn-lg btn-dark px-5 mx-5"> Signup</a><a href="/profile/account" class="text-decoration-none text-dark px-5 mx-2"> My Account </a> <a href="#/" class=" text-dark text-align-left px-3"> Not a member yet? Join here! </a></div></div>' className="signin text-decoration-none text-dark " type="button"><i className="bi bi-person mx-2"></i>  {t("signin")}</a>
     
         <a href="#/2" className="menu text-decoration-none text-dark"><i className="bi bi-heart mx-2"></i>{t("favourites")}</a>
        

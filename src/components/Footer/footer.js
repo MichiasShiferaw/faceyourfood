@@ -59,7 +59,7 @@ function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a className="link-secondary" href="/#">
+                  <a className="link-secondary" href="/profile">
                     {t("myAccount")}
                   </a>
                 </li>

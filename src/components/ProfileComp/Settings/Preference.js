@@ -1,5 +1,5 @@
 import React from 'react'
-import { AllLang } from "../Data/Language";
+import { AllLang } from "../../Data/Language";
 import { useTranslation } from "react-i18next";
 import { useEffect} from "react";
 import i18next from "i18next";
@@ -25,7 +25,7 @@ function Preference() {
 
 {t("profilePage:togglePre")}
 <div className='fs-4'>
-    <div className="form-check form-switch ">
+    <div className="form-check form-switch">
     <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
     <label className="form-check-label" htmlFor="flexSwitchCheckDefault">{t("profilePage:recommendRec")}</label>
     </div>

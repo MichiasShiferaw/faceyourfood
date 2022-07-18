@@ -115,10 +115,22 @@ table.table-fit tfoot td {
 
 } */
 
-@media (max-width: 995px) {
+@media (max-width: 1201px) {
     #steps {
         display: none;
       }
+    #starsRates{
+      display: none;
+    }
+
+}
+
+@media (min-width: 1201px) {
+
+
+  #altRates {
+    display: none;
+  }
 
 }
 
@@ -290,6 +302,9 @@ a.category-title {
   background: linear-gradient(0deg, rgba(255, 255, 255, 1) 3%, rgba(193, 214, 240, 1) 20%, rgba(118, 144, 177, 1) 51%, rgba(31, 64, 104, 1) 100%);
 }
 
+.mealOption {
+  background: linear-gradient(0deg, rgba(128, 157, 193, 0.5471230728619573) 30%, rgba(255, 255, 255, 0.8300362381280637) 78%);
+}
 .myprofile{
   background-color: #809dc1;
 
@@ -336,3 +351,27 @@ label.hello+input[type='radio']:checked {
       left: auto;
       bottom: 0;
 } 
+
+
+#flexSwitchCheckDefault label input[type=checkbox]:checked+.lever {
+
+  background-color: #1ffd01;
+}
+
+.switch label input[type=checkbox]:checked+.lever:after {
+
+  background-color: #fff;
+
+}
+
+.switch label input[type=checkbox]:checked+.lever:after {
+
+  background-color: #1201fa;
+
+}
+.form-check-input:checked {
+  background-color:#1B1C25 !important;
+  
+  /* "forgreen";
+  border-color: #0d6efd; */
+}

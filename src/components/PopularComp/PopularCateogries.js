@@ -32,14 +32,15 @@ export default function Pop1() {
           {categoriesPreview.slice(0,6).map((recipe, index)=>(
                 <div  key={index} className="col-lg-2 col-md-4 col-4">
                     <figure className="my-3 text-center">
-                     <Link to={`/categories/${(recipe.title).toLowerCase()}`} className="animation rounded-circle">
+                     <Link to={`/categories/${(recipe.title).toLowerCase()}`} className="animation rounded-circle text-decoration-none">
             {/* <a href=`/catgories/${recipe.title}` className="animation rounded-circle"> */}
               <img src={recipe.thumbnail} className="rounded-circle img-fluid" alt="Menu"/>
             {/* </a> */}
-            </Link>
+
             <figcaption className="mt-2">
-              <a href="#/" className="category-title text-grite"><strong>{recipe.title}</strong></a>
+              <span className="category-title text-grite"><strong>{recipe.title}</strong></span>
             </figcaption>
+            </Link>
           </figure> 
         </div>))}
                 

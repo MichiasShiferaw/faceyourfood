@@ -18,7 +18,7 @@ export default class Toggle extends Component {
 
   render() {
     return (
-      <a href="#0" className="text-forgreen" onClick={this.onToggle}>
+      <a href="#/" className="text-forgreen" onClick={this.onToggle}>
         {this.state.toggle1 ? (
           <i className={this.props["icon"]}/>
         ) : (

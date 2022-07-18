@@ -22,7 +22,7 @@ const Mealoption= () => {
             // console.log(descrips);
 
   return (
-    <div >
+    <div className='mealOption container'>
 
       {isValid ? 
         <>
