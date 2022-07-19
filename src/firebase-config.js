@@ -32,7 +32,7 @@ const storage = getStorage();
 
 const datab = getFirestore(app);
 
-export {datab};
+export {datab, storage};
 
 export function signup(email, password) {
   return createUserWithEmailAndPassword(auth, email, password);

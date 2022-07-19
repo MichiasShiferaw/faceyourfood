@@ -33,7 +33,7 @@
             "3 tablespoon olive oil\r",
             "2 pound frozen shrimp"
         ],
-        "category":"bakery", "tags": [
+        "category":"italian", "tags": [
             "seafood",
             "shrimp",
             "main"
@@ -62,7 +62,7 @@
             "1 lb strawberries, (2 pints)\r",
             "4 tbsp brandy"
         ],
-        "category":"bakery", "tags": [
+        "category":"desserts", "tags": [
             "fruit",
             "dessert",
             "strawberries",
@@ -3368,12 +3368,12 @@
             "1\/4 cup fresh parsley, chopped\r",
             "1\/2 tbsp olive oil"
         ],
-        "category":"bakery", "tags": [
+        "category":"vegetarian", "tags": [
             "vegetarian",
             "main"
         ]
     },
-    "id107": {
+    "Warm shrimp and potato salad": {
         "id": "id107",
         "name": "Warm shrimp and potato salad",
         "source": "Food Network Magazine Nov 2011",
@@ -3416,7 +3416,7 @@
             "main"
         ]
     },
-    "id108": {
+    "Cherry couscous pudding": {
         "id": "id108",
         "name": "Cherry couscous pudding",
         "source": "Food Network Magazine Nov 2011",
@@ -3445,12 +3445,12 @@
             "1\/4 cup sliced almonds, toasted\r",
             "honey"
         ],
-        "category":"bakery", "tags": [
+        "category":"dessert", "tags": [
             "dessert",
             "cherries"
         ]
     },
-    "id109": {
+    "Spinach lasagna with mushroom ragu": {
         "id": "id109",
         "name": "Spinach lasagna with mushroom ragu",
         "source": "Food Network Magazine Nov 2011",
@@ -3491,13 +3491,13 @@
             "1\/4 tsp nutmeg, freshly grated\r",
             "12 oz dried lasagna noodles"
         ],
-        "category":"bakery", "tags": [
+        "category":"italian", "tags": [
             "italian",
             "vegetarian",
             "main"
         ]
     },
-    "id110": {
+    "Chocolate chestnut mousse": {
         "id": "id110",
         "name": "Chocolate chestnut mousse",
         "source": "Food Network Magazine Nov 2011",
@@ -3522,12 +3522,12 @@
             "1 1\/8 cup confectioners' sugar\r",
             "2 cup heavy cream"
         ],
-        "category":"bakery", "tags": [
+        "category":"desserts", "tags": [
             "chocolate",
             "dessert"
         ]
     },
-    "id111": {
+    "Spicy sauteed kale with lemon": {
         "id": "id111",
         "name": "Spicy sauteed kale with lemon",
         "source": "Everyday Food Nov 2011",
@@ -3558,7 +3558,7 @@
             "vegetarian"
         ]
     },
-    "id112": {
+    "Caesar Salad Dressing": {
         "id": "id112",
         "name": "Caesar Salad Dressing",
         "source": "http:\/\/www.foodnetwork.com\/recipes\/wolfgang-puck\/caesar-salad-recipe\/index.html",
@@ -3593,9 +3593,9 @@
             "salad"
         ]
     },
-    "id113": {
+    "Honey Cookies with Walnuts": {
         "id": "id113",
-        "name": "Melomakarona - Honey Cookies with Walnuts",
+        "name": "Honey Cookies with Walnuts",
         "source": "http:\/\/greekfood.about.com\/od\/cookiescakes\/r\/Melomakarona-Spiced-Honey-Cookies-With-Walnuts.htm",
         "preptime": 0,
         "waittime": 0,
@@ -3632,15 +3632,15 @@
             "1 piece lemon rind, 2-inch\r",
             "1 tsp lemon juice"
         ],
-        "category":"bakery", "tags": [
+        "category":"desserts", "tags": [
             "cookies",
             "dessert",
             "greek"
         ]
     },
-    "id114": {
+    "Sweet Cheese Pastries from Crete": {
         "id": "id114",
-        "name": "Kalitsounia Kritis: Sweet Cheese Pastries from Crete",
+        "name": "Sweet Cheese Pastries from Crete",
         "source": "http:\/\/greekfood.about.com\/od\/dessertspastriessweets\/r\/kaltsounakia.htm",
         "preptime": 0,
         "waittime": 0,
@@ -7616,7 +7616,7 @@
             "sauce"
         ]
     },
-    "id270": {
+    "Veggie Pizza": {
         "id": "id270",
         "name": "Veggie Pizza",
         "source": "",
@@ -7645,13 +7645,13 @@
             "2 clove garlic\r",
             "2 tbsp olive oil"
         ],
-        "category":"bakery", "tags": [
+        "category":"pizza", "tags": [
             "vegetarian",
             "pizza",
             "main"
         ]
     },
-    "id271": {
+    "Eggs": {
         "id": "id271",
         "name": "Eggs",
         "source": "",
@@ -7671,11 +7671,11 @@
         "ingredients": [
             "1 egg"
         ],
-        "category":"bakery", "tags": [
+        "category":"breakfast", "tags": [
             "breakfast"
         ]
     },
-    "id272": {
+    "Goat cheese, sun dried tomato, and pesto torta": {
         "id": "id272",
         "name": "Goat cheese, sun dried tomato, and pesto torta",
         "source": "Bride and Groom first and forever cookbook by Barber and Whiteford",
@@ -7703,12 +7703,12 @@
             "Garnish, fresh basil leaves or parsley sprigs\r",
             "Toasted baguette slices or crackers, for serving"
         ],
-        "category":"bakery", "tags": [
+        "category":"greek", "tags": [
             "appetizer",
             "party"
         ]
     },
-    "id273": {
+    "Frozen Dinner": {
         "id": "id273",
         "name": "Frozen Dinner",
         "source": "",
@@ -7728,12 +7728,12 @@
         "ingredients": [
             "1 frozen dinner"
         ],
-        "category":"bakery", "tags": [
+        "category":"japanese", "tags": [
             "dinner",
             "components"
         ]
     },
-    "id275": {
+    "Tempeh sauerbraten": {
         "id": "id275",
         "name": "Tempeh sauerbraten",
         "source": "Whole Foods",
@@ -7768,7 +7768,7 @@
             "1 tbsp honey\r",
             "8 oz tempeh, cut into 1 inch cubes"
         ],
-        "category":"bakery", "tags": [
+        "category":"vegetarian", "tags": [
             "untried",
             "vegetarian",
             "main"
@@ -8174,7 +8174,7 @@
             "main"
         ]
     },
-    "id290": {
+    "Mediterranean Patio Pizza": {
         "id": "id290",
         "name": "Mediterranean Patio Pizza",
         "source": "http:\/\/new.pamperedchef.com\/recipe\/10006",
@@ -8211,7 +8211,7 @@
             "1\/2 tsp dijon mustard \r",
             "salt and pepper"
         ],
-        "category":"bakery", "tags": [
+        "category":"pizza", "tags": [
             "pizza",
             "main",
             "vegetarian"

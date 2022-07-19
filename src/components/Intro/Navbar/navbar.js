@@ -57,10 +57,10 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
             {t("popularcategories")}
           </Link>
           <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><Link to="/categories/bakery" className="dropdown-item" href="#services">Bakery</Link></li>
+            <li><Link to="/categories/bakery" className="dropdown-item">Bakery</Link></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><a data-bs-toggle="modal" href="#exampleModalToggle" role="button" className="dropdown-item" >Seafood</a></li>
-            <li><a className="dropdown-item disabled" href="#prices">Breakfast</a></li>
+            <li><Link to="categories/sandwiches"  className="dropdown-item" >Sandwiches</Link></li>
+            <li><Link to="categories/desserts" className="dropdown-item" href="#prices">Desserts</Link></li>
             <li><a className="dropdown-item disabled" href="#prices">Lunch</a></li>
             <li><a className="dropdown-item disabled" href="#prices">Dinner</a></li>
           </ul>

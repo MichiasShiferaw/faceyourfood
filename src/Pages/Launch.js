@@ -2,7 +2,7 @@ import React from 'react'
 
 function Launch() {
   return (
-    <section className='bg-grite'>
+    <section className='bg-secondary'>
     <section class="hero-btm-curve1 bg-stitch pb-5"></section>
     <section id="section1" class="py-5 bg-stitch text-light">
         <div class="container">
@@ -36,21 +36,21 @@ function Launch() {
     <section class="hero-btm-curve bg-stitch pb-5"></section>
     
     {/* <section class="hero-btm-curve1 bg-forgreen pb-5"></section> */}
-        <section class="bg-forgreen py-5 text-white">
+        <section class="bg-secondary py-5 text-dark">
         <div className='container'>
         <div class="row row-cols-1 row-cols-md-3 mb-3 mt-3 text-center">
       <div class="col">
-        <div class="mb-4 rounded-3 shadow-sm bg-darkness py-2">
+        <div class="mb-4 rounded-3 shadow-sm bg-light py-2">
           <div>
-            <h1 class="card-title pricing-card-title">3500<small class="text-muted fw-light">+</small></h1>
+            <h1 class="card-title pricing-card-title">4422<small class="text-muted fw-light">+</small></h1>
               <h3 class="mt-3 mb-4">Recipes</h3>
           </div>
         </div>
       </div>
       <div class="col">
-        <div class="mb-4 rounded-3 shadow-sm bg-darkness py-2">
+        <div class="mb-4 rounded-3 shadow-sm bg-light py-2">
           <div >
-            <h1 class="card-title pricing-card-title">1440<small class="text-muted fw-light">+</small></h1>
+            <h1 class="card-title pricing-card-title">1738<small class="text-muted fw-light">+</small></h1>
 
               <h3 class="mt-3 mb-4">Users</h3>
 
@@ -58,7 +58,7 @@ function Launch() {
         </div>
       </div>
       <div class="col">
-        <div class="mb-4 rounded-3 shadow-sm border-primary bg-darkness py-2">
+        <div class="mb-4 rounded-3 shadow-sm bg-light py-2">
           <div>
             <h1 class="card-title pricing-card-title">5000<small class="text-muted fw-light">+</small></h1>
               <h3 class="mt-3 mb-4">Comments</h3>
@@ -71,7 +71,7 @@ function Launch() {
     {/* <section class="hero-btm-curve bg-forgreen pb-5"></section> */}
 
 <section class="hero-btm-curve1 bg-stitch pb-5"></section>
-    <section id="section2" class="py-5 px-0 bg-stitch text-white">
+    <section id="section2" class="py-5 px-0 bg-stitch text-dark">
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-lg">

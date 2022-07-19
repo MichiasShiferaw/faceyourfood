@@ -23,8 +23,8 @@ function Preference() {
 
 <div>
 
-{t("profilePage:togglePre")}
-<div className='fs-4'>
+<h4>{t("profilePage:togglePre")}</h4>
+<div className='fs-4 ms-3'>
     <div className="form-check form-switch">
     <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
     <label className="form-check-label" htmlFor="flexSwitchCheckDefault">{t("profilePage:recommendRec")}</label>

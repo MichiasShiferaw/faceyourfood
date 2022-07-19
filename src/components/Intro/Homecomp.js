@@ -13,7 +13,35 @@ function stars(a) {
 export default function Homecomp() {
   const {t} = useTranslation(["homePage"]);
   return (
+    
     <section className="p-0 mb-4 mb-md-5">
+       <div class="container text-grite">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h1>Welcome To Face Your Food</h1>
+                    <p class="lead">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Similique deleniti possimus magnam corporis ratione facere!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+                        reiciendis eius autem eveniet mollitia, at asperiores suscipit
+                        quae similique laboriosam iste minus placeat odit velit quos,
+                        nulla architecto amet voluptates?
+                    </p>
+
+                    <a href="/home" class="btn btn-light mt-3 mx-3">
+                        <i class="bi bi-chevron-right"></i> Get Started
+                    </a>
+                                       <a href="#section2" class="btn btn-light mt-3 mx-3">
+                        <i class="bi bi-chevron-right"></i> Read More
+                    </a>
+                </div>
+                <div class="col-md">
+                    <img src="/assets/images/faceYourFood.png" class="img-fluid"  alt="Nigga" />
+                </div>
+            </div>
+        </div>
       <div className="pt-3 d-flex align-items-center">
         <hr />
         <h3 className="text-grite">{t("trending")}</h3>

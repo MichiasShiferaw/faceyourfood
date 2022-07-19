@@ -16,9 +16,9 @@ export default function Subsection() {
       <div className="row">
         {categoriesPreview.map((recipe,index)=>(
         <div key={index} className="col-lg-3 col-md-4 col-6" title={recipe.title}onClick={()=>{toComponentB(`${(recipe.title).toLowerCase()}`)}}>
-          <figure className="my-3 my-md-4 text-center">
+          <figure className="my-3 my-md-4 text-center" >
             <div  className="animation rounded-circle">
-              <img src={recipe.thumbnail} className="rounded-circle img-fluid"  alt="Menu"/>
+              <img src={recipe.thumbnail} className="rounded-circle img-fluid"  alt="Menu" width={"75%"} height={"75%"}/>
             </div>
             <figcaption className="mt-2 mt-md-3" defaultValue={"Seafood"}>
               <a href="#0" className="category-title">{recipe.title}</a>

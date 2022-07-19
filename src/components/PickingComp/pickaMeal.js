@@ -4,12 +4,10 @@ import Filter2 from '../Filter/Filter2';
 import Data from "../Data/RecipeDB.json";
 import {useTranslation} from "react-i18next";
 
-// export default function PickMeal({title1}) {
+
   export default function PickMeal({cuisine}) {
     const {t} = useTranslation(["optionPage"]);
-    // {Object.key(Data).map((muffin)=>(
-    //   console.log(muffin)
-    // ))}
+
 const [state1, setState1] = useState(15);
   const handleChange = e => {
     setState1( e.target.value);
@@ -38,22 +36,20 @@ const [state1, setState1] = useState(15);
     <div className="col-md-6">
       <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div className="col p-4 d-flex flex-column position-static">
-          <strong className="d-inline-block mb-2 text-stitch">LOREM Specials</strong>
-          <div className="mb-1 text-muted">Nov 12</div>
+          <strong className="d-inline-block mb-2 text-stitch">{cuisine.option1} Specials</strong>
+
           <p className="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#/" className="text-decoration-none stretched-link text-stitch">{t("view")}</a>
+          <Link to='Veggie_Pizza' href="#/" className="text-decoration-none stretched-link text-stitch">{t("view")}</Link>
         </div>
         <div className="col-auto d-none d-lg-block">
-          <svg className="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
+          <img width="200" height="250" src={cuisine.thumbnail}/>
         </div>
       </div>
     </div>
     <div className="col-md-6">
       <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div className="col p-4 d-flex flex-column position-static">
-          <strong className="d-inline-block mb-2 text-forgreen">LOREM Favourites</strong>
-          <div className="mb-1 text-muted">Nov 11</div>
+          <strong className="d-inline-block mb-2 text-forgreen">{cuisine.option2} Favourites</strong>
           <p className="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
           <a href="#/" className="text-decoration-none stretched-link text-stitch">{t("view")}</a>
         </div>
@@ -70,11 +66,6 @@ const [state1, setState1] = useState(15);
    <div className="row g-5">
     <div className="col-md-3 flex-wrap">
       <div className="position-sticky " style={{top: "2rem"}}>
-        {/* <div className="p-4 mb-3 bg-light rounded ">
-          <h4 className="fst-italic">Categories</h4>
-          <p className="mb-0">Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit, sed do eiusmod tempor</p>
-        </div> */}
         <Filter2 cuisine1={cuisine.title}/>
 
 <div className="mt-4 range border-success">
@@ -127,13 +118,13 @@ const [state1, setState1] = useState(15);
 {Object.keys(Data).map((muffin,index)=>{
   // console.log(Data[muffin].category);
   if((Data[muffin].category).toLowerCase()===(cuisine.title).toLowerCase()){
- console.log(`${(Data[muffin]).name}`);
+//  console.log(`${(Data[muffin]).name}`);
 return(
 
         <div className="card mb-3" key={index}>
   <div className="row g-0">
     <div className="col-md-4 bg-light border border-primary">
-      <img src="/assets/images/muffins/3.png" className="img-fluid rounded-start" alt="..."/>
+      <img src={cuisine.display1} className="img-fluid rounded-start" alt="..."/>
     </div>
     <div className="col-md-8">
       <div className="card-body">

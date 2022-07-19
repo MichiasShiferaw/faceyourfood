@@ -46,7 +46,7 @@ class App extends Component {
 
 
       <Routes>
-        {/* Change this */}
+
         <Route path="/" element={<Launch/>}/>  
         <Route path="/home" element={<Home/>}/>  
         <Route path="/about" element={<About/>}/>
@@ -54,31 +54,16 @@ class App extends Component {
           <Route path="account" element={<Account />} />
           <Route path="favourite" element={<Favourite />} />
           <Route path="preference" element={<Preference />} />
-          {/* <Route path=":id" element={<ProductDisplay />} /> */}
-        </Route>
-        {/* <Route path="/profile" element={<Profile/>}/>   
-        <Route path="/profile/:username" element={<Profile/>}/>  */}
 
+        </Route>
 
 
          <Route path="/categories" element={<Categories/>}/> 
          <Route path="/categories/:cato/*" element={<Options12/>}/>
          <Route path="/categories/:cato/:meal" element={<Recipes/>}/>
-
-        {/* <Route path="/bakery/:meal/*" element={<Recipes/>}/>
-        <Route path="/bakery/*" element={<Options12/>}/> 
-        <Route path="/dessert/:meal/*" element={<Errorpage/>}/>
-        <Route path="/fastfood/:meal/*" element={<Errorpage/>}/>
-        <Route path="/breakfast/:meal/*" element={<Errorpage/>}/>
-        <Route path="/snacks/:meal/*" element={<Errorpage/>}/> */}
-        <Route path="/faq" element={<FAQ/>}/>
         <Route path="/recipes" element={<Recipes1/>}/>  
         <Route path="/sign/:id1" element={<Login/>}/> 
-         {/* <Route path="user" element={<About />}>
-          <Route path="profile" element={<Profile />} />
-          <Route path="account" element={<FAQ />} />
-          <Route path="*" element={<Errorpage />} />
-        </Route> */}
+
         <Route path="*" element={<Errorpage/>}/>    
       </Routes>
 

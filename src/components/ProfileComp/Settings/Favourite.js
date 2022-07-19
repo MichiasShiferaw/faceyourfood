@@ -14,7 +14,6 @@ function Favourite() {
               <div className="d-flex justify-content-between align-items-center">
 
                   <button type="button" className="btn btn-sm btn-outline-secondary">View</button>
-Shakshuka with chickpeas
                 <small className="text-muted"><i className="bi bi-heart-fill"></i></small>
               </div>
             </div>

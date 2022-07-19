@@ -58,101 +58,101 @@ export default function Portiontwo() {
           <div className="row h-100">
             <div className="col-6">
               <figure className="my-3 text-center card">
-                <a href="#" className="animation">
+                <a href="#/" className="animation">
                   <img src="/assets/images/categories/another/Pizza.jpg" className="w-100" alt="Menu"/>
                 </a>
                 <figcaption className="bg-white pt-2">
-                  <h6 className=" small"><a href="#">Homemade Chicago Style Pizza</a></h6>
+                  <h6 className=" small"><a href="#/">Homemade Chicago Style Pizza</a></h6>
                 </figcaption>
               </figure>
             </div>
             <div className="col-6">
               <figure className="my-3 text-center card">
-                <a href="#" className="animation">
+                <a href="#/" className="animation">
                   <img src="assets/images/categories/categoriesThumbnail/Chicken.jpg" className="w-100" alt="Menu"/>
                 </a>
                 <figcaption className="bg-white pt-2">
-                  <h6 className=" small"><a href="#">Lorem, ipsum dolor sit amet</a></h6>
+                  <h6 className=" small"><a href="#/">Lorem, ipsum dolor sit amet</a></h6>
                 </figcaption>
               </figure>
             </div>
             <div className="col-6">
               <figure className="my-3 text-center card">
-                <a href="#" className="animation">
+                <a href="#/" className="animation">
                   <img src="assets/images/categories/categoriesThumbnail/Thai.jpg" className="w-100" alt="Menu"/>
                 </a>
                 <figcaption className="bg-white pt-2">
-                  <h6 className=" small"><a href="#">Easy Chocolate Chip Muffins</a></h6>
+                  <h6 className=" small"><a href="#/">Easy Chocolate Chip Muffins</a></h6>
                 </figcaption>
               </figure>
             </div>
             <div className="col-6">
               <figure className="my-3 text-center card">
-                <a href="#" className="animation">
+                <a href="#/" className="animation">
                   <img src="assets/images/categories/categoriesThumbnail/Desserts.jpg" className="w-100" alt="Menu"/>
                 </a>
                 <figcaption className="bg-white pt-2">
-                  <h6 className=" small"><a href="#">Lorem, ipsum dolor sit amet</a></h6>
+                  <h6 className=" small"><a href="#/">Lorem, ipsum dolor sit amet</a></h6>
                 </figcaption>
               </figure>
             </div>
             <div className="col-6">
               <figure className="my-3 text-center card">
-                <a href="#" className="animation">
+                <a href="#/" className="animation">
                   <img src="assets/images/categories/categoriesThumbnail/Mexican.jpg" className="w-100" alt="Menu"/>
                 </a>
                 <figcaption className="bg-white pt-2">
-                  <h6 className=" small"><a href="#">Lorem Geneus</a></h6>
+                  <h6 className=" small"><a href="#/">Lorem Geneus</a></h6>
                 </figcaption>
               </figure>
             </div>
             <div className="col-6">
               <figure className="my-3 text-center card">
-                <a href="#" className="animation">
+                <a href="#/" className="animation">
                   <img src="assets/images/categories/categoriesThumbnail/Smoothie.jpg" className="w-100" alt="Menu"/>
                 </a>
                 <figcaption className="bg-white pt-2">
-                  <h6 className=" small"><a href="#">Berry Smoothies</a></h6>
+                  <h6 className=" small"><a href="#/">Berry Smoothies</a></h6>
                 </figcaption>
               </figure>
             </div>
             <div className="col-6">
               <figure className="my-3 text-center card">
-                <a href="#" className="animation">
+                <a href="#/" className="animation">
                   <img src="assets/images/categories/categoriesThumbnail/Coffee.jpg" className="w-100" alt="Menu"/>
                 </a>
                 <figcaption className="bg-white pt-2">
-                  <h6 className=" small"><a href="#">Amazin' Low-Cafe Coffee</a></h6>
+                  <h6 className=" small"><a href="#/">Amazin' Low-Cafe Coffee</a></h6>
                 </figcaption>
               </figure>
             </div>
             <div className="col-6">
               <figure className="my-3 text-center card">
-                <a href="#" className="animation">
+                <a href="#/" className="animation">
                   <img src="assets/images/categories/categoriesThumbnail/Breakfast.jpg" className="w-100" alt="Menu"/>
                 </a>
                 <figcaption className="bg-white pt-2">
-                  <h6 className=" small"><a href="#">Broccoli and Mozzarella Pizza</a></h6>
+                  <h6 className=" small"><a href="#/">Broccoli and Mozzarella Pizza</a></h6>
                 </figcaption>
               </figure>
             </div>
             <div className="col-6">
               <figure className="my-3 text-center card">
-                <a href="#" className="animation">
+                <a href="#/" className="animation">
                   <img src="assets/images/categories/categoriesThumbnail/Vietnamese.jpg" className="w-100" alt="Menu"/>
                 </a>
                 <figcaption className="bg-white pt-2">
-                  <h6 className=" small"><a href="#">Spicy Pho</a></h6>
+                  <h6 className=" small"><a href="#/">Spicy Pho</a></h6>
                 </figcaption>
               </figure>
             </div>
             <div className="col-6">
               <figure className="my-3 text-center card">
-                <a href="#" className="animation">
+                <a href="#/" className="animation">
                   <img src="assets/images/categories/categoriesThumbnail/Indian.jpg" className="w-100" alt="Menu"/>
                 </a>
                 <figcaption className="bg-white pt-2">
-                  <h6 className=" small"><a href="#">Chicken Tikka Masala</a></h6>
+                  <h6 className=" small"><a href="#/">Chicken Tikka Masala</a></h6>
                 </figcaption>
               </figure>
             </div>
