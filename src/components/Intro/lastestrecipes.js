@@ -14,7 +14,7 @@ export default function Portiontwo() {
           <h1 className="mt-3 mb-4 text-white"> {t("latestRecipes")} </h1>
           <figure className="my-3 border">
             <img src="assets/images/muffins/Moussaka.png" className="w-100 rounded-top-12" alt="Menu"/>
-            <figcaption className="bg-white px-4 px-lg-5 pt-4 mb-4 collection border-top-0 rounded-bottom-6">
+            <figcaption className="bg-transparent px-4 px-lg-5 pt-4 mb-4 collection border-top-0 rounded-bottom-6">
               <div className="w-100 float-left my-3">
                 <div className="float-left">
                 </div>
@@ -43,7 +43,7 @@ export default function Portiontwo() {
     <hr/>
     <div className="row featurette">
       <div className="col-md-7 order-md-2">
-        <h2 className="featurette-heading fw-normal lh-1">Wild Mushroom Risotto. <span className="text-muted">ut labore et dolore magna.</span></h2>
+        <h2 className="featurette-heading fw-normal lh-1">Wild Mushroom Risotto.</h2>
         <p className="lead">Need a meal to impress someone. Try the Risotto, easy, quick and looks amazing! </p>
         <Link
                     to="/categories/bbq/Wild_Mushroom_Risotto"
@@ -60,7 +60,7 @@ export default function Portiontwo() {
     </div>
 
         </div>
-        <div className="col-md-4">
+        <div className="col-md-4 text-decoration-none bg-transparent">
           <h4 className="mt-3 mt-xl-4 pt-3 pt-xl-4 mb-2 text-white">{t("freshFavRecipes")}</h4>
           <div className="row h-100">
             <div className="col-6">
@@ -68,7 +68,7 @@ export default function Portiontwo() {
                 <Link to="#/" className="animation">
                   <img src="/assets/images/categories/another/Pizza.jpg" className="w-100" alt="Menu"/>
                 </Link>
-                <figcaption className="bg-white pt-2">
+                <figcaption className="bg-transparent pt-2">
                   <h6 className=" small"><Link to="#/">Homemade Chicago Style Pizza</Link></h6>
                 </figcaption>
               </figure>
@@ -78,7 +78,7 @@ export default function Portiontwo() {
                 <Link to="#/" className="animation">
                   <img src="assets/images/categories/categoriesThumbnail/Chicken.jpg" className="w-100" alt="Menu"/>
                 </Link>
-                <figcaption className="bg-white pt-2">
+                <figcaption className="bg-transparent pt-2">
                   <h6 className=" small"><Link to="/Oregano_Marinated_Chicken">Oregano Marinated Chicken</Link></h6>
                 </figcaption>
               </figure>
@@ -88,7 +88,7 @@ export default function Portiontwo() {
                 <Link to="#/" className="animation">
                   <img src="assets/images/categories/categoriesThumbnail/Thai.jpg" className="w-100" alt="Menu"/>
                 </Link>
-                <figcaption className="bg-white pt-2">
+                <figcaption className="bg-transparent pt-2">
                   <h6 className=" small"><Link to="/Thai_Vegetable_Stir-fry">Thai Vegetable Stir-fry</Link></h6>
                 </figcaption>
               </figure>
@@ -98,7 +98,7 @@ export default function Portiontwo() {
                 <Link to="#/" className="animation">
                   <img src="assets/images/categories/categoriesThumbnail/Desserts.jpg" className="w-100" alt="Menu"/>
                 </Link>
-                <figcaption className="bg-white pt-2">
+                <figcaption className="bg-transparent pt-2">
                   <h6 className=" small"><Link to="/Salted_caramel_six_layer_chocolate_cake">Salted caramel six layer chocolate cake</Link></h6>
                 </figcaption>
               </figure>
@@ -108,7 +108,7 @@ export default function Portiontwo() {
                 <Link to="#/" className="animation">
                   <img src="assets/images/categories/categoriesThumbnail/Mexican.jpg" className="w-100" alt="Menu"/>
                 </Link>
-                <figcaption className="bg-white pt-2">
+                <figcaption className="bg-transparent pt-2">
                   <h6 className=" small"><Link to="/Black_bean_and_cheese_tacos">Black bean and cheese tacos</Link></h6>
                 </figcaption>
               </figure>
@@ -118,7 +118,7 @@ export default function Portiontwo() {
                 <Link to="#/" className="animation">
                   <img src="assets/images/categories/categoriesThumbnail/Smoothie.jpg" className="w-100" alt="Menu"/>
                 </Link>
-                <figcaption className="bg-white pt-2">
+                <figcaption className="bg-transparent pt-2">
                   <h6 className=" small"><Link to="#/">Berry Smoothies</Link></h6>
                 </figcaption>
               </figure>
@@ -128,7 +128,7 @@ export default function Portiontwo() {
                 <Link to="#/" className="animation">
                   <img src="assets/images/categories/categoriesThumbnail/Coffee.jpg" className="w-100" alt="Menu"/>
                 </Link>
-                <figcaption className="bg-white pt-2">
+                <figcaption className="bg-transparent pt-2">
                   <h6 className=" small"><Link to="#/">Amazin' Low-Cafe Coffee</Link></h6>
                 </figcaption>
               </figure>
@@ -138,7 +138,7 @@ export default function Portiontwo() {
                 <Link to="#/" className="animation">
                   <img src="assets/images/categories/categoriesThumbnail/Breakfast.jpg" className="w-100" alt="Menu"/>
                 </Link>
-                <figcaption className="bg-white pt-2">
+                <figcaption className="bg-transparent pt-2">
                   <h6 className=" small"><Link to="#/">Broccoli and Mozzarella Pizza</Link></h6>
                 </figcaption>
               </figure>
@@ -148,7 +148,7 @@ export default function Portiontwo() {
                 <Link to="#/" className="animation">
                   <img src="assets/images/categories/categoriesThumbnail/Vietnamese.jpg" className="w-100" alt="Menu"/>
                 </Link>
-                <figcaption className="bg-white pt-2">
+                <figcaption className="bg-transparent pt-2">
                   <h6 className=" small"><Link to="#/">Spicy Pho</Link></h6>
                 </figcaption>
               </figure>
@@ -158,7 +158,7 @@ export default function Portiontwo() {
                 <Link to="#/" className="animation">
                   <img src="assets/images/categories/categoriesThumbnail/Indian.jpg" className="w-100" alt="Menu"/>
                 </Link>
-                <figcaption className="bg-white pt-2">
+                <figcaption className="bg-transparent pt-2">
                   <h6 className=" small"><Link to="#/">Chicken Tikka Masala</Link></h6>
                 </figcaption>
               </figure>

@@ -15,49 +15,32 @@ function stars(a) {
 
 export default function Recipe({ currRecipe }) {
   const { t } = useTranslation(["recipesPage"]);
+  const adjective=["There's something truly special about "," This simple recipes let the sweet, yet tart flavors of fresh flavours shine bright from a classic ","Amazing is an understatement to ", "Great ","Sweet ","Try the phenomenal ","Of all the things to try, you MUST try "].sort(()=> Math.random()-0.5)
+          const closing=["Trust me when I say, it is an unexpected but deliciously addictive flavor. ","See the recipe immediately!", "What are you waiting for? Get Started!", "This recipe could be the talk of your friends and family!"].sort(()=> Math.random()-0.5)
   return (
     <section className="p-0">
       <div className="container">
         <section className="my-4 my-md-5">
           <div>
-            <div className="order-sm-2 ms-auto">
+            <div className="order-sm-2 ms-auto ">
               <nav className="text-grite" aria-label="breadcrumb">
-                <ol className="breadcrumb">
-                  <Link to="/categories" className="breadcrumb-item">
+                <ol className="breadcrumb text-grite">
+                  <Link to="/categories" className="breadcrumb-item text-grite">
                     {t("categories")}
                   </Link>
                   <Link
                     to={`/categories/${currRecipe.category}`}
-                    className="breadcrumb-item"
+                    className="breadcrumb-item text-grite"
                   >
                     {currRecipe.category.charAt(0).toUpperCase() +
                       currRecipe.category.slice(1)}
                   </Link>
                   {/* <li className="breadcrumb-item" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="#/">Muffins</a></li> */}
-                  <li className="breadcrumb-item active" aria-current="page">
-                    {currRecipe.name}
+                  <li className="breadcrumb-item active text-grite" aria-current="page">
+                    <strong>{currRecipe.name}</strong>
                   </li>
                 </ol>
               </nav>
-
-              {/* <div className="row">
-            <div className="col-sm-6 col-md-8">
-              
- <h1 className="display-4 recipeheader"><strong>{currRecipe.name}</strong>
- 
-             
-           </h1> 
-           </div>
-           <div className="col-6 col-md-4 p-0">
-              <span className="ms-2 pe-3 display-4"><Toggle className="pe-3 display-4" icon={"bi bi-heart"}/> </span>
-           <a href="#0"><i className="bi bi-download px-3 display-4"></i></a>
-           <span className="display-6 ms-auto me-4 px-3">
-              {stars(currRecipe.rating)}
-              
-              </span>
-          </div>
-          
-          </div> */}
 
               <div className="d-flex justify-content-between">
                 <div>
@@ -91,13 +74,7 @@ export default function Recipe({ currRecipe }) {
             <hr style={{ height: "5px" }} />
             <p className="pb-0 mb-0 text-grite">
               <em>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                {adjective[0]} <strong>{currRecipe.name}</strong>. {closing[0]}
               </em>
             </p>
             <br />
@@ -203,7 +180,7 @@ export default function Recipe({ currRecipe }) {
             <br />
             {/* <div className="d-flex justify-content-between mt-0 mt-md-5"> */}
             <div className="row mt-0 mt-md-5">
-              <div className="col-md-12">
+              <div className="col-md-12 text-grite">
                 <ul className="list-unstyled component-list fyf-svg display-flex">
                   <li>
                     <small>{t("Preptime")}: </small>
@@ -260,9 +237,9 @@ export default function Recipe({ currRecipe }) {
               <div className="col-md-6">
                 <div
                   id="ingredients"
-                  className="ingredientssect mt-4 mt-md-5 bg-secondary bg-opacity-25"
+                  className="ingredientssect mt-4 mt-md-5 bg-secondary bg-opacity-25 text-grite"
                 >
-                  <h3 className="ps-2">
+                  <h3 className="ps-2 ">
                     <strong>{t("ingredients")}</strong>
                   </h3>
                   <div className="checklist pb-2">
@@ -358,7 +335,7 @@ export default function Recipe({ currRecipe }) {
                 </div>
                 {/* </div> */}
               </div>
-              <div className="col-md-6">
+              <div className="col-md-6 text-grite">
                 <div className="mt-5">
                   <h3>{t("instructions")}</h3>
                   <ul
@@ -442,11 +419,11 @@ export default function Recipe({ currRecipe }) {
               </div>
             </div>
           </div>
-          <div className="feedback my-0 my-md-5 py-1 py-md-5 text-center">
+          <div className="feedback my-0 my-md-5 py-1 py-md-5 text-center text-grite">
             <h1 className="mb-3">{t("already")}</h1>
             <a
               href="#reviewtitle"
-              className="btn btn-outline-dark my-2 py-2 px-5"
+              className="btn btn-outline-dark my-2 py-4 px-5"
             >
               {t("shareFeedback")}
             </a>
