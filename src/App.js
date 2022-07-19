@@ -23,6 +23,9 @@ import Account from './components/ProfileComp/Settings/Account';
 import Favourite from './components/ProfileComp/Settings/Favourite';
 import Preference from './components/ProfileComp/Settings/Preference';
 import Launch from './Pages/Launch';
+import Logincomp from './components/Register/Logincomp';
+import Registercomp from './components/Register/Registercomp';
+
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -47,22 +50,26 @@ class App extends Component {
 
       <Routes>
 
-        <Route path="/" element={<Launch/>}/>  
+        <Route path="/" element={<Home/>}/>  
         <Route path="/home" element={<Home/>}/>  
         <Route path="/about" element={<About/>}/>
-         <Route path="profile" element={<Profile/>}>
+
+        <Route path="profile" element={<Profile/>}>
           <Route path="account" element={<Account />} />
           <Route path="favourite" element={<Favourite />} />
           <Route path="preference" element={<Preference />} />
-
         </Route>
 
-
+        <Route path="/faq" element={<FAQ/>}/>
          <Route path="/categories" element={<Categories/>}/> 
          <Route path="/categories/:cato/*" element={<Options12/>}/>
          <Route path="/categories/:cato/:meal" element={<Recipes/>}/>
         <Route path="/recipes" element={<Recipes1/>}/>  
-        <Route path="/sign/:id1" element={<Login/>}/> 
+
+        <Route path="signin" element={<Login/>}>
+          <Route path="login" element={<Logincomp/>}/> 
+          <Route path="register" element={<Registercomp/>}/> 
+        </Route>
 
         <Route path="*" element={<Errorpage/>}/>    
       </Routes>

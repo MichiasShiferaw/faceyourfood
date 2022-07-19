@@ -26,13 +26,13 @@
             title: "Chinese",
             image: "/assets/images/categories/categoriesImg/Chinese.png",
             description:"description on Chinese",
-            thumbnail: "https://firebasestorage.googleapis.com/v0/b/seg3125-fyf.appspot.com/o/Images%2FDisplay%2FChinese2.jpg?alt=media&token=e8892b21-443e-456f-8a04-55f5a3ceed43",
-            display1: "/assets/images/categories/categoriesThumbnail/Chinese2.jpg",
+            thumbnail: "/assets/images/categories/categoriesThumbnail/Chinese.jpg",
+            display1: "https://firebasestorage.googleapis.com/v0/b/seg3125-fyf.appspot.com/o/Images%2FDisplay%2FChinese2.jpg?alt=media&token=e8892b21-443e-456f-8a04-55f5a3ceed43",
         adjective:[
                 "Amazing", "Great","Sweet","Phenomenal"
             ].sort(()=> Math.random()-0.5),
-            option1:"",
-            option2:"",},
+            option1:"Cold soba and shrimp fritter bento",
+            option2:"Extreme Green Salad",},
         {
             title: "Middle-Eastern",
             image: "/assets/images/categories/categoriesImg/Middle_Eastern.png",
@@ -43,8 +43,8 @@
         adjective:[
                 "Amazing", "Great","Sweet","Phenomenal"
             ].sort(()=> Math.random()-0.5),
-            option1:"",
-            option2:"",},
+            option1:"Vegetable Stock",
+            option2:"Apple Carrot Salad",},
         {
             title: "Vegan",
             image: "/assets/images/categories/categoriesImg/Vegetarian.png",
@@ -65,8 +65,8 @@
         adjective:[
                 "Amazing", "Great","Sweet","Phenomenal"
             ].sort(()=> Math.random()-0.5),
-            option1:"",
-            option2:"",}, {
+            option1:"Greek yogurt with homemade honeycomb",
+            option2:"Frozen chocolate mousse trifles",}, {
             title: "Smoothies",
             image: "/assets/images/categories/categoriesImg/Smoothie.png",
             description:"description on Smoothies",
@@ -75,8 +75,8 @@
         adjective:[
                 "Amazing", "Great","Sweet","Phenomenal"
             ].sort(()=> Math.random()-0.5),
-            option1:"",
-            option2:"",},
+            option1:"PB&J smoothie",
+            option2:"Sweet Almond Date Smoothie",},
         {
             title: "Breakfasts",
             image: "/assets/images/categories/categoriesImg/Breakfast.png",

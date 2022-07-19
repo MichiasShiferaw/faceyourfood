@@ -1,10 +1,31 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function FAQindex() {
   return (
-    <div className='container my-5'>
+    <div className='container my-5 text-decoration-none'>
+                    <nav aria-label="breadcrumb ">
+                <ol className="breadcrumb">
+                  <Link to="/" className="breadcrumb-item text-decoration-none text-grite">
+                    Home
+                  </Link>
+                  {/* <li className="breadcrumb-item" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="#/">Muffins</a></li> */}
+                  <li className="breadcrumb-item active text-decoration-none" aria-current="page">
+                    FAQ
+                  </li>
+                </ol>
+              </nav>
+              <div>
+                <img className="mb-4 d-block mx-auto" src="/assets/images/faceYourFood.png" alt="" width="126" height="100"/>
+                <h1 className="h2 text-center p-2 text-grite">Frequently Asked Questions (FAQs) Option</h1>
+
+
+              </div>
         
         
+        <div className='row align-items-center'>
+          <div class="col-lg-2"></div>
+        <div className='col-lg-8'>
         <div className="accordion accordion-flush" id="accordionFlushExample">
   <div className="accordion-item">
     <h2 className="accordion-header" id="flush-headingOne">
@@ -70,7 +91,11 @@ function FAQindex() {
     
     
 
-</div></div>
+</div>
+</div>
+          <div class="col-lg-2"></div>
+          </div>
+</div>
   )
 }
 

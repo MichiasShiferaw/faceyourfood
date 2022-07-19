@@ -26,14 +26,15 @@ export default function Portion() {
   
  
         <div className="col" key={index}>
-          <div className="card shadow-sm bg-transparent rounded">
+          <div className="card shadow-sm bg-transparent rounded seasonalhov">
             {/* <svg className="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> */}
-            <img src="assets/images/categories/categoriesThumbnail/IceCream.jpg" className="card-img-top img-fluid" width="100%" height="225" />
+            <img src="assets/images/categories/categoriesThumbnail/IceCream.jpg" className="card-img-top img-fluid image1" width="100%" height="225" />
             <div className="card-body bg-transparent">
                             {/* <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> */}
-                            <div className="imgoverlay">
-                              <div className="image__title">Bricks</div>
-                              <p className="image__description">Here we have a brick wall</p>
+                            <div className="overlay center">
+                              <button type="button" className="fs-5 btn btn-sm btn-outline-secondary">{t("view")}</button>
+                              {/* <div className="image__title">Bricks</div>
+                              <p className="image__description">Here we have a brick wall</p> */}
                             </div>
               <div className="fs-3 d-flex justify-content-between align-items-center">
                 <div className="btn-group">

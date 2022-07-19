@@ -12,6 +12,8 @@ function stars(a) {
 }
 export default function Homecomp() {
   const {t} = useTranslation(["homePage"]);
+          const adjective=["There's something truly special about "," This simple recipes let the sweet, yet tart flavors of fresh flavours shine bright from a classic ","Amazing is an understatement to ", "Great ","Sweet ","Try the phenomenal ","Of all the things to try, you MUST try "].sort(()=> Math.random()-0.5)
+          const closing=["Trust me when I say, it is an unexpected but deliciously addictive flavor. ","See the recipe immediately!", "What are you waiting for? Get Started!", "This recipe could be the talk of your friends and family!"].sort(()=> Math.random()-0.5)
   return (
     
     <section className="p-0 mb-4 mb-md-5">
@@ -53,13 +55,14 @@ export default function Homecomp() {
             <div key={index} className="col-md-4">
               <div className="card h-100 bg-light">
                 <figure className="my-1 card">
-                  <a href="#0" className="animation rounded-top-6">
+                  <Link
+                    to={`/categories/${(food.category).toLowerCase()}/${(food.name)}`} className="animation rounded-top-6">
                     <img
-                      src="assets/images/muffins/1.png"
+                      src={food.img}
                       className="w-100"
                       alt="Menu"
                     />
-                  </a>
+                  </Link>
                   <figcaption className="rating mt-2 px-3 px-lg-4">
                     <div className="w-100 float-left">
                       <div className="float-left">
@@ -67,16 +70,17 @@ export default function Homecomp() {
                       </div>
                     </div>
                     <h5 className="card-title  f-size-25 mt-2 mb-1">
-                      <a href="#0" className="text-black d-block mt-1">
+                      <Link to={`/categories/${(food.category).toLowerCase()}/${(food.name)}`} className="text-black d-block mt-1">
                         {food.name}
-                      </a>
+                      </Link>
                     </h5>
                   </figcaption>
                 </figure>
                 <div className="card-body">
                   <p className="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    {adjective[index ]}
+                    {food.name}
+                    {closing[index]}
                   </p>
 
                   <div className="container p-0 ">
@@ -95,9 +99,8 @@ export default function Homecomp() {
                 </div>
                 <div className=" fs-3 card-footer d-flex justify-content-between align-items-center">
                   <Link
-                    to="/categories/bakery/oatmeal_muffin"
-                    href="#/"
-                    className=" fs-4 btn btn-outline-stitch"
+                    to={`/categories/${(food.category).toLowerCase()}/${(food.name)}`}
+                    className="fs-4 btn btn-outline-secondary"
                   >
                     {t("view")} <i className="bi bi-caret-right-fill"></i>
                   </Link>
