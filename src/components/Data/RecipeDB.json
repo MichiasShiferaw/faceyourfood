@@ -95,7 +95,7 @@
             "Salt\r",
             "14 tsp black pepper"
         ],
-        "category":"bakery", "tags": [
+        "category":"greek", "tags": [
             "soup",
             "tomatoes",
 
@@ -486,7 +486,7 @@
             "2 tablespoon fresh chives, finely chopped, for garnish, optional\r",
             "1 serving [Sherry Vinaigrette](http:www.xanthir.comrecipesshowrecipe.php?id=18)"
         ],
-        "category":"bakery", "tags": [
+        "category":"vegetarian", "tags": [
             "vegetarian",
             "main",
             "mushrooms",
@@ -606,7 +606,7 @@
             "vegetarian"
         ]
     },
-    "28": {
+    "Guacamole": {
         "id": "28",
         "name": "Guacamole",
         "source": "Yuri Elkaim",
@@ -633,7 +633,7 @@
             "Pinch of sea salt\r",
             "1 jalapeno, seeded and minced fine (optional)"
         ],
-        "category":"bakery", "tags": [
+        "category":"mexican", "tags": [
             "dip",
             "appetizer",
             "mexican",
@@ -842,7 +842,7 @@
             "berries"
         ]
     },
-    "51": {
+    "Popeye's Muscle Salad": {
         "id": "51",
         "name": "Popeye's Muscle Salad",
         "source": "Yuri Elkaim",
@@ -873,7 +873,7 @@
             "1 tsp dijon mustard\r",
             "salt and pepper"
         ],
-        "category":"bakery", "tags": [
+        "category":"japanese", "tags": [
             "salad",
             "FUF",
             "spinach",
@@ -908,7 +908,7 @@
             "breakfast"
         ]
     },
-    "55": {
+    "Best Oatmeal Ever": {
         "id": "55",
         "name": "Best Oatmeal Ever",
         "source": "Yuri Elkaim",
@@ -933,11 +933,11 @@
             "1 tbsp nut butter\r",
             "1 tbsp ground flax seed"
         ],
-        "category":"bakery", "tags": [
+        "category":"breakfast", "tags": [
             "breakfast"
         ]
     },
-    "56": {
+    "Lovely Lentils": {
         "id": "56",
         "name": "Lovely Lentils",
         "source": "Yuri Elkaim",
@@ -963,13 +963,13 @@
             "1 tsp fresh or dried rosemary\r",
             "1 tbsp olive oil"
         ],
-        "category":"bakery", "tags": [
+        "category":"chinese", "tags": [
             "lentils",
             "FUF",
             "sides"
         ]
     },
-    "57": {
+    "Sweet Mashed Potatoes": {
         "id": "57",
         "name": "Sweet Mashed Potatoes",
         "source": "Yuri Elkaim",
@@ -993,13 +993,13 @@
             "salt and pepper, to taste\r",
             "1 tsp cinnamon (optional)"
         ],
-        "category":"bakery", "tags": [
+        "category":"greek", "tags": [
             "potatoes",
             "FUF",
             "sides"
         ]
     },
-    "61": {
+    "Steakhouse steaks": {
         "id": "61",
         "name": "Steakhouse steaks",
         "source": "http:www.foodnetwork.comrecipesina-gartensteakhouse-steaks-recipeindex.html",
@@ -1024,12 +1024,12 @@
             "2 tablespoon unsalted butter, at room temperature, optional\r",
             "2 servings [Roquefort Cheese Sauce](http:www.xanthir.comrecipesshowrecipe.php?id=62)"
         ],
-        "category":"bakery", "tags": [
+        "category":"bbq", "tags": [
             "beef",
             "main"
         ]
     },
-    "63": {
+    "Stove top mac and cheese": {
         "id": "63",
         "name": "Stove top mac and cheese",
         "source": "Alton Brown",
@@ -1057,7 +1057,7 @@
             "14 teaspoon dry mustard\r",
             "10 ounce sharp cheddar, shredded"
         ],
-        "category":"bakery", "tags": [
+        "category":"vegetarian", "tags": [
             "cheese",
             "noodles",
             "main",
@@ -2949,7 +2949,7 @@
             "cherries"
         ]
     },
-    "id86": {
+    "Raspberry-lemon thumbprint cookies": {
         "id": "id86",
         "name": "Raspberry-lemon thumbprint cookies",
         "source": "Emeril Lagasse",

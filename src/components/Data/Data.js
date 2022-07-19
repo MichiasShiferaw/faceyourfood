@@ -119,8 +119,8 @@
         adjective:[
                 "Amazing", "Great","Sweet","Phenomenal"
             ].sort(()=> Math.random()-0.5),
-            option1:"",
-            option2:"",},
+            option1:"Flaky Buttermilk Biscuits",
+            option2:"Raspberry-lemon thumbprint cookies",},
         {
             title: "Mexican",
             image: "/assets/images/categories/categoriesImg/Mexican.png",
@@ -241,7 +241,7 @@
         {
             title: "Pizza",
             image: "/assets/images/categories/categoriesImg/Pizza.png",
-            description:"description on Pizza",
+            description:"Pizza is full of umami, which means “delicious” in Japanese. Just like the other types of taste, which are sweet, sour, salty, and bitter, umami is a rich and savory flavor that your taste buds taste and recognize",
             display1: "https://firebasestorage.googleapis.com/v0/b/seg3125-fyf.appspot.com/o/Images%2FDisplay%2FPizza2.jpg?alt=media&token=0894077e-b832-4ede-a8a5-acb181e654cb",
             thumbnail: "/assets/images/categories/another/Pizza.jpg",
             aadjective:[

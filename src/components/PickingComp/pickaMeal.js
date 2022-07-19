@@ -7,6 +7,8 @@ import {useTranslation} from "react-i18next";
 
   export default function PickMeal({cuisine}) {
     const {t} = useTranslation(["optionPage"]);
+    const adjective=["There's something truly special about "," This simple recipes let the sweet, yet tart flavors of fresh flavours shine bright from a classic ","Amazing is an understatement to ", "Great ","Sweet ","Try the phenomenal ","Of all the things to try, you MUST try "].sort(()=> Math.random()-0.5)
+          const closing=["Trust me when I say, it is an unexpected but deliciously addictive flavor. ","See the recipe immediately!", "What are you waiting for? Get Started!", "This recipe could be the talk of your friends and family!"].sort(()=> Math.random()-0.5)
 
 const [state1, setState1] = useState(15);
   const handleChange = e => {
@@ -25,7 +27,7 @@ const [state1, setState1] = useState(15);
             <div className="col-md-7 text-center text-md-start">
         <h1 className="display-5 fw-bold">{cuisine.title}</h1>
         <p className="lead my-4">{cuisine.description}</p>
-        <a href="#selection"className="btn btn-darkness btn-lg" type="button">{t("checkOut")}</a>
+        <a href="#selection"className="btn btn-outline-darkness btn-lg" type="button">{t("checkOut")}</a>
         </div><div className="col-md-4 text-center d-none d-md-block">
         <img className="img-fluid d-none d-md-block" src={cuisine.image} alt="" />
         </div>
@@ -38,8 +40,8 @@ const [state1, setState1] = useState(15);
         <div className="col p-4 d-flex flex-column position-static">
           <strong className="d-inline-block mb-2 text-stitch">{cuisine.option1} Specials</strong>
 
-          <p className="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <Link to='Veggie_Pizza' href="#/" className="text-decoration-none stretched-link text-stitch">{t("view")}</Link>
+          <p className="card-text mb-auto">{adjective[0]} {cuisine.option1}. {closing[0]}</p>
+          <Link to='Veggie_Pizza' className="text-decoration-none stretched-link text-stitch">{t("view")}</Link>
         </div>
         <div className="col-auto d-none d-lg-block">
           <img width="200" height="250" src={cuisine.thumbnail}/>
@@ -50,7 +52,7 @@ const [state1, setState1] = useState(15);
       <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div className="col p-4 d-flex flex-column position-static">
           <strong className="d-inline-block mb-2 text-forgreen">{cuisine.option2} Favourites</strong>
-          <p className="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <p className="mb-auto">{adjective[1]} {cuisine.option2}. {closing[1]}.</p>
           <a href="#/" className="text-decoration-none stretched-link text-stitch">{t("view")}</a>
         </div>
         <div className="col-auto d-none d-lg-block">
@@ -130,7 +132,7 @@ return(
       <div className="card-body">
         <h5 className="card-title">{(Data[muffin]).name}</h5>
         <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+        <p className="card-text"><small className="text-muted">Yum</small></p>
         <Link to={`${(Data[muffin]).name}`.split(" ").join("_")} className="btn btn-outline-darkness">{t("seeRecipe")} {(Data[muffin]).name}!</Link>
       </div>
     </div>
