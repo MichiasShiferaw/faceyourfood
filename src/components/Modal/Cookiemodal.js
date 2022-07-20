@@ -18,8 +18,8 @@ export default class Cookiemodal extends Component {
         return (
           <div>
       <div className={"modal fade" + (this.state.modalState ? " show d-block" : " d-none")} id="cookieModal" tabIndex="-1" aria-labelledby="cookieModalLabel" aria-hidden="true">
-  <div className="modal-dialog tester101">
-    <div className="modal-content bg-success">
+  <div className="modal-dialog text-grite tester101">
+    <div className="modal-content bg-secondary">
       <div className="modal-header">
         <h5 className="modal-title" id="cookieModalLabel">Cookies for FYF</h5>
         <button type="button" className="btn-close" onClick={this.handleShow}></button>

@@ -213,12 +213,31 @@
 
 // export default Errorpage
 
-
+// export default Errorpage
+import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router'
 import React from 'react'
 
 function Errorpage() {
+    let navigate = useNavigate();
   return (
-    <div>Welcome to the Error Page</div>
+    <div className=" container">
+    <div className='text-center m-0 p-0'>
+      <div className="row justify-content-center align-items-center">
+      <div className="col-md-4 text-center d-none d-md-block">
+        <img alt="logo" className="img-fluid" src="/assets/images/chef.gif"/>
+    </div>
+    
+    <div className="col-md-6 text-center">
+      <h1 ><span style={{fontSize:"16.5vw"}}>O<span className='text-secondary'>o</span>p<span className='text-secondary'>s</span>!</span><br/>Something's went WRONG! </h1>
+      <div className='mx-2'>
+      <button onClick={() => navigate(-1)} className='btn btn-lg btn-outline-secondary'>Back to Previous Page</button>
+      <Link to="/" className='btn btn-lg btn-outline-secondary'>Return to the Homepage</Link>
+      </div>
+      <h1 style={{fontSize:"12.0vw"}}className='text-success'>404</h1>
+      
+      </div></div></div>
+    </div>
   )
 }
 
