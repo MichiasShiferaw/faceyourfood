@@ -19,7 +19,7 @@ export default function NavBar (){
 
 	const handleLanguageChange = (e) => {
     if (e.target.value==="other"){
-      navigate("/profile");
+      navigate("/profile/preference");
     }
 		i18n.changeLanguage(e.target.value);
 	};
@@ -57,12 +57,12 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
             {t("popularcategories")}
           </Link>
           <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><Link to="/categories/bakery" className="dropdown-item">Bakery</Link></li>
+            <li><Link to="/categories/thai" className="dropdown-item">Thai</Link></li>
             <li><hr className="dropdown-divider"/></li>
             <li><Link to="categories/sandwiches"  className="dropdown-item" >Sandwiches</Link></li>
             <li><Link to="categories/desserts" className="dropdown-item" href="#prices">Desserts</Link></li>
-            <li><a className="dropdown-item disabled" href="#prices">Lunch</a></li>
-            <li><a className="dropdown-item disabled" href="#prices">Dinner</a></li>
+            <li><a className="dropdown-item disabled" href="#prices">Pizza</a></li>
+            <li><a className="dropdown-item disabled" href="#prices">Chicken</a></li>
           </ul>
         </li>
         
@@ -86,9 +86,9 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
           
 
         <li className="nav-item fs-5">
-           <a  tabIndex="0" data-bs-trigger="focus" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true" 
+           <a href="/#" tabIndex="0" data-bs-trigger="focus" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true" 
            data-bs-content='<div class="popover fs-6" role="tooltip">
- <div class="popover-body bg-light px-2"><button type="button" class="btn btn-primary"disabled>Toggle PopOver</button><a href="/sign/1" type="button" class="btn btn-lg btn-dark px-5" rounded-3> Signup</a><a href="/profile/account" class="text-decoration-none text-align-center text-center text-dark"> My Account </a> <br/> <a href="/sign/2" class="small text-dark text-align-center text-center"> Not a member yet? Join here! </a></div></div>' 
+ <div class="popover-body bg-light px-2"><button type="button" class="btn btn-primary"disabled>Toggle PopOver</button><a href="/sign/1" type="button" class="btn btn-lg btn-dark px-5" rounded-3> Signup</a><a href="/profile/account" class="text-decoration-none text-align-center text-center text-dark"> My Account </a> <br/> <a href="/signin/register" class="small text-dark text-align-center text-center"> Not a member yet? Join here! </a></div></div>' 
  className="signin text-decoration-none nav-link" type="button"><i className="bi bi-person mx-2"></i>  {t("signin")}</a>
     </li>
     <li className="nav-item fs-5">

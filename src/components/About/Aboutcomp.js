@@ -1,5 +1,6 @@
 import {useTranslation} from "react-i18next";
 import React from "react";
+import { Link } from "react-router-dom";
 
 function About() {
   const {t} = useTranslation(["aboutPage","footerPage"]);
@@ -20,7 +21,10 @@ function About() {
                 </span>{" "} {t("aboutPage:aboutPart4")}
                 <br/>{t("aboutPage:aboutPart5")} 
               </p>
-              <a className="btn btn-primary btn-lg" href="https://github.com/MichiasShiferaw/draftfyf" rel="noreferrer" target="_blank">{t("github")}</a>
+              <div className="">
+              <a className="btn btn-primary btn-lg me-4" href="https://github.com/MichiasShiferaw/draftfyf" rel="noreferrer" target="_blank">{t("github")}</a>
+              <Link to="/FAQ"className="btn btn-outline-secondary btn-lg">FAQ</Link>
+              </div>
             </div>
             <div className="col-md-4 text-center d-none d-md-block">
               <img
@@ -66,67 +70,67 @@ function About() {
       </div>
 
       <div className="mt-5 text-white">
-            <div class="text-center">
+            <div className="text-center">
                 <h2>Get In Touch</h2>
-                <p class="lead">Question to ask? Fill out the form to contact the team directly...</p>
+                <p className="lead">Question to ask? Fill out the form to contact the team directly...</p>
             </div>
 
-            <div class="row justify-content-center my-5">
-                <div class="col-lg-6">
+            <div className="row justify-content-center my-5">
+                <div className="col-lg-6">
                     <form>
-                        <label for="email" class="form-label">Email Address:</label>
-                        <div class="mb-4 input-group">
-                            <span class="input-group-text">
-                                <i class="bi bi-envelope-fill"></i>
+                        <label htmlFor="email" className="form-label">Email Address:</label>
+                        <div className="mb-4 input-group">
+                            <span className="input-group-text">
+                                <i className="bi bi-envelope-fill"></i>
                             </span>
-                            <input type="email" class="form-control" id="email" placeholder="e.g. mario@example.com"/>
+                            <input type="email" className="form-control" id="email" placeholder="e.g. username@example.com"/>
 
-                            <span class="input-group-text">
-                                <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to">
-                                <i class="bi bi-question-circle text-muted"></i>
+                            <span className="input-group-text">
+                                <span className="tt" data-bs-placement="bottom" title="Enter an email address we can reply to">
+                                <i className="bi bi-question-circle text-muted"></i>
                                 </span>
                             </span>
                         </div>
 
                        
 
-                        <label for="name" class="form-label">Name:</label>
+                        <label htmlFor="name" className="form-label">Name:</label>
 
-                        <div class="mb-4 input-group">
-                            <span class="input-group-text">
-                                <i class="bi bi-person-fill"></i>
+                        <div className="mb-4 input-group">
+                            <span className="input-group-text">
+                                <i className="bi bi-person-fill"></i>
                             </span>
-                            <input type="text" class="form-control" id="name" placeholder="e.g. Mario"/>
+                            <input type="text" className="form-control" id="name" placeholder="e.g. Julie"/>
 
-                            <span class="input-group-text">
-                                <span class="tt" data-bs-placement="bottom" title="Pretty self explanatory really">
-                                    <i class="bi bi-question-circle text-muted"></i>
+                            <span className="input-group-text">
+                                <span className="tt" data-bs-placement="bottom" title="Pretty self explanatory really">
+                                    <i className="bi bi-question-circle text-muted"></i>
                                 </span>
                             </span>
                         </div>
 
 
 
-                        <label for="subject" class="form-label">What is your question about?</label>
+                        <label htmlFor="subject" className="form-label">What is your question about?</label>
                         
-                        <div class="input-group mb-4">
-                            <span class="input-group-text">
-                                <i class="bi bi-chat-right-dots-fill"></i>
+                        <div className="input-group mb-4">
+                            <span className="input-group-text">
+                                <i className="bi bi-chat-right-dots-fill"></i>
                             </span>
-                        <select id="subject" class="form-select">
+                        <select id="subject" className="form-select">
                             <option value="recipe" selected>Recipe</option>
                             <option value="application" >Application</option>
                             <option value="other">Other query</option>
                         </select>
                         </div>
 
-                        <div class="form-floating mb-4 mt-5">
-                            <textarea id="query" class="form-control"></textarea>
-                            <label for="query">Enter your feedback here</label>
+                        <div className="form-floating mb-4 mt-5">
+                            <textarea id="query" className="form-control"></textarea>
+                            <label htmlFor="query">Enter your feedback here</label>
                         </div>
 
-                        <div class="mb-4 text-center">
-                            <button type="submit" class="btn btn-secondary">Submit</button>
+                        <div className="mb-4 text-center">
+                            <button type="submit" className="btn btn-secondary">Submit</button>
                         </div>
                     </form>
                 </div>

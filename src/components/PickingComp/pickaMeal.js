@@ -131,9 +131,9 @@ return(
     <div className="col-md-8">
       <div className="card-body">
         <h5 className="card-title">{(Data[muffin]).name}</h5>
-        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p className="card-text">{adjective[0]} {(Data[muffin]).name}. {closing[0]}</p>
         <p className="card-text"><small className="text-muted">Yum</small></p>
-        <Link to={`${(Data[muffin]).name}`.split(" ").join("_")} className="btn btn-outline-darkness">{t("seeRecipe")} {(Data[muffin]).name}!</Link>
+        <Link to={`${(Data[muffin]).name}`.split(" ").join("_")} className=" btn btn-outline-darkness">{t("seeRecipe")} {(Data[muffin]).name}!</Link>
       </div>
     </div>
   </div>

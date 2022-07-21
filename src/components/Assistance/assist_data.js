@@ -19,7 +19,7 @@ const welcome = [
         },
         {
           element: ".language",
-          intro: "Here you can find options to modify the language of the application"
+          intro: "This is the nternationalization aspect of the application. As a user, you can find options to modify the language of the application. "
         },
 
         {
@@ -29,7 +29,7 @@ const welcome = [
         },
         {
           element:".seasonalheader",
-          intro:"This summer, we want to make sure it is vibrant, so checkout some of our Seasonal Fav",
+          intro:"This summer, we want to make sure it is vibrant, so checkout some of our Seasonal Favourites",
         },
         ];
 
@@ -46,15 +46,15 @@ const welcome = [
         },
          {
           element: ".breadcrumb",
-          intro: "breadcrumb"
+          intro: "Navigate to easily through various recipes and categories, "
         },
         {
           element: ".reviewsect",
-          intro: "Reviews Section"
+          intro: "Share a comment of your experience to a particular dish."
         },
                 {
           element: ".recommendationsect",
-          intro: "Recommendation Section"
+          intro: "Recommendation Section, find out what you would like to try next!"
         },
         
         ];

@@ -65,91 +65,91 @@ export default function Portiontwo() {
           <div className="row h-100">
             <div className="col-6">
               <figure className="my-3 text-center card">
-                <Link to="#/" className="animation">
+                <Link to="/categories/chicken/Homemade_Chicago_Style_Pizza" className="animation">
                   <img src="/assets/images/categories/another/Pizza.jpg" className="w-100" alt="Menu"/>
                 </Link>
                 <figcaption className="bg-transparent pt-2">
-                  <h6 className=" small"><Link to="#/">Homemade Chicago Style Pizza</Link></h6>
+                  <h6 className=" small"><Link to="/categories/chicken/Homemade_Chicago_Style_Pizza">Homemade Chicago Style Pizza</Link></h6>
                 </figcaption>
               </figure>
             </div>
             <div className="col-6">
               <figure className="my-3 text-center card">
-                <Link to="#/" className="animation">
+                <Link to="/categories/chicken/Oregano_Marinated_Chicken" className="animation">
                   <img src="assets/images/categories/categoriesThumbnail/Chicken.jpg" className="w-100" alt="Menu"/>
                 </Link>
                 <figcaption className="bg-transparent pt-2">
-                  <h6 className=" small"><Link to="/Oregano_Marinated_Chicken">Oregano Marinated Chicken</Link></h6>
+                  <h6 className=" small"><Link to="/categories/chicken/Oregano_Marinated_Chicken">Oregano Marinated Chicken</Link></h6>
                 </figcaption>
               </figure>
             </div>
             <div className="col-6">
               <figure className="my-3 text-center card">
-                <Link to="#/" className="animation">
+                <Link to="/categories/thai/Thai_Vegetable_Stir-fry" className="animation">
                   <img src="assets/images/categories/categoriesThumbnail/Thai.jpg" className="w-100" alt="Menu"/>
                 </Link>
                 <figcaption className="bg-transparent pt-2">
-                  <h6 className=" small"><Link to="/Thai_Vegetable_Stir-fry">Thai Vegetable Stir-fry</Link></h6>
+                  <h6 className=" small"><Link to="/categories/thai/Thai_Vegetable_Stir-fry">Thai Vegetable Stir-fry</Link></h6>
                 </figcaption>
               </figure>
             </div>
             <div className="col-6">
               <figure className="my-3 text-center card">
-                <Link to="#/" className="animation">
+                <Link to="/categories/desserts/Salted_caramel_six_layer_chocolate_cake" className="animation">
                   <img src="assets/images/categories/categoriesThumbnail/Desserts.jpg" className="w-100" alt="Menu"/>
                 </Link>
                 <figcaption className="bg-transparent pt-2">
-                  <h6 className=" small"><Link to="/Salted_caramel_six_layer_chocolate_cake">Salted caramel six layer chocolate cake</Link></h6>
+                  <h6 className=" small"><Link to="/categories/desserts/Salted_caramel_six_layer_chocolate_cake">Salted caramel six layer chocolate cake</Link></h6>
                 </figcaption>
               </figure>
             </div>
             <div className="col-6">
               <figure className="my-3 text-center card">
-                <Link to="#/" className="animation">
+                <Link to="/categories/mexican/Black_bean_and_cheese_tacos" className="animation">
                   <img src="assets/images/categories/categoriesThumbnail/Mexican.jpg" className="w-100" alt="Menu"/>
                 </Link>
                 <figcaption className="bg-transparent pt-2">
-                  <h6 className=" small"><Link to="/Black_bean_and_cheese_tacos">Black bean and cheese tacos</Link></h6>
+                  <h6 className=" small"><Link to="/categories/mexican/Black_bean_and_cheese_tacos">Black bean and cheese tacos</Link></h6>
                 </figcaption>
               </figure>
             </div>
             <div className="col-6">
               <figure className="my-3 text-center card">
-                <Link to="#/" className="animation">
+                <Link to="/categories/smoothie/PB&J_smoothie" className="animation">
                   <img src="assets/images/categories/categoriesThumbnail/Smoothie.jpg" className="w-100" alt="Menu"/>
                 </Link>
                 <figcaption className="bg-transparent pt-2">
-                  <h6 className=" small"><Link to="#/">Berry Smoothies</Link></h6>
+                  <h6 className=" small"><Link to="/categories/smoothie/PB&J_smoothie">PB&amp;J smoothie </Link></h6>
                 </figcaption>
               </figure>
             </div>
             <div className="col-6">
               <figure className="my-3 text-center card">
-                <Link to="#/" className="animation">
+                <Link to="/categories/coffee/Hot_Nutty_Irishman" className="animation">
                   <img src="assets/images/categories/categoriesThumbnail/Coffee.jpg" className="w-100" alt="Menu"/>
                 </Link>
                 <figcaption className="bg-transparent pt-2">
-                  <h6 className=" small"><Link to="#/">Amazin' Low-Cafe Coffee</Link></h6>
+                  <h6 className=" small"><Link to="/categories/coffee/Hot_Nutty_Irishman">Hot Nutty Irishman</Link></h6>
                 </figcaption>
               </figure>
             </div>
             <div className="col-6">
               <figure className="my-3 text-center card">
-                <Link to="#/" className="animation">
+                <Link to="/categories/pizza/Broccoli_and_Mozzarella_Pizza" className="animation">
                   <img src="assets/images/categories/categoriesThumbnail/Breakfast.jpg" className="w-100" alt="Menu"/>
                 </Link>
                 <figcaption className="bg-transparent pt-2">
-                  <h6 className=" small"><Link to="#/">Broccoli and Mozzarella Pizza</Link></h6>
+                  <h6 className=" small"><Link to="/categories/pizza/Broccoli_and_Mozzarella_Pizza">Broccoli and Mozzarella Pizza</Link></h6>
                 </figcaption>
               </figure>
             </div>
             <div className="col-6">
               <figure className="my-3 text-center card">
-                <Link to="#/" className="animation">
+                <Link to="/categories/vietnamese/Green-packed_Stir_Fry_with_Fresh_Herbs" className="animation">
                   <img src="assets/images/categories/categoriesThumbnail/Vietnamese.jpg" className="w-100" alt="Menu"/>
                 </Link>
                 <figcaption className="bg-transparent pt-2">
-                  <h6 className=" small"><Link to="#/">Spicy Pho</Link></h6>
+                  <h6 className=" small"><Link to="/categories/vietnamese/Green-packed_Stir_Fry_with_Fresh_Herbs">Green-packed Stir Fry with Fresh Herbs</Link></h6>
                 </figcaption>
               </figure>
             </div>
@@ -159,7 +159,7 @@ export default function Portiontwo() {
                   <img src="assets/images/categories/categoriesThumbnail/Indian.jpg" className="w-100" alt="Menu"/>
                 </Link>
                 <figcaption className="bg-transparent pt-2">
-                  <h6 className=" small"><Link to="#/">Chicken Tikka Masala</Link></h6>
+                  <h6 className=" small"><Link to="/categories/indian/Restaurant_Style_Butter_Chicken">Restaurant Style Butter Chicken</Link></h6>
                 </figcaption>
               </figure>
             </div>

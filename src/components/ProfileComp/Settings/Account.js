@@ -67,7 +67,7 @@ setPhotoURL(user.photoURL);
 
 
       <div className="row align-items-center text-grite">
-        <div class="col-lg-5 text-center ">
+        <div className="col-lg-5 text-center ">
           <h4 className="mb-5">Change Avatar </h4>
           <div className="d-flex">
           <input className="h7" type="file" onChange={handleChange}/>
@@ -85,7 +85,7 @@ setPhotoURL(user.photoURL);
                             <span className="input-group-text">
                                 <i className="bi bi-at"></i>
                             </span>
-                            <input type="text" className="form-control" id="username" defaultValue="stephCooking321" placeholder="e.g. mario@example.com"/>
+                            <input type="text" className="form-control" id="username" defaultValue="stephCooking321" placeholder="e.g. username@example.com"/>
                             <span className="input-group-text">
                                 
                                 <i className="bi bi-question-circle text-muted"></i>
@@ -101,7 +101,7 @@ setPhotoURL(user.photoURL);
                             <span className="input-group-text">
                                 <i className="bi bi-envelope-fill"></i>
                             </span>
-                            <input type="email" className="form-control" id="email" defaultValue="t*********s@gmail.com"placeholder="e.g. mario@example.com"/>
+                            <input type="email" className="form-control" id="email" defaultValue="t*********s@gmail.com"placeholder="e.g. username@example.com"/>
                             <span className="input-group-text">
                                 
                                 <i className="bi bi-question-circle text-muted"></i>
@@ -176,7 +176,7 @@ setPhotoURL(user.photoURL);
            
         </div>
         
-        {/* <div class="col-lg-2"></div> */}
+        {/* <div className="col-lg-2"></div> */}
          <hr className="m-0" style={{ height: "5px",color:"black" }} />
       
       </>

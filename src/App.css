@@ -433,3 +433,7 @@ label.hello+input[type='radio']:checked {
   transition: .5s ease;
   backface-visibility: hidden;
 }
+
+a.btn-outline-darkness:hover{
+  color: white;
+}

@@ -24,7 +24,7 @@ function Recipes() {
       (<>
         <RecipeComp currRecipe={Data[mealName]}/>
         <Assistance page={recipeTour}/>
-        </>):(<Navigate replace to="/" />)
+        </>):(<Navigate replace to="/404Error" />)
         }
         </div>
   )

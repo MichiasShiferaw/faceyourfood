@@ -6,7 +6,6 @@ function stars(a) {
   let menuItems = [];
   for (let index = 0; index < a; index++) {
     menuItems.push(<i key={index} className="bi bi-star-fill" />);
-    // console.log(a)
   }
   return menuItems;
 }
@@ -17,11 +16,11 @@ export default function Homecomp() {
   return (
     
     <section className="p-0 mb-4 mb-md-5">
-       <div class="container text-grite">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md p-5">
+       <div className="container text-grite">
+            <div className="row align-items-center justify-content-between">
+                <div className="col-md p-5">
                     <h1>Welcome To Face Your Food</h1>
-                    <p class="lead">
+                    <p className="lead">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                         Similique deleniti possimus magnam corporis ratione facere!
                     </p>
@@ -32,15 +31,15 @@ export default function Homecomp() {
                         nulla architecto amet voluptates?
                     </p>
 
-                    <a href="/home" class="btn btn-light mt-3 mx-3">
-                        <i class="bi bi-chevron-right"></i> Get Started
+                    <a href="#trending" className="btn btn-light mt-3 mx-3">
+                        <i className="bi bi-chevron-right"></i> Get Started
                     </a>
-                                       <a href="#section2" class="btn btn-light mt-3 mx-3">
-                        <i class="bi bi-chevron-right"></i> Read More
-                    </a>
+                                       <Link to="/about" href="#section2" className="btn btn-light mt-3 mx-3">
+                        <i className="bi bi-chevron-right"></i> Read More
+                    </Link>
                 </div>
-                <div class="col-md">
-                    <img src="/assets/images/faceYourFood.png" class="img-fluid"  alt="Nigga" />
+                <div className="col-md">
+                    <img src="/assets/images/faceYourFood.png" className="img-fluid"  alt="Nigga" />
                 </div>
             </div>
         </div>
@@ -49,7 +48,7 @@ export default function Homecomp() {
         <h3 className="text-grite">{t("trending")}</h3>
         <hr className="flex-grow-1" />
       </div>
-      <div className="row">
+      <div className="row" id="trending">
         <div className="card-group">
           {trendingNow.slice(0, 3).map((food, index) => (
             <div key={index} className="col-md-4">

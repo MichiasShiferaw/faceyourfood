@@ -29,7 +29,7 @@ export default function Registercomp(){
   // const register=async ()=>{
   //   try{
   //   const user= await createUserWithEmailAndPassword(
-  //     auth, 
+  //     auth,
   //     registerEmail,
   //     registerPassword
   //   );
@@ -46,7 +46,7 @@ export default function Registercomp(){
   // const login= async()=>{
   //   try{
   //   const user= await signInWithEmailAndPassword(
-  //     auth, 
+  //     auth,
   //     registerEmail,
   //     registerPassword
   //   );
@@ -82,37 +82,37 @@ const togglePassword = () => {
     setLoading(false);
   }
 
-  async function handleLogin() {
-    setLoading(true);
-    try {
-      await login(emailRef.current.value, passwordRef.current.value);
-    } catch {
-      console.log("Error!");
-    }
-    setLoading(false);
-  }
+  // async function handleLogin() {
+  //   setLoading(true);
+  //   try {
+  //     await login(emailRef.current.value, passwordRef.current.value);
+  //   } catch {
+  //     console.log("Error!");
+  //   }
+  //   setLoading(false);
+  // }
 
-  async function handleLogout() {
-    setLoading(true);
-    try {
-      await logout();
-    } catch {
-      console.log("Error!");
-    }
-    setLoading(false);
-  }
+  // async function handleLogout() {
+  //   setLoading(true);
+  //   try {
+  //     await logout();
+  //   } catch {
+  //     console.log("Error!");
+  //   }
+  //   setLoading(false);
+  // }
 
 
 
     return(
 
       <>
-        <h2 className="mb-3 text-center"><strong>{t("getStarted")}</strong></h2>
+        <h2 className="mb-3 text-center text-grite"><strong>{t("getStarted")}</strong></h2>
         <hr className="my-4"/>
         {!currentUser&&
         <>
         <form className="needs-validation" noValidate="">
-          <div className="container">
+          <div className="container text-grite">
     <section className="my-4 my-md-5">
       <div className="row">
         <div className="col-lg-12">
@@ -127,9 +127,9 @@ const togglePassword = () => {
                                 <i className="bi bi-person-fill"></i>
                             </span>
                             </a>
-                            <input type="text" className="form-control" id="name" 
-                            
-                              
+                            <input type="text" className="form-control" id="name"
+
+
                               placeholder="e.g.Jane Doe"/>
                               {/* onChange={(event)=>{setRegisterName(event.target.value);}} */}
                             <a type="button"  href="#/0" data-bs-toggle="tooltip" title="Enter your first and last name (Not case sensitive)">
@@ -150,10 +150,10 @@ const togglePassword = () => {
                                 <i className="bi bi-at"></i>
                             </span>
                             </a>
-                            <input type="text" className="form-control" id="username" placeholder="e.g. mario@example.com"/>
-                            
+                            <input type="text" className="form-control" id="username" placeholder="e.g. username@example.com"/>
+
                             <a type="button"  href="#/0" data-bs-toggle="tooltip" title="Username can only include letters and numbers"><span className="input-group-text">
-                              
+
                                 <i className="bi bi-question-circle text-muted"></i>
 
                             </span>
@@ -169,7 +169,7 @@ const togglePassword = () => {
                                 <i className="bi bi-envelope-fill"></i>
                             </span>
                             </a>
-                            <input type="email" className="form-control" id="email" ref={emailRef} placeholder="e.g. mario@example.com"/>
+                            <input type="email" className="form-control" id="email" ref={emailRef} placeholder="e.g. username@example.com"/>
                             <a type="button"  href="#/0" data-bs-toggle="tooltip" title="Only valid emails will be accepted"><span className="input-group-text">
 
                                 <i className="bi bi-question-circle text-muted"></i>
@@ -195,27 +195,28 @@ const togglePassword = () => {
                             )
                             }
                             </span>
-                            
+
                         </div>
                 </div>
               </div>
             </div>
-             <a href="#/" className="d-block p mb-3 text-center text-muted">Don't have an Account</a>
-            <div className="form-check">
-            
-            <input type="checkbox" className="form-check-input" id="save-info"/>
-            <label className="form-check-label" htmlFor="save-info">{t("agree")}</label>
-            
-          </div>
-          <div className="form-check">
+             <a href="#/" className="d-block p mb-3 text-center text-muted"><strong>Don't have an Account?</strong></a>
+                       <div className="form-check">
           <input type="checkbox" value="remember1" className="form-check-input" id="remember"/>
             <label className="form-check-label" htmlFor="remember">Remember me</label>
             </div>
+            <div className="form-check">
+
+            <input type="checkbox" className="form-check-input" id="save-info"/>
+            <label className="form-check-label" htmlFor="save-info">{t("agree")}</label>
+
+          </div>
+
         </div>
       </div>
     </section>
     </div>
-   
+
     <div className="">
           <button className="col align-self-start w-100 btn btn-forgreen btn-lg pb-3" onClick={handleSignup}>{t("login")}</button>
            </div>

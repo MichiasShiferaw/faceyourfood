@@ -221,23 +221,24 @@ import React from 'react'
 function Errorpage() {
     let navigate = useNavigate();
   return (
-    <div className=" container">
+    <section style={{backgroundColor:"#adb5bd"}}>
     <div className='text-center m-0 p-0'>
       <div className="row justify-content-center align-items-center">
       <div className="col-md-4 text-center d-none d-md-block">
-        <img alt="logo" className="img-fluid" src="/assets/images/chef.gif"/>
+        <img alt="logo" className="img-fluid" src="/assets/images/chef3.gif"/>
     </div>
     
     <div className="col-md-6 text-center">
-      <h1 ><span style={{fontSize:"16.5vw"}}>O<span className='text-secondary'>o</span>p<span className='text-secondary'>s</span>!</span><br/>Something's went WRONG! </h1>
+      <h3>FaceYourFood Presents</h3>
+      <h1 ><span style={{fontSize:"16.5vw"}}>O<span className='text-secondary'>o</span>p<span className='text-secondary'>s</span>!</span><br/>Something went WRONG! </h1>
       <div className='mx-2'>
       <button onClick={() => navigate(-1)} className='btn btn-lg btn-outline-secondary'>Back to Previous Page</button>
-      <Link to="/" className='btn btn-lg btn-outline-secondary'>Return to the Homepage</Link>
+      <Link to="/" className='btn btn-lg btn-primary'>Return to the Homepage</Link>
       </div>
       <h1 style={{fontSize:"12.0vw"}}className='text-success'>404</h1>
       
       </div></div></div>
-    </div>
+    </section>
   )
 }
 

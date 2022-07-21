@@ -165,10 +165,10 @@ function Reviews() {
           </div>
         </div>
 
-        <div className=" fs-4 write-comment align-items-center mb-3 mx-3">
+        <div className=" fs-4 write-comment align-items-center mb-3 mx-3 ">
           <div>
             {" "}
-            <h4>Rate it out of Five</h4>{" "}
+            <h4>Create a Review</h4>{" "}
             <span className="ms-3">{stars.map((_, index) => {
               return (
                 <i

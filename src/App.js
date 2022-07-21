@@ -22,7 +22,7 @@ import Login from './Pages/Login';
 import Account from './components/ProfileComp/Settings/Account';
 import Favourite from './components/ProfileComp/Settings/Favourite';
 import Preference from './components/ProfileComp/Settings/Preference';
-import Launch from './Pages/Launch';
+// import Launch from './Pages/Launch';
 import Logincomp from './components/Register/Logincomp';
 import Registercomp from './components/Register/Registercomp';
 

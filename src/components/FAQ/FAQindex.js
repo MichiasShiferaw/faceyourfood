@@ -17,14 +17,14 @@ function FAQindex() {
               </nav> */}
               <div>
                 <img className="mb-4 d-block mx-auto" src="/assets/images/faceYourFood.png" alt="" width="126" height="100"/>
-                <h1 className="h2 text-center p-2 text-grite">Frequently Asked Questions (FAQs) Option</h1>
+                <h1 className="h2 text-center p-2 text-grite">Frequently Asked Questions (FAQs) </h1>
 
 
               </div>
         
         
         <div className='row align-items-center'>
-          <div class="col-lg-2"></div>
+          <div className="col-lg-2"></div>
         <div className='col-lg-8'>
         <div className="accordion accordion-flush" id="accordionFlushExample">
   <div className="accordion-item">
@@ -93,7 +93,7 @@ function FAQindex() {
 
 </div>
 </div>
-          <div class="col-lg-2"></div>
+          <div className="col-lg-2"></div>
           </div>
 </div>
   )

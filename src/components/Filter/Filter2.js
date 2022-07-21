@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-// import { categoriesPreview } from "../Data/Data";
+ import { categoriesPreview } from "../Data/Data";
 import Data from '../Data/RecipeDB.json';
 
-function Filter2({cuisine1}) {
+function Filter2({mealOpt}) {
+
   const [searchTerm, setSearchTerm] = useState("");
   return (
     <div>
@@ -18,33 +19,21 @@ function Filter2({cuisine1}) {
         placeholder="Searching..."
       />
       <div>
-        <datalist id="datalistOptions" className="my-2">
-          {Object.keys(Data).filter((val1) => {
-            // {console.log((Data[val1]).waittime)}
-            if (searchTerm === "") return val1;
-              if ((Data[val1].category).toLowerCase()===(cuisine1).toLowerCase()) return false;
-             let obj= Data[val1];
-             console.log(obj)
-            //   if (searchTerm === "") return val1;
-            //   if ((Data[val1].category).toLowerCase()===(cuisine1).toLowerCase()) return false;
-
-            //     if ((Data[val1].name).toLowerCase().includes(searchTerm.toLowerCase())){
-            //       return val1;
-            //     }
-            //     let test=false;
-            //     obj.
-            //     obj.forEach((obj1)=>{
-            //       if (obj1.text &&)
-            //     })
-            //     }
-            //   }
-                
-              
-            // )
-            // )
-            }
-          )
-          }
+         <datalist id="datalistOptions" className="my-2">
+          {mealOpt
+            .filter((val) => {
+              if (searchTerm == "") {
+                return val;
+              } else if (
+                val.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                val.id.toLowerCase().includes(searchTerm.toLowerCase())
+              ) {
+                return val;
+              }
+            })
+            .map((recipe, index) => (
+              <option value={recipe.name} key={index}/>
+            ))}
         </datalist>
       </div>
     </div>
