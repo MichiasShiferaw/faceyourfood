@@ -30,42 +30,42 @@ function FAQindex() {
   <div className="accordion-item">
     <h2 className="accordion-header" id="flush-headingOne">
       <button className="accordion-button collapsed bg-beige2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-       FAQ Question #1
+       I commented on one of your recipes and am wondering why it hasn’t been posted.
       </button>
     </h2>
     <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-      <div className="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+      <div className="accordion-body">I love engaging with readers and only approve comments that add value to the recipe page. All comments are filtered for spam and I don’t post anything derogatory or rude. I also do not post comments with links in them.</div>
     </div>
   </div>
   <div className="accordion-item">
     <h2 className="accordion-header" id="flush-headingTwo">
       <button className="accordion-button collapsed bg-beige2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-       FAQ Question #2
+        Is there a way to print out your recipes
       </button>
     </h2>
     <div id="flush-collapseTwo" className="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-      <div className="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+      <div className="accordion-body">If you look above the list of ingredients on each recipe you will see a print button. Click that and you should be good to go.</div>
     </div>
   </div>
   <div className="accordion-item">
     <h2 className="accordion-header" id="flush-headingThree">
       <button className="accordion-button collapsed bg-beige2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-       FAQ Question #3
+       Where can I find nutritional information on your recipes?
       </button>
     </h2>
     <div id="flush-collapseThree" className="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-      <div className="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+      <div className="accordion-body">Nutritional information is provided with each recipe, but only as an estimate because cooking methods can change this, as well as the brands used. Content found on HowToCook.recipes is not meant as medical advice or information. You are welcome to use various nutritional calculators found online. All you have to do is copy the link to the recipe in their address bar to get the nutritional information you need. You don’t even have to specify the ingredients! It couldn’t be easier.</div>
     </div>
   </div>
 
   <div className="accordion-item">
     <h2 className="accordion-header" id="flush-headingFour">
       <button className="accordion-button collapsed bg-beige2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-       FAQ Question #4
+       Can I double the recipe? 
       </button>
     </h2>
     <div id="flush-collapseFour" className="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-      <div className="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+      <div className="accordion-body">In most situations where the recipe is baked in an 8×8-inch square pan, it will double fine being baked in 9×13-inch pan. Most of my bars and cakes are baked in 8×8 pans, but if there’s a 9×9-inch recipe that you want to double, it could be a tight fit in a 9×13 pan.</div>
     </div>
   </div>
   <div className="accordion-item">
@@ -81,11 +81,11 @@ function FAQindex() {
   <div className="accordion-item">
     <h2 className="accordion-header" id="flush-headingSix">
       <button className="accordion-button collapsed bg-beige2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-       FAQ Question #6
+       Can I use margarine in place of butter?
       </button>
     </h2>
     <div id="flush-collapseSix" className="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
-      <div className="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+      <div className="accordion-body">Probably not. It’s too watery and doesn’t behave like butter. I would suggest vegan butter such as Earth Balance sticks rather than margarine, but real butter is all I bake with when I call for butter in my recipes and using anything else can be a big gamble.</div>
     </div>
   </div>
     
