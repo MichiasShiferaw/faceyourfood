@@ -15,5 +15,7 @@
     "enterEmail": "Ingrese el correo electrónico para unirse, debe incluir @",
     "login": "Iniciar sesión",
     "enterEmailPlaceholder": "Ingresar dirección de email",
-    "join": "Unirse"
+    "join": "Unirse",
+    "readMore": "Leer más",
+    "enterEmail2": "Ingrese su dirección de email"
 }

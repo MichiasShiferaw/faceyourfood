@@ -12,5 +12,16 @@
     "recordActivity": "Record Activity on My Account",
     "keepFav": "Keep my favourites private",
     "selectLang": "Select a Language",
-    "save": "save"
+    "save": "Save",
+    "password":"Password",
+    "connect":"Connect your Social Media to keep your friends and family up-to-date",
+    "currently":"You are currently",
+    "subscribed":"subscribed",
+    "newsletter": "Newsletter",
+    "newsletter1":"to our newsletter",
+    "unsubscribe":"Unsubscribe",
+    "emailAddress":"Email Address",
+    "changeAvatar":"Change Avatar",
+    "upload":"Upload",
+    "userName":"Username"
 }

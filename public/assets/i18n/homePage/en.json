@@ -16,5 +16,7 @@
     "enterEmail":"Enter email to join, must include @",
         "login": "Login",
         "enterEmailPlaceholder": "Enter email",
-        "join":"Join"
+        "join":"Join",
+        "readMore":"Read More",
+        "enterEmail2":"Enter Email"
 }

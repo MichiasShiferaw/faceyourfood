@@ -3,6 +3,7 @@ import Reviews from "./Reviews/Reviews";
 import { Link } from "react-router-dom";
 import Toggle from "./Togglelike";
 import { useTranslation } from "react-i18next";
+import { categoriesPreview } from "../Data/Data";
 
 function stars(a) {
   let menuItems = [];
@@ -14,6 +15,19 @@ function stars(a) {
 }
 
 export default function Recipe({ currRecipe }) {
+  var index= categoriesPreview[0]
+  //var cat= categoriesPreview[i];
+  // console.log(currRecipe.category)
+  var var1 = categoriesPreview.find(function(item,i){
+    // console.log(item.title)
+    if ((item.title).toLowerCase()===(currRecipe.category).toLowerCase()){
+      // index=i;
+      index = categoriesPreview[i];
+      // categoriesPreview[i];
+      //  console.log(categoriesPreview[i]);
+    }
+  });
+  // console.log(var1);
   const { t } = useTranslation(["recipesPage"]);
   const adjective=["There's something truly special about "," This simple recipes let the sweet, yet tart flavors of fresh flavours shine bright from a classic ","Amazing is an understatement to ", "Great ","Sweet ","Try the phenomenal ","Of all the things to try, you MUST try "].sort(()=> Math.random()-0.5)
           const closing=["Trust me when I say, it is an unexpected but deliciously addictive flavor. ","See the recipe immediately!", "What are you waiting for? Get Started!", "This recipe could be the talk of your friends and family!"].sort(()=> Math.random()-0.5)
@@ -108,7 +122,7 @@ export default function Recipe({ currRecipe }) {
               <div className="carousel-inner ">
                 <div className="carousel-item active" data-bs-interval="10000">
                   <img
-                    src="/assets/images/muffins/1.png"
+                    src={index.display1}
                     className="d-block w-175 img-fluid"
                     alt="..."
                   />
@@ -124,7 +138,7 @@ export default function Recipe({ currRecipe }) {
                 </div>
                 <div className="carousel-item" data-bs-interval="2000">
                   <img
-                    src="/assets/images/muffins/2.png"
+                    src={index.image}
                     className="d-block w-175 img-fluid"
                     alt="..."
                   />
@@ -138,7 +152,7 @@ export default function Recipe({ currRecipe }) {
                 </div>
                 <div className="carousel-item">
                   <img
-                    src="/assets/images/muffins/3.png"
+                    src={index.thumbnail}
                     className="d-block w-175 img-fluid"
                     alt="..."
                   />

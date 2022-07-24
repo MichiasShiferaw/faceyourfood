@@ -9,5 +9,7 @@
     "login":"Login",
     "popularcategories": "Popular Categories",
     "signin": "Sign In",
-    "demo": "View Demo"
+    "demo": "View Demo",
+    "viewAll":"View All",
+    "faq":"Frequently Asked Questions"
 }

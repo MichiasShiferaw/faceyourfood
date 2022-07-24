@@ -10,7 +10,7 @@ const { t } = useTranslation(["common"]);
       <div className="col-6 d-flex">
         <h3 className="mb-2 me-4 text-white">{t("popularcategories")} </h3>
         <Link to='/categories'>
-          <button className="btn bg-grite">View All</button>
+          <button className="btn bg-grite">{t("viewAll")}</button>
         </Link>
       </div>
       <div className="col-6 text-end">

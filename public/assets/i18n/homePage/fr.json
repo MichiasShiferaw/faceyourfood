@@ -16,5 +16,7 @@
     "enterEmail": "Entrez le courrier électronique pour rejoindre, doit inclure @",
     "login": "Connexion",
     "enterEmailPlaceholder":"Entrez votre Adresse Courriel",
-    "join": "S'inscrive"
+    "join": "S'inscrive",
+    "readMore": "Lire la suite",
+    "enterEmail2": "Entrez votre courrie"
 }

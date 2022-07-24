@@ -12,5 +12,16 @@
     "recordActivity": "Enregistrer l'activité sur mon compte",
     "keepFav": "Garder mes favoris privés",
     "selectLang": "Sélectionnez une langue",
-    "save": "enregistrer"
+    "save": "enregistrer",
+    "password": "Mot de passe",
+    "connect": "Connectez vos médias sociaux pour garder vos amis et votre famille à jour",
+    "currently": "Vous êtes actuellement",
+    "subscribed": "souscrit",
+    "newsletter": "Bulletin",
+    "newsletter1": "à notre newsletter",
+    "unsubscribe": "Se Désabonner",
+    "emailAddress": "Votre Courriel",
+    "changeAvatar": "Changer d’avatar",
+    "upload": "Télécharger",
+    "userName": "Nom d’utilisateur"
 }

@@ -23,7 +23,7 @@ const [email, setEmail] = useState("");
             <input
               type="email"
               className="form-control"
-              placeholder="Enter Email"
+              placeholder={t("enterEmail2")}
               required
               onChange={(event)=>setEmail(event.target.value)}
             />

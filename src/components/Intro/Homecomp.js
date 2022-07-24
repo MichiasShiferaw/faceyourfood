@@ -10,7 +10,7 @@ function stars(a) {
   return menuItems;
 }
 export default function Homecomp() {
-  const {t} = useTranslation(["homePage"]);
+  const {t} = useTranslation(["homePage","aboutPage"]);
           const adjective=["There's something truly special about "," This simple recipes let the sweet, yet tart flavors of fresh flavours shine bright from a classic ","Amazing is an understatement to ", "Great ","Sweet ","Try the phenomenal ","Of all the things to try, you MUST try "].sort(()=> Math.random()-0.5)
           const closing=["Trust me when I say, it is an unexpected but deliciously addictive flavor. ","See the recipe immediately!", "What are you waiting for? Get Started!", "This recipe could be the talk of your friends and family!"].sort(()=> Math.random()-0.5)
   return (
@@ -21,21 +21,14 @@ export default function Homecomp() {
                 <div className="col-md p-5">
                     <h1>Welcome To Face Your Food</h1>
                     <p className="lead">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                        Similique deleniti possimus magnam corporis ratione facere!
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
-                        reiciendis eius autem eveniet mollitia, at asperiores suscipit
-                        quae similique laboriosam iste minus placeat odit velit quos,
-                        nulla architecto amet voluptates?
+                        {t("aboutPage:intro")}
                     </p>
 
                     <a href="#trending" className="btn btn-light mt-3 mx-3">
-                        <i className="bi bi-chevron-right"></i> Get Started
+                        <i className="bi bi-chevron-right"></i> {t("homePage:getStarted")}
                     </a>
                                        <Link to="/about" href="#section2" className="btn btn-light mt-3 mx-3">
-                        <i className="bi bi-chevron-right"></i> Read More
+                        <i className="bi bi-chevron-right"></i> {t("homePage:readMore")}
                     </Link>
                 </div>
                 <div className="col-md">
